@@ -37,8 +37,13 @@ export class Header {
     this.logInText.classList.add("page-header__logIn_text");
     this.logInText.textContent = "Sign In";
 
+    this.logInLink = document.createElement("a");
+    this.logInLink.classList.add("page-header__logIn_link");
+    this.logInLink.href = " ";
+
     this.headerDiv.append(this.logInContainer);
     this.logInContainer.append(this.logInImage);
     this.logInContainer.append(this.logInText);
+    this.logInContainer.append(this.logInLink);
   }
 }
