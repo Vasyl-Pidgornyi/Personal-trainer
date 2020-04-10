@@ -343,7 +343,7 @@ template {
 
 html {
   color: #111111;
-  font-size: 18px;
+  font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -383,13 +383,13 @@ button {
   background-position: left top, left 1170px, left 2340px;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 .page-header {
   width: 100%;
   height: 85px;
-  background-color: #27232b;
+  background-color: #252128;
   position: fixed;
   display: flex;
   justify-content: center;
@@ -428,6 +428,46 @@ button {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+.trainerBooking-continer {
+  width: 100%;
+  height: auto;
+  padding-top: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  background-attachment: scroll;
+}
+.trainerBooking-continer__header {
+  color: #fff;
+  font-size: 5.5rem;
+  font-weight: 400;
+  letter-spacing: 17.6px;
+}
+.trainerBooking-continer__description {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 13.44px;
+  text-transform: uppercase;
+}
+.trainerBooking-continer__btn {
+  margin-top: 60px;
+  padding-top: 13px;
+  width: 147px;
+  height: 55px;
+  background-color: #252128;
+  font-size: 20px;
+  line-height: 28px;
+  color: #fe6148;
+  text-align: center;
+}
+.trainerBooking-continer__btn:hover {
+  background-color: #fe6148;
+  color: #252128;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,4 +1,43 @@
 .trainerBooking-continer {
   width: 100%;
   height: auto;
+  padding-top: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  background-attachment: scroll;
+
+  &__header {
+    color: $trainer-bookin-text-color;
+    font-size: 5.5rem;
+    font-weight: 400;
+    letter-spacing: 17.6px;
+  }
+
+  &__description {
+    margin-top: 20px;
+    color: $trainer-bookin-text-color;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 13.44px;
+    text-transform: uppercase;
+  }
+
+  &__btn {
+    margin-top: 60px;
+    padding-top: 13px;
+    width: 147px;
+    height: 55px;
+    background-color: $main-dark-color;
+    font-size: 20px;
+    line-height: 28px;
+    color: $main-orange-color;
+    text-align: center;
+  }
+
+  &__btn:hover {
+    background-color: $main-orange-color;
+    color: $main-dark-color;
+  }
 }
