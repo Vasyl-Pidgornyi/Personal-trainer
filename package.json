@@ -4,7 +4,8 @@
   "description": "Graduate work",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "local-server": "http-server -c-1 ./",
+    "inner-sass": "sass --watch ./src/styles/sass:./src/styles/css"
   },
   "repository": {
     "type": "git",
