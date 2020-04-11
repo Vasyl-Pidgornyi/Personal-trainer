@@ -21,7 +21,7 @@ export class trainerBooking {
     this.trainerHeader.textContent = "JOEY DIXON";
     this.trainerDescription.textContent = "training with a world champion";
     this.bookButton.textContent = "Book Now";
-    this.bookButton.href = " ";
+    this.bookButton.href = "#";
 
     this.pageContentDiv.append(this.trainerHeader);
     this.pageContentDiv.append(this.trainerDescription);

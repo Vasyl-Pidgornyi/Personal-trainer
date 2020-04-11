@@ -21,7 +21,7 @@ export class Header {
     for (let i = 0; i < navButtons.length; i++) {
       this.navRefference = document.createElement("a");
       this.navRefference.classList.add("page-header__nav");
-      this.navRefference.href = "";
+      this.navRefference.href = "#";
       this.navRefference.innerText = navButtons[i];
       this.headerDiv.append(this.navRefference);
     }
@@ -35,11 +35,11 @@ export class Header {
 
     this.logInText = document.createElement("p");
     this.logInText.classList.add("page-header__logIn_text");
-    this.logInText.textContent = "Sign In";
+    this.logInText.textContent = "Log In";
 
     this.logInLink = document.createElement("a");
     this.logInLink.classList.add("page-header__logIn_link");
-    this.logInLink.href = " ";
+    this.logInLink.href = "#";
 
     this.headerDiv.append(this.logInContainer);
     this.logInContainer.append(this.logInImage);

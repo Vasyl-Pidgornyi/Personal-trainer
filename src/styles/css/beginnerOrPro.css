@@ -1,0 +1,64 @@
+.beginnerOrPro-cover {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 1;
+  justify-content: space-evenly;
+  margin-top: 480px;
+}
+.beginnerOrPro-cover__content {
+  width: 50%;
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+.beginnerOrPro-cover__content_background-transition {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.beginnerOrPro-cover__content_background-transition:hover {
+  background-color: #fe6148;
+  opacity: 0.45;
+}
+.beginnerOrPro-cover__content_description-cover {
+  padding-right: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+}
+.beginnerOrPro-cover__content_description-cover_description {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 2.5px;
+}
+.beginnerOrPro-cover__content_description-cover_image {
+  background-image: url("/src/assets/images/navigation/arrow_orange_mv2.webp");
+  background-repeat: no-repeat;
+  width: 55px;
+  height: 55px;
+  transform: rotate(-90deg);
+  margin-top: 20px;
+}
+.beginnerOrPro-cover__content_description-cover_image:hover {
+  background-image: url("/src/assets/images/navigation/arrow_white_mv2.webp");
+}
+
+.left-background {
+  background-image: url("/src/assets/images/selector_first/rookie.webp");
+}
+
+.right-background {
+  background-image: url("/src/assets/images/selector_first/professional.webp");
+}
+
+/*# sourceMappingURL=beginnerorpro.css.map */
