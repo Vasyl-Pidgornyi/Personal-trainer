@@ -31,7 +31,7 @@ export class Header {
 
     this.logInImage = document.createElement("img");
     this.logInImage.classList.add("page-header__logIn_icon");
-    this.logInImage.src = "./src/assets/images/svg/login_icon2.svg";
+    this.logInImage.src = "src/assets/images/svg/login_icon2.svg";
 
     this.logInText = document.createElement("p");
     this.logInText.classList.add("page-header__logIn_text");

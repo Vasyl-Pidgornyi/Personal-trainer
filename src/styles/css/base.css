@@ -6,12 +6,12 @@
   font-family: "doplomaFont";
   font-style: normal;
   font-weight: 400;
-  src: local("doplomaFont"), url(../../assets/fonts/diplomaFont.woff2) format("woff2");
+  src: local("diplomaFont"), url("../assets/fonts/diplomaFont.woff2") format("woff2");
 }
 html {
   color: #111111;
   font-size: 16px;
-  font-family: "doplomaFont", Arial, Helvetica, sans-serif;
+  font-family: "diplomaFont", Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
 
