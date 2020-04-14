@@ -47,7 +47,7 @@
       }
 
       &_image {
-        background-image: url("../assets/images/navigation/arrow_orange_mv2.png");
+        background-image: url("../assets/images/navigation/arrow_orange_mv2.webp");
         background-repeat: no-repeat;
         $image-size: 55px;
         width: $image-size;
@@ -57,7 +57,7 @@
       }
 
       &_image:hover {
-        background-image: url("../assets/images/navigation/arrow_white_mv2.png");
+        background-image: url("../assets/images/navigation/arrow_white_mv2.webp");
       }
     }
   }
@@ -68,5 +68,5 @@
 }
 
 .right-background {
-  background-image: url("../assets/images/selector_first/professional.png");
+  background-image: url("../assets/images/selector_first/professional.webp");
 }
