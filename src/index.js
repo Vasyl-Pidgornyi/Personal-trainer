@@ -1,6 +1,7 @@
-import { Header } from "./header.js";
-import { trainerBooking } from "./trainerBooking.js";
-import { noobOrPro } from "./beginnerOrPro.js";
+import { Header } from "./js/header.js";
+import { trainerBooking } from "./js/trainerBooking.js";
+import { noobOrPro } from "./js/beginnerOrPro.js";
+import "./sass/index.scss";
 
 const pageContainer = document.querySelector(".page-container");
 

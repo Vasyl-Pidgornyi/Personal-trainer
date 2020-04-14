@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "local-server": "http-server -c-1 ./",
-    "inner-sass": "sass --watch ./src/styles/sass:./src/styles/css"
+    "inner-sass": "sass --watch ./src/styles/sass:./src/styles/css",
+    "build": "./node_modules/.bin/webpack --mode=production",
+    "dev": "./node_modules/.bin/webpack --mode=development --watch"
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,18 @@
   },
   "homepage": "https://github.com/Vasyl-Pidgornyi/Personal-trainer#readme",
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.2",
     "http-server": "^0.12.1",
-    "sass": "^1.26.3"
-  }
+    "sass": "^1.26.3",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {}
 }
