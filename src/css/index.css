@@ -1011,7 +1011,7 @@ button {
   letter-spacing: 2.5px;
 }
 .beginnerOrPro-cover__content_description-cover_image {
-  background-image: url("/src/assets/images/navigation/arrow_orange_mv2.webp");
+  background-image: url("../assets/images/navigation/arrow_orange_mv2.png");
   background-repeat: no-repeat;
   width: 55px;
   height: 55px;
@@ -1019,15 +1019,15 @@ button {
   margin-top: 20px;
 }
 .beginnerOrPro-cover__content_description-cover_image:hover {
-  background-image: url("/src/assets/images/navigation/arrow_white_mv2.webp");
+  background-image: url("../assets/images/navigation/arrow_white_mv2.png");
 }
 
 .left-background {
-  background-image: url("/src/assets/images/selector_first/rookie.webp");
+  background-image: url("../assets/images/selector_first/rookie.png");
 }
 
 .right-background {
-  background-image: url("/src/assets/images/selector_first/professional.webp");
+  background-image: url("../assets/images/selector_first/professional.png");
 }
 
 /*# sourceMappingURL=index.css.map */

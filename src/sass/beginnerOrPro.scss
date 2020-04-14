@@ -47,7 +47,7 @@
       }
 
       &_image {
-        background-image: url("/src/assets/images/navigation/arrow_orange_mv2.webp");
+        background-image: url("../assets/images/navigation/arrow_orange_mv2.png");
         background-repeat: no-repeat;
         $image-size: 55px;
         width: $image-size;
@@ -57,16 +57,16 @@
       }
 
       &_image:hover {
-        background-image: url("/src/assets/images/navigation/arrow_white_mv2.webp");
+        background-image: url("../assets/images/navigation/arrow_white_mv2.png");
       }
     }
   }
 }
 
 .left-background {
-  background-image: url("/src/assets/images/selector_first/rookie.webp");
+  background-image: url("../assets/images/selector_first/rookie.png");
 }
 
 .right-background {
-  background-image: url("/src/assets/images/selector_first/professional.webp");
+  background-image: url("../assets/images/selector_first/professional.png");
 }
