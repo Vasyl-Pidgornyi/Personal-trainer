@@ -1,11 +1,12 @@
 const path = require("path");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: "./src/index.js",
   devtool: "source-map",
   output: {
     filename: "bundle.js",
-    path: path.resolve(__dirname, "build/scripts")
+    path: path.resolve(__dirname, "build")
   },
   module: {
     rules: [
@@ -17,16 +18,14 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [
-          // Creates `style` nodes from JS strings
-          "style-loader",
-          // Translates CSS into CommonJS
+          // fallback to style-loader in development
+          MiniCssExtractPlugin.loader,
           "css-loader",
-          // Compiles Sass to CSS
           "sass-loader"
         ]
       },
       {
-        test: /\.(jpg|jpeg|png|woff|woff2|eot|ttf|svg)$/,
+        test: /\.(jpg|jpeg|png|eot|ttf|svg)$/,
         use: [
           {
             loader: "url-loader"
@@ -35,7 +34,27 @@ module.exports = {
             // }
           }
         ]
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "fonts/"
+            }
+          }
+        ]
       }
     ]
-  }
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // both options are optional
+      filename: "[name].css",
+      chunkFilename: "[id].css"
+    })
+  ]
 };
