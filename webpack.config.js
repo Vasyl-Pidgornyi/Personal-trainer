@@ -29,10 +29,10 @@ module.exports = {
         test: /\.(jpg|jpeg|png|woff|woff2|eot|ttf|svg)$/,
         use: [
           {
-            loader: "url-loader",
-            options: {
-              limit: 100000
-            }
+            loader: "url-loader"
+            // options: {
+            //   limit: 200000
+            // }
           }
         ]
       }

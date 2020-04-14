@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "local-server": "http-server -c-1 ./",
-    "inner-sass": "sass --watch ./src/sass:./src/styles/css",
+    "inner-sass": "sass --watch ./src/sass:./src/css",
     "build": "./node_modules/.bin/webpack --mode=production",
     "dev": "./node_modules/.bin/webpack --mode=development --watch"
   },
