@@ -1,2 +1,0 @@
-# Personal-trainer
-Graduate work
