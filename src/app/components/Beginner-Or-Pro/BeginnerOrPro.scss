@@ -1,0 +1,86 @@
+@import "../../../sass/variables.scss";
+
+.beginnerOrPro-cover {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 1;
+  justify-content: space-evenly;
+
+  &__content {
+    width: 50%;
+    height: $image-height;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &.left {
+      justify-content: flex-end;
+    }
+
+    &.right {
+      justify-content: flex-start;
+    }
+
+    &_background-transition {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 1;
+    }
+
+    &_background-transition:hover {
+      background-color: $main-orange-color;
+      opacity: 0.45;
+    }
+
+    &_description-cover {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      z-index: 2;
+
+      &.padding-right {
+        padding-right: 100px;
+      }
+
+      &.padding-left {
+        padding-left: 100px;
+      }
+
+      &_description {
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: $main-white-color;
+        letter-spacing: 9px;
+      }
+
+      &_image {
+        background-image: url("../../../assets/images/navigation/arrow_orange_mv2.webp");
+        background-repeat: no-repeat;
+        $image-size: 55px;
+        width: $image-size;
+        height: $image-size;
+        transform: rotate(-90deg);
+        margin-top: 20px;
+      }
+
+      &_image:hover {
+        background-image: url("../../../assets/images/navigation/arrow_white_mv2.webp");
+      }
+    }
+  }
+}
+
+.left-background {
+  background-image: url("../../../assets/images/selector_first/rookie.webp");
+}
+
+.right-background {
+  background-image: url("../../../assets/images/selector_first/professional.webp");
+}

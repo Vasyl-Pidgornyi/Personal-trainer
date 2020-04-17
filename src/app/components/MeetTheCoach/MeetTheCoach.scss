@@ -1,0 +1,55 @@
+@import "../../../sass/variables.scss";
+
+.meetTheCoach-cover {
+  width: 100%;
+  height: auto;
+  background-image: url("../../../assets/images/background/man_middle.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  padding-left: 450px;
+  padding-bottom: 15px;
+  &__description {
+    max-width: 325px;
+    &_header {
+      color: $main-dark-white-color;
+      font-size: 4.6rem;
+      margin-bottom: 60px;
+    }
+    &_messege {
+      color: $main-dark-white-color;
+      font-size: 1.1rem;
+      letter-spacing: 1.2px;
+      line-height: 1.5rem;
+      margin-bottom: 40px;
+    }
+    &_socials {
+      max-height: 43px;
+      display: flex;
+      &_icon {
+        $social-icon-size: 43px;
+        width: $social-icon-size;
+        height: $social-icon-size;
+        margin-right: 5px;
+
+        &.facebook {
+          background-image: url("../../../assets/images/media/facebook_white.webp");
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        &.twitter {
+          background-image: url("../../../assets/images/media/twitter_white.webp");
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        &.instagram {
+          background-image: url("../../../assets/images/media/instagram_white.webp");
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}

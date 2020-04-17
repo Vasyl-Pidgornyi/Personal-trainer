@@ -1,11 +1,11 @@
 .page-container {
   max-width: 100vw;
   height: 100vh;
-  background-image: url("../assets/images/background/man_top.webp"),
-    url("../assets/images/background/man_middle.webp"),
+  background-image: url("../assets/images/background/man_middle.webp"),
     url("../assets/images/background/gloves.webp");
-  background-position: left top, left 1170px, left 2340px;
+  background-position: left 1170px, left 2340px;
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-attachment: scroll;
+  // url("../assets/images/background/man_top.webp"),
 }

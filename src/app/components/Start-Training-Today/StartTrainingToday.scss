@@ -1,0 +1,35 @@
+@import "../../../sass/variables.scss";
+
+.startTrainingToday-continer {
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: $main-gray-color;
+
+  &__header {
+    color: $main-white-color;
+    font-size: 1.7rem;
+    letter-spacing: 13px;
+  }
+
+  &__btn {
+    margin-top: 60px;
+    padding-top: 13px;
+    width: 212px;
+    height: 55px;
+    background-color: $main-dark-color;
+    font-size: 20px;
+    line-height: 28px;
+    color: $main-orange-color;
+    text-align: center;
+  }
+
+  &__btn:hover {
+    background-color: $main-orange-color;
+    color: $main-dark-color;
+  }
+}

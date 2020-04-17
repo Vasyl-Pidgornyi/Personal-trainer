@@ -1,0 +1,61 @@
+@import "../../../sass/variables.scss";
+.page-header {
+  width: 100%;
+  height: 85px;
+  background-color: $main-dark-color;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__global-nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__nav-link {
+    color: #bdbdbd;
+    text-transform: uppercase;
+    line-height: 50px;
+    padding: 0 10px;
+  }
+
+  &__nav-link:hover {
+    color: $main-orange-color;
+  }
+
+  &__nav-link:active {
+    color: white;
+  }
+
+  &__logIn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
+    width: 100px;
+    height: 50px;
+    position: relative;
+  }
+
+  &__logIn_icon {
+    width: 25px;
+    height: 25px;
+    stroke-width: 0;
+    fill-opacity: 1;
+    stroke: #5e97ff;
+    stroke-opacity: 1;
+    fill: rgba(254, 97, 72, 1);
+  }
+
+  &__logIn_text {
+    color: $main-orange-color;
+    padding-left: 15px;
+  }
+
+  &__logIn_link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
