@@ -33260,6 +33260,100 @@ var StartTrainingToday = /*#__PURE__*/function (_Component) {
 
 /***/ }),
 
+/***/ "./src/app/components/The-Studio/TheStudio.jsx":
+/*!*****************************************************!*\
+  !*** ./src/app/components/The-Studio/TheStudio.jsx ***!
+  \*****************************************************/
+/*! exports provided: TheStudio */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TheStudio", function() { return TheStudio; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _TheStudio_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./TheStudio.scss */ "./src/app/components/The-Studio/TheStudio.scss");
+/* harmony import */ var _TheStudio_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_TheStudio_scss__WEBPACK_IMPORTED_MODULE_2__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+var TheStudio = /*#__PURE__*/function (_Component) {
+  _inherits(TheStudio, _Component);
+
+  var _super = _createSuper(TheStudio);
+
+  function TheStudio() {
+    _classCallCheck(this, TheStudio);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(TheStudio, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "theStudio-cover"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "theStudio-cover__description"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "theStudio-cover__description_main-header"
+      }, "THE STUDIO"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "theStudio-cover__description_text"
+      }, "I'm a paragraph. Click here to add your own text and edit me. It\u2019s easy. Just click \u201CEdit Text\u201D or double click me to add your own content and make changes to the font."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+        className: "theStudio-cover__description_sub-header"
+      }, "ADDRESS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+        className: "theStudio-cover__description_sub-header-description"
+      }, "500 TERRY FRANCOIS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+        className: "theStudio-cover__description_sub-header-description-second"
+      }, "ST. SF, CA 94158"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+        className: "theStudio-cover__description_sub-header"
+      }, "HOURS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+        className: "theStudio-cover__description_sub-header-description"
+      }, "MONDAY - FRIDAY"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+        className: "theStudio-cover__description_sub-header-description-second"
+      }, "6:30AM - 7:00PM")));
+    }
+  }]);
+
+  return TheStudio;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/***/ }),
+
+/***/ "./src/app/components/The-Studio/TheStudio.scss":
+/*!******************************************************!*\
+  !*** ./src/app/components/The-Studio/TheStudio.scss ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "./src/app/components/Trainer-booking/TrainerBooking.jsx":
 /*!***************************************************************!*\
   !*** ./src/app/components/Trainer-booking/TrainerBooking.jsx ***!
@@ -33479,6 +33573,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_MeetTheCoach_MeetTheCoach_jsx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/MeetTheCoach/MeetTheCoach.jsx */ "./src/app/components/MeetTheCoach/MeetTheCoach.jsx");
 /* harmony import */ var _components_Winnings_Winnings_jsx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/Winnings/Winnings.jsx */ "./src/app/components/Winnings/Winnings.jsx");
 /* harmony import */ var _components_Start_Training_Today_StartTrainingToday_jsx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/Start-Training-Today/StartTrainingToday.jsx */ "./src/app/components/Start-Training-Today/StartTrainingToday.jsx");
+/* harmony import */ var _components_The_Studio_TheStudio_jsx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/The-Studio/TheStudio.jsx */ "./src/app/components/The-Studio/TheStudio.jsx");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -33514,6 +33609,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+
 var App = /*#__PURE__*/function (_React$Component) {
   _inherits(App, _React$Component);
 
@@ -33530,7 +33626,7 @@ var App = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["HashRouter"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "page-container"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header_Header_jsx__WEBPACK_IMPORTED_MODULE_3__["Header"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Trainer_booking_TrainerBooking_jsx__WEBPACK_IMPORTED_MODULE_7__["TrainerBooking"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Beginner_Or_Pro_BeginnerOrPro_jsx__WEBPACK_IMPORTED_MODULE_8__["BeginnerOrPro"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MeetTheCoach_MeetTheCoach_jsx__WEBPACK_IMPORTED_MODULE_9__["MeetTheCoach"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Winnings_Winnings_jsx__WEBPACK_IMPORTED_MODULE_10__["Winnings"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Start_Training_Today_StartTrainingToday_jsx__WEBPACK_IMPORTED_MODULE_11__["StartTrainingToday"], null))));
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header_Header_jsx__WEBPACK_IMPORTED_MODULE_3__["Header"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Trainer_booking_TrainerBooking_jsx__WEBPACK_IMPORTED_MODULE_7__["TrainerBooking"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Beginner_Or_Pro_BeginnerOrPro_jsx__WEBPACK_IMPORTED_MODULE_8__["BeginnerOrPro"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MeetTheCoach_MeetTheCoach_jsx__WEBPACK_IMPORTED_MODULE_9__["MeetTheCoach"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Winnings_Winnings_jsx__WEBPACK_IMPORTED_MODULE_10__["Winnings"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Start_Training_Today_StartTrainingToday_jsx__WEBPACK_IMPORTED_MODULE_11__["StartTrainingToday"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_The_Studio_TheStudio_jsx__WEBPACK_IMPORTED_MODULE_12__["TheStudio"], null))));
     }
   }]);
 
