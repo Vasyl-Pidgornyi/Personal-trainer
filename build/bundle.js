@@ -32816,6 +32816,309 @@ var Footer = /*#__PURE__*/function (_Component) {
 
 /***/ }),
 
+/***/ "./src/app/components/Gallery/Gallery-Detailed/GalleryDetailed.jsx":
+/*!*************************************************************************!*\
+  !*** ./src/app/components/Gallery/Gallery-Detailed/GalleryDetailed.jsx ***!
+  \*************************************************************************/
+/*! exports provided: GalleryDetailed */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GalleryDetailed", function() { return GalleryDetailed; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _GalleryDetailed_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./GalleryDetailed.scss */ "./src/app/components/Gallery/Gallery-Detailed/GalleryDetailed.scss");
+/* harmony import */ var _GalleryDetailed_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_GalleryDetailed_scss__WEBPACK_IMPORTED_MODULE_2__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+var GalleryDetailed = /*#__PURE__*/function (_Component) {
+  _inherits(GalleryDetailed, _Component);
+
+  var _super = _createSuper(GalleryDetailed);
+
+  function GalleryDetailed() {
+    _classCallCheck(this, GalleryDetailed);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(GalleryDetailed, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container5"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "content5"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "header"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "description"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "image-section5"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "left"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "../../../../assets/images/gallery/first.webp",
+        alt: "",
+        className: "image5"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "right"))));
+    }
+  }]);
+
+  return GalleryDetailed;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/***/ }),
+
+/***/ "./src/app/components/Gallery/Gallery-Detailed/GalleryDetailed.scss":
+/*!**************************************************************************!*\
+  !*** ./src/app/components/Gallery/Gallery-Detailed/GalleryDetailed.scss ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./src/app/components/Gallery/Gallery-Item/GalleryItem.jsx":
+/*!*****************************************************************!*\
+  !*** ./src/app/components/Gallery/Gallery-Item/GalleryItem.jsx ***!
+  \*****************************************************************/
+/*! exports provided: GalleryItem */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GalleryItem", function() { return GalleryItem; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _GalleryItem_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./GalleryItem.scss */ "./src/app/components/Gallery/Gallery-Item/GalleryItem.scss");
+/* harmony import */ var _GalleryItem_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_GalleryItem_scss__WEBPACK_IMPORTED_MODULE_2__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+var GalleryItem = /*#__PURE__*/function (_Component) {
+  _inherits(GalleryItem, _Component);
+
+  var _super = _createSuper(GalleryItem);
+
+  function GalleryItem(props) {
+    var _this;
+
+    _classCallCheck(this, GalleryItem);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      showBox: false
+    };
+
+    _this.handleBoxToggle = function () {
+      return _this.setState({
+        showBox: !_this.state.showBox
+      });
+    };
+
+    return _this;
+  }
+
+  _createClass(GalleryItem, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-4 gallery__item"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "gallery__item_cover ".concat(this.props.image)
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        onMouseEnter: this.handleBoxToggle,
+        onMouseLeave: this.handleBoxToggle,
+        className: "gallery__item_content".concat(this.state.showBox ? " show" : "")
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "gallery__item_description gallery__description"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "gallery__description_header"
+      }, this.props.header), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "gallery__description_text"
+      }, this.props.description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        to: "/".concat(this.props.link),
+        className: "gallery__item_link"
+      })))));
+    }
+  }]);
+
+  return GalleryItem;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/***/ }),
+
+/***/ "./src/app/components/Gallery/Gallery-Item/GalleryItem.scss":
+/*!******************************************************************!*\
+  !*** ./src/app/components/Gallery/Gallery-Item/GalleryItem.scss ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./src/app/components/Gallery/Gallery.jsx":
+/*!************************************************!*\
+  !*** ./src/app/components/Gallery/Gallery.jsx ***!
+  \************************************************/
+/*! exports provided: Gallery */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Gallery", function() { return Gallery; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _Gallery_Item_GalleryItem_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Gallery-Item/GalleryItem.jsx */ "./src/app/components/Gallery/Gallery-Item/GalleryItem.jsx");
+/* harmony import */ var _Gallery_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Gallery.scss */ "./src/app/components/Gallery/Gallery.scss");
+/* harmony import */ var _Gallery_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Gallery_scss__WEBPACK_IMPORTED_MODULE_3__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+
+var Gallery = /*#__PURE__*/function (_Component) {
+  _inherits(Gallery, _Component);
+
+  var _super = _createSuper(Gallery);
+
+  function Gallery() {
+    _classCallCheck(this, Gallery);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(Gallery, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "gallery-container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        div: true,
+        className: "gallery__content grid-container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Gallery_Item_GalleryItem_jsx__WEBPACK_IMPORTED_MODULE_2__["GalleryItem"], {
+        image: "first-image",
+        header: "I'm an image title",
+        description: "Describe your image here. Use catchy text to tell people the story behind the photo. \r Go to \u201CManage Media\u201D to add your content.",
+        link: "Gallery-Detailed"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Gallery_Item_GalleryItem_jsx__WEBPACK_IMPORTED_MODULE_2__["GalleryItem"], {
+        image: "second-image",
+        header: "I'm an image title",
+        description: "Describe your image here. Use catchy text to tell people the story behind the photo. \r Go to \u201CManage Media\u201D to add your content.",
+        link: "Gallery-Detailed"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Gallery_Item_GalleryItem_jsx__WEBPACK_IMPORTED_MODULE_2__["GalleryItem"], {
+        image: "third-image",
+        header: "I'm an image title",
+        description: "Describe your image here. Use catchy text to tell people the story behind the photo. \r Go to \u201CManage Media\u201D to add your content.",
+        link: "Gallery-Detailed"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Gallery_Item_GalleryItem_jsx__WEBPACK_IMPORTED_MODULE_2__["GalleryItem"], {
+        image: "forth-image",
+        header: "I'm an image title",
+        description: "Describe your image here. Use catchy text to tell people the story behind the photo. \r Go to \u201CManage Media\u201D to add your content.",
+        link: "Gallery-Detailed"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Gallery_Item_GalleryItem_jsx__WEBPACK_IMPORTED_MODULE_2__["GalleryItem"], {
+        image: "fifth-image",
+        header: "I'm an image title",
+        description: "Describe your image here. Use catchy text to tell people the story behind the photo. \r Go to \u201CManage Media\u201D to add your content.",
+        link: "Gallery-Detailed"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Gallery_Item_GalleryItem_jsx__WEBPACK_IMPORTED_MODULE_2__["GalleryItem"], {
+        image: "sixth-image",
+        header: "I'm an image title",
+        description: "Describe your image here. Use catchy text to tell people the story behind the photo. \r Go to \u201CManage Media\u201D to add your content.",
+        link: "Gallery-Detailed"
+      })));
+    }
+  }]);
+
+  return Gallery;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/***/ }),
+
+/***/ "./src/app/components/Gallery/Gallery.scss":
+/*!*************************************************!*\
+  !*** ./src/app/components/Gallery/Gallery.scss ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "./src/app/components/Header/Header.jsx":
 /*!**********************************************!*\
   !*** ./src/app/components/Header/Header.jsx ***!
@@ -33574,6 +33877,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Winnings_Winnings_jsx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/Winnings/Winnings.jsx */ "./src/app/components/Winnings/Winnings.jsx");
 /* harmony import */ var _components_Start_Training_Today_StartTrainingToday_jsx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/Start-Training-Today/StartTrainingToday.jsx */ "./src/app/components/Start-Training-Today/StartTrainingToday.jsx");
 /* harmony import */ var _components_The_Studio_TheStudio_jsx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/The-Studio/TheStudio.jsx */ "./src/app/components/The-Studio/TheStudio.jsx");
+/* harmony import */ var _components_Gallery_Gallery_jsx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/Gallery/Gallery.jsx */ "./src/app/components/Gallery/Gallery.jsx");
+/* harmony import */ var _components_Gallery_Gallery_Detailed_GalleryDetailed_jsx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/Gallery/Gallery-Detailed/GalleryDetailed.jsx */ "./src/app/components/Gallery/Gallery-Detailed/GalleryDetailed.jsx");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -33610,6 +33915,8 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+
+
 var App = /*#__PURE__*/function (_React$Component) {
   _inherits(App, _React$Component);
 
@@ -33626,7 +33933,9 @@ var App = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["HashRouter"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "page-container"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header_Header_jsx__WEBPACK_IMPORTED_MODULE_3__["Header"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Trainer_booking_TrainerBooking_jsx__WEBPACK_IMPORTED_MODULE_7__["TrainerBooking"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Beginner_Or_Pro_BeginnerOrPro_jsx__WEBPACK_IMPORTED_MODULE_8__["BeginnerOrPro"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MeetTheCoach_MeetTheCoach_jsx__WEBPACK_IMPORTED_MODULE_9__["MeetTheCoach"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Winnings_Winnings_jsx__WEBPACK_IMPORTED_MODULE_10__["Winnings"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Start_Training_Today_StartTrainingToday_jsx__WEBPACK_IMPORTED_MODULE_11__["StartTrainingToday"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_The_Studio_TheStudio_jsx__WEBPACK_IMPORTED_MODULE_12__["TheStudio"], null))));
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header_Header_jsx__WEBPACK_IMPORTED_MODULE_3__["Header"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Trainer_booking_TrainerBooking_jsx__WEBPACK_IMPORTED_MODULE_7__["TrainerBooking"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Beginner_Or_Pro_BeginnerOrPro_jsx__WEBPACK_IMPORTED_MODULE_8__["BeginnerOrPro"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MeetTheCoach_MeetTheCoach_jsx__WEBPACK_IMPORTED_MODULE_9__["MeetTheCoach"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Winnings_Winnings_jsx__WEBPACK_IMPORTED_MODULE_10__["Winnings"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Start_Training_Today_StartTrainingToday_jsx__WEBPACK_IMPORTED_MODULE_11__["StartTrainingToday"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Gallery_Gallery_jsx__WEBPACK_IMPORTED_MODULE_13__["Gallery"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_The_Studio_TheStudio_jsx__WEBPACK_IMPORTED_MODULE_12__["TheStudio"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+        path: "/Gallery-Detailed"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Gallery_Gallery_Detailed_GalleryDetailed_jsx__WEBPACK_IMPORTED_MODULE_14__["GalleryDetailed"], null)));
     }
   }]);
 

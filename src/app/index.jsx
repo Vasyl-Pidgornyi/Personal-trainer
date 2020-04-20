@@ -11,6 +11,8 @@ import { MeetTheCoach } from "./components/MeetTheCoach/MeetTheCoach.jsx";
 import { Winnings } from "./components/Winnings/Winnings.jsx";
 import { StartTrainingToday } from "./components/Start-Training-Today/StartTrainingToday.jsx";
 import { TheStudio } from "./components/The-Studio/TheStudio.jsx";
+import { Gallery } from "./components/Gallery/Gallery.jsx";
+import { GalleryDetailed } from "./components/Gallery/Gallery-Detailed/GalleryDetailed.jsx";
 
 class App extends React.Component {
   render() {
@@ -24,6 +26,7 @@ class App extends React.Component {
             <MeetTheCoach />
             <Winnings />
             <StartTrainingToday />
+            <Gallery />
             <TheStudio />
             {/* <Route exact={true} path="/">
               <Home />
@@ -34,6 +37,9 @@ class App extends React.Component {
           </main>
           {/* <Footer /> */}
         </div>
+        <Route path="/Gallery-Detailed">
+          <GalleryDetailed />
+        </Route>
       </Router>
     );
   }
