@@ -20,8 +20,8 @@ export class GalleryItem extends Component {
           <div
             onMouseEnter={this.handleBoxToggle}
             onMouseLeave={this.handleBoxToggle}
-            className={`gallery__item_content${
-              this.state.showBox ? " show" : ""
+            className={`gallery__item_content ${
+              this.state.showBox ? "show" : ""
             }`}
           >
             <div className="gallery__item_description gallery__description">
@@ -32,9 +32,14 @@ export class GalleryItem extends Component {
                 {this.props.description}
               </p>
               <Link
-                to={`/${this.props.link}`}
                 className="gallery__item_link"
-              ></Link>
+                to={{
+                  pathname: "/Gallery-detailed",
+                  state: {
+                    info: this.props
+                  }
+                }}
+              />
             </div>
           </div>
         </div>

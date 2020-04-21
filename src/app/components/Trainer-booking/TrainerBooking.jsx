@@ -5,7 +5,7 @@ import "./TrainerBooking.scss";
 export class TrainerBooking extends Component {
   render() {
     return (
-      <div className="trainerBooking-continer">
+      <div className="trainerBooking-continer" id="home">
         <h1 className="trainerBooking-continer__header">JOEY DIXON</h1>
         <p className="trainerBooking-continer__description">
           training with a world champion

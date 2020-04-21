@@ -5,7 +5,7 @@ import "./MeetTheCoach.scss";
 export class MeetTheCoach extends Component {
   render() {
     return (
-      <div className="meetTheCoach-cover">
+      <div className="meetTheCoach-cover" id="about">
         <div className="meetTheCoach-cover__description">
           <h1 className="meetTheCoach-cover__description_header">
             MEET THE COACH

@@ -1,21 +1,100 @@
-.container5 {
-  width: 500px;
-  height: 500px;
+@import "../../../../sass/variables.scss";
+@import "../../../../sass/mixin.scss";
+@mixin imageProperties {
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
-
-.content5 {
+.galleryDetailed__container {
+  padding: 30px 30px;
+  background-color: #2f2b32;
   width: 100%;
   height: 100%;
 }
 
-.image-section5 {
+.detailedContent {
   width: 100%;
   height: 100%;
+  &__header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+
+    &_btn {
+      width: 80px;
+      height: 80px;
+      background-color: red;
+      color: black;
+    }
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: white;
+
+    &_header-text {
+      font-size: 1.8rem;
+      text-align: left;
+      width: 250px;
+    }
+
+    &_text {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      text-align: left;
+      max-width: 250px;
+    }
+  }
+
+  &__imageSection {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+}
+
+.imageSection {
+  width: 900px;
+  height: 450px;
+  margin: 0 20px;
+}
+
+.exper {
+  display: flex;
+  justify-content: center;
+}
+
+.first-image-detailed {
   background-image: url("../../../../assets/images/gallery/first.webp");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
-.image5 {
-  width: 500px;
+.second-image-detailed {
+  background-image: url("../../../../assets/images/gallery/second.webp");
+  @include imageProperties;
+}
+
+.third-image-detailed {
+  background-image: url("../../../../assets/images/gallery/third.webp");
+  @include imageProperties;
+}
+
+.forth-image-detailed {
+  background-image: url("../../../../assets/images/gallery/forth.webp");
+  @include imageProperties;
+}
+
+.fifth-image-detailed {
+  background-image: url("../../../../assets/images/gallery/fifth.webp");
+  @include imageProperties;
+}
+
+.sixth-image-detailed {
+  background-image: url("../../../../assets/images/gallery/sixth.webp");
+  @include imageProperties;
 }

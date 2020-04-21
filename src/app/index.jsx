@@ -2,9 +2,6 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import { HashRouter as Router, Route, Link } from "react-router-dom";
 import { Header } from "./components/Header/Header.jsx";
-import { Footer } from "./components/Footer/Footer.jsx";
-import { Home } from "./components/Home/Home.jsx";
-import { Shop } from "./components/Shop/Shop.jsx";
 import { TrainerBooking } from "./components/Trainer-booking/TrainerBooking.jsx";
 import { BeginnerOrPro } from "./components/Beginner-Or-Pro/BeginnerOrPro.jsx";
 import { MeetTheCoach } from "./components/MeetTheCoach/MeetTheCoach.jsx";
@@ -13,31 +10,73 @@ import { StartTrainingToday } from "./components/Start-Training-Today/StartTrain
 import { TheStudio } from "./components/The-Studio/TheStudio.jsx";
 import { Gallery } from "./components/Gallery/Gallery.jsx";
 import { GalleryDetailed } from "./components/Gallery/Gallery-Detailed/GalleryDetailed.jsx";
+import { BookApp } from "./components/Book-App/BookApp.jsx";
+import { Footer } from "./components/Footer/Footer.jsx";
 
 class App extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      sectionInFocus: 0,
+      distanceFromTop: null
+    };
+  }
+
+  componentDidMount = () => {
+    window.addEventListener("scroll", this.handleScroll);
+  };
+
+  componentWillUnmount = () => {
+    window.removeEventListener("scroll", this.handleScroll);
+  };
+
+  handleScroll = () => {
+    let distanceFromTop = document
+      .getElementById("mainPage")
+      .getBoundingClientRect();
+    this.setState(
+      () => ({ distanceFromTop }),
+      () => {
+        if (this.state.distanceFromTop.top > -823) {
+          this.setState(() => ({ sectionInFocus: 0 }));
+        }
+        if (this.state.distanceFromTop.top < -823) {
+          this.setState(() => ({ sectionInFocus: 1 }));
+        }
+        if (this.state.distanceFromTop.top < -1424) {
+          this.setState(() => ({ sectionInFocus: 2 }));
+        }
+        if (this.state.distanceFromTop.top < -2345) {
+          this.setState(() => ({ sectionInFocus: 3 }));
+        }
+        if (this.state.distanceFromTop.top < -4107) {
+          this.setState(() => ({ sectionInFocus: 4 }));
+        }
+      }
+    );
+  };
+
   render() {
     return (
       <Router>
-        <div className="page-container">
-          <Header />
-          <main>
-            <TrainerBooking />
-            <BeginnerOrPro />
-            <MeetTheCoach />
-            <Winnings />
-            <StartTrainingToday />
-            <Gallery />
-            <TheStudio />
-            {/* <Route exact={true} path="/">
-              <Home />
-            </Route>
-            <Route path="/shop">
-              <Shop />
-            </Route> */}
-          </main>
-          {/* <Footer /> */}
-        </div>
-        <Route path="/Gallery-Detailed">
+        <Route exact path="/">
+          <div className="page-container" id="mainPage">
+            <Header sectionInFocus={this.state.sectionInFocus} />
+            <main>
+              <TrainerBooking />
+              <BeginnerOrPro />
+              <MeetTheCoach />
+              <Winnings />
+              <StartTrainingToday />
+              <Gallery />
+              <TheStudio />
+              <BookApp />
+            </main>
+            <Footer />
+          </div>
+        </Route>
+        <Route path="/Gallery-detailed">
           <GalleryDetailed />
         </Route>
       </Router>

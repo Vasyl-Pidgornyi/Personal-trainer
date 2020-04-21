@@ -1,4 +1,15 @@
+@import "./variables.scss";
+
 @mixin background-image-style {
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@mixin BookAppInputFields {
+  height: 40px;
+  padding: 0 12px;
+  border: 2px solid $main-white-color;
+  background-color: $main-dark-color;
+  color: $main-white-color;
+  font-size: 0.9rem;
 }

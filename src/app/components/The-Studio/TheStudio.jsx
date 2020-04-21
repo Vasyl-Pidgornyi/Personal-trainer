@@ -5,7 +5,7 @@ import "./TheStudio.scss";
 export class TheStudio extends Component {
   render() {
     return (
-      <div className="theStudio-cover">
+      <div className="theStudio-cover" id="the-studio">
         <div className="theStudio-cover__description">
           <h1 className="theStudio-cover__description_main-header">
             THE STUDIO

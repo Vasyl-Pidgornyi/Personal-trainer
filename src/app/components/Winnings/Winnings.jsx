@@ -5,7 +5,7 @@ import "./Winnings.scss";
 export class Winnings extends Component {
   render() {
     return (
-      <div className="winnings-cover">
+      <div className="winnings-cover" id="winnings">
         <div className="winnings-cover__content content">
           <h1 className="content__header">WINNINGS</h1>
           <div className="content__description">

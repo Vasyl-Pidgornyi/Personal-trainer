@@ -5,7 +5,7 @@ import "./BeginnerOrPro.scss";
 export class BeginnerOrPro extends Component {
   render() {
     return (
-      <div className="beginnerOrPro-cover">
+      <div className="beginnerOrPro-cover" id="training">
         {/* left side content start */}
         <div className="beginnerOrPro-cover__content left left-background">
           <div className="beginnerOrPro-cover__content_description-cover padding-right">
@@ -20,7 +20,7 @@ export class BeginnerOrPro extends Component {
               className="beginnerOrPro-cover__content_description-cover_image"
             ></Link>
           </div>
-          <Link className="beginnerOrPro-cover__content_background-transition"></Link>
+          <div className="beginnerOrPro-cover__content_background-transition" />
         </div>
         {/* left side content end */}
         {/* right side content start */}
@@ -37,7 +37,7 @@ export class BeginnerOrPro extends Component {
               className="beginnerOrPro-cover__content_description-cover_image"
             ></Link>
           </div>
-          <Link className="beginnerOrPro-cover__content_background-transition"></Link>
+          <div className="beginnerOrPro-cover__content_background-transition" />
         </div>
         {/* right side content end */}
       </div>
