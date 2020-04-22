@@ -13,3 +13,12 @@
   color: $main-white-color;
   font-size: 0.9rem;
 }
+
+@mixin foter-socials {
+  background-repeat: no-repeat;
+  background-size: cover;
+  $socials-size-footer: 32px;
+  width: $socials-size-footer;
+  height: $socials-size-footer;
+  margin-right: 10px;
+}

@@ -24,18 +24,18 @@ export class BookApp extends Component {
               engaged with your business on the go. Let them join with a
               download link sent to their mobile.
             </p>
-            <div className="app__input input-block">
+            <div className="app__input">
               <input
                 type="tel"
                 placeholder="+380"
-                className="input-block__code-number"
+                className="app__input_code-number"
               />
               <input
                 type="tel"
                 placeholder="Phone Number"
-                className="input-block__phone-number"
+                className="app__input_phone-number"
               />
-              <button className="input-block__button">Send</button>
+              <button className="app__input_button">Send</button>
             </div>
             <div className="app__links">
               <a href="#">

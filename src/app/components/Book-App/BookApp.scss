@@ -53,20 +53,20 @@ $input-field-padding: 2px 5px;
   height: 370px;
 }
 
-.input-block {
+.app__input {
   display: flex;
   justify-content: space-between;
-  &__code-number {
+  &_code-number {
     @include BookAppInputFields;
     width: 73px;
   }
 
-  &__phone-number {
+  &_phone-number {
     width: 150px;
     @include BookAppInputFields;
   }
 
-  &__button {
+  &_button {
     width: 91px;
     height: 40px;
     color: $main-dark-color;

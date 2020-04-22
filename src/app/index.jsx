@@ -38,19 +38,19 @@ class App extends React.Component {
     this.setState(
       () => ({ distanceFromTop }),
       () => {
-        if (this.state.distanceFromTop.top > -823) {
+        if (this.state.distanceFromTop.top > -790) {
           this.setState(() => ({ sectionInFocus: 0 }));
         }
-        if (this.state.distanceFromTop.top < -823) {
+        if (this.state.distanceFromTop.top < -790) {
           this.setState(() => ({ sectionInFocus: 1 }));
         }
-        if (this.state.distanceFromTop.top < -1424) {
+        if (this.state.distanceFromTop.top < -1400) {
           this.setState(() => ({ sectionInFocus: 2 }));
         }
-        if (this.state.distanceFromTop.top < -2345) {
+        if (this.state.distanceFromTop.top < -2300) {
           this.setState(() => ({ sectionInFocus: 3 }));
         }
-        if (this.state.distanceFromTop.top < -4107) {
+        if (this.state.distanceFromTop.top < -4100) {
           this.setState(() => ({ sectionInFocus: 4 }));
         }
       }
