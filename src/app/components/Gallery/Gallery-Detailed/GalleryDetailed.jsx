@@ -17,7 +17,7 @@ export function GalleryDetailed(props) {
               history.location.hash = history.goBack();
             }}
           >
-            Close page
+            ╳
           </Button>
         </div>
         <div className="detailedContent__description">
@@ -28,13 +28,13 @@ export function GalleryDetailed(props) {
             {location.state.info.description}
           </p>
         </div>
-        <div className="exper">
-          <div className="detailedContent__imageSection imageSection">
-            <button>left</button>
+        <div className="detailedContent__imageSlider">
+          <div className="detailedContent__imageSection">
+            <Button className="detailedContent__imageSection_btn">🢔</Button>
             <div
-              className={`imageSection ${location.state.info.image}-detailed`}
+              className={`detailedContent__imageSection_photo ${location.state.info.image}-detailed`}
             ></div>
-            <button>right</button>
+            <Button className="detailedContent__imageSection_btn">🢖</Button>
           </div>
         </div>
       </div>

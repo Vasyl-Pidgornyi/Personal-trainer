@@ -1423,16 +1423,20 @@
   justify-content: flex-end;
 }
 .detailedContent__header_btn {
-  width: 80px;
-  height: 80px;
-  background-color: red;
-  color: black;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 30px;
+  transform: scaleX(1.2);
+  margin-right: 20px;
+  outline: none;
 }
 .detailedContent__description {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   color: white;
+  margin-top: 40px;
 }
 .detailedContent__description_header-text {
   font-size: 1.8rem;
@@ -1445,24 +1449,28 @@
   text-align: left;
   max-width: 250px;
 }
+.detailedContent__imageSlider {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
 .detailedContent__imageSection {
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
 }
-
-.imageSection {
+.detailedContent__imageSection_photo {
   width: 900px;
   height: 450px;
   margin: 0 20px;
 }
-
-.exper {
-  display: flex;
-  justify-content: center;
+.detailedContent__imageSection_btn {
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 100px;
+  line-height: 82px;
+  outline: none;
 }
 
 .first-image-detailed {

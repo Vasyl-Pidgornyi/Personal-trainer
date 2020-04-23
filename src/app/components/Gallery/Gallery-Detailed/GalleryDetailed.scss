@@ -21,10 +21,13 @@
     justify-content: flex-end;
 
     &_btn {
-      width: 80px;
-      height: 80px;
-      background-color: red;
-      color: black;
+      background-color: transparent;
+      border: none;
+      color: $main-white-color;
+      font-size: 30px;
+      transform: scaleX(1.2);
+      margin-right: 20px;
+      outline: none;
     }
   }
   &__description {
@@ -32,6 +35,7 @@
     flex-direction: column;
     align-items: flex-end;
     color: white;
+    margin-top: 40px;
 
     &_header-text {
       font-size: 1.8rem;
@@ -47,25 +51,32 @@
     }
   }
 
+  &__imageSlider {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  }
+
   &__imageSection {
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+
+    &_photo {
+      width: 900px;
+      height: 450px;
+      margin: 0 20px;
+    }
+
+    &_btn {
+      color: white;
+      background-color: transparent;
+      border: none;
+      font-size: 100px;
+      line-height: 82px;
+      outline: none;
+    }
   }
-}
-
-.imageSection {
-  width: 900px;
-  height: 450px;
-  margin: 0 20px;
-}
-
-.exper {
-  display: flex;
-  justify-content: center;
 }
 
 .first-image-detailed {
