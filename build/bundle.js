@@ -34504,6 +34504,170 @@ var MeetTheCoach = /*#__PURE__*/function (_Component) {
 
 /***/ }),
 
+/***/ "./src/app/components/Plans/Plans-Item/PlansItem.jsx":
+/*!***********************************************************!*\
+  !*** ./src/app/components/Plans/Plans-Item/PlansItem.jsx ***!
+  \***********************************************************/
+/*! exports provided: PlansItem */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PlansItem", function() { return PlansItem; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _PlansItem_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PlansItem.scss */ "./src/app/components/Plans/Plans-Item/PlansItem.scss");
+/* harmony import */ var _PlansItem_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_PlansItem_scss__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+function PlansItem(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "plansItem__content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "plansItem__content_bestValueBlock ".concat(props.item.bestValue ? "" : "hide-bestValueBlock")
+  }, "Best Value"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "plansItem__content-wrapper ".concat(props.item.bestValue ? "bestValue-upperBlock" : "")
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "plansItem__content_header"
+  }, props.item.membership), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "plansItem__content_priceing"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "plansItem__content_priceing_dollar-sign"
+  }, "$"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "plansItem__content_price"
+  }, props.item.price)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "plansItem__content_monthlyPay ".concat(props.item.monthlyPayShow ? "" : "transparentText")
+  }, props.item.monthlyPay), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "plansItem__content_planForWho"
+  }, props.item.planForWho), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "plansItem__content_validationTerm ".concat(props.item.validationHidden ? "transparentText" : "")
+  }, props.item.validationTerm), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "plansItem__content_btn"
+  }, "Select")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "plansItem__content-wrapper topUnderscore ".concat(props.item.bestValue ? "bestValue-lowerBlock" : "")
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "plansItem__content_planPrivileges"
+  }, props.item.planPrivilege1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "plansItem__content_planPrivileges"
+  }, props.item.planPrivilege2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "plansItem__content_planPrivileges"
+  }, props.item.planPrivilege3), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "plansItem__content_planPrivileges"
+  }, props.item.planPrivilege4), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "plansItem__content_planPrivileges"
+  }, props.item.planPrivilege5)));
+}
+
+/***/ }),
+
+/***/ "./src/app/components/Plans/Plans-Item/PlansItem.scss":
+/*!************************************************************!*\
+  !*** ./src/app/components/Plans/Plans-Item/PlansItem.scss ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./src/app/components/Plans/Plans.jsx":
+/*!********************************************!*\
+  !*** ./src/app/components/Plans/Plans.jsx ***!
+  \********************************************/
+/*! exports provided: Plans */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Plans", function() { return Plans; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Plans_Item_PlansItem_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Plans-Item/PlansItem.jsx */ "./src/app/components/Plans/Plans-Item/PlansItem.jsx");
+/* harmony import */ var _Plans_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Plans.scss */ "./src/app/components/Plans/Plans.scss");
+/* harmony import */ var _Plans_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Plans_scss__WEBPACK_IMPORTED_MODULE_2__);
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+function Plans() {
+  var _ref, _ref2;
+
+  var data = [{
+    id: 0,
+    membership: "Silver Membership",
+    price: 30,
+    monthlyPay: "no text here",
+    planForWho: "Short-term trial for beginners",
+    validationTerm: "Valid for one month",
+    planPrivilege1: "Unlimited classes",
+    planPrivilege2: "Fitness assessment",
+    planPrivilege3: "Locker room with showers",
+    bestValue: false,
+    monthlyPayShow: false,
+    validationHidden: false,
+    planId: "silver"
+  }, (_ref = {
+    id: 1,
+    membership: "Gold Membership",
+    price: 25,
+    monthlyPay: "Evety month",
+    planForWho: "Ideal for advanced trainers",
+    validationTerm: "Valid for 12 months",
+    planPrivilege1: "Unlimited classes",
+    planPrivilege2: "Fitness assessment",
+    planPrivilege3: "Locker room with showers",
+    planPrivilege4: "Free parking",
+    bestValue: true,
+    monthlyPayShow: true
+  }, _defineProperty(_ref, "monthlyPayShow", true), _defineProperty(_ref, "validationHidden", false), _defineProperty(_ref, "planId", "gold"), _ref), (_ref2 = {
+    id: 2,
+    membership: "Platinum Membership",
+    price: 40,
+    monthlyPay: "Evety month",
+    planForWho: "Perfect for committed trainers",
+    validationTerm: "no text here",
+    planPrivilege1: "Unlimited classes",
+    planPrivilege2: "Fitness assessment",
+    planPrivilege3: "Locker room with showers",
+    planPrivilege4: "Free parking",
+    planPrivilege5: "Guest privileges",
+    bestValue: false,
+    monthlyPayShow: true
+  }, _defineProperty(_ref2, "monthlyPayShow", true), _defineProperty(_ref2, "validationHidden", true), _defineProperty(_ref2, "planId", "platinum"), _ref2)];
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "plans__container",
+    id: "plans"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "plans__content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "plans__content_header"
+  }, "PLANS & PRICING"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "plansItem__container"
+  }, data.map(function (i) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Plans_Item_PlansItem_jsx__WEBPACK_IMPORTED_MODULE_1__["PlansItem"], {
+      key: i.id,
+      item: i
+    });
+  }))));
+}
+
+/***/ }),
+
+/***/ "./src/app/components/Plans/Plans.scss":
+/*!*********************************************!*\
+  !*** ./src/app/components/Plans/Plans.scss ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "./src/app/components/Start-Training-Today/StartTrainingToday.jsx":
 /*!************************************************************************!*\
   !*** ./src/app/components/Start-Training-Today/StartTrainingToday.jsx ***!
@@ -34905,6 +35069,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Footer_Footer_jsx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/Footer/Footer.jsx */ "./src/app/components/Footer/Footer.jsx");
 /* harmony import */ var _components_Book_Online_BookOnline_jsx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/Book-Online/BookOnline.jsx */ "./src/app/components/Book-Online/BookOnline.jsx");
 /* harmony import */ var _components_Book_Online_Book_Online_Detailed_BookOnlineDetailed_jsx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/Book-Online/Book-Online-Detailed/BookOnlineDetailed.jsx */ "./src/app/components/Book-Online/Book-Online-Detailed/BookOnlineDetailed.jsx");
+/* harmony import */ var _components_Plans_Plans_jsx__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/Plans/Plans.jsx */ "./src/app/components/Plans/Plans.jsx");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -34928,6 +35093,7 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 
 
 
@@ -35040,7 +35206,9 @@ var App = /*#__PURE__*/function (_React$Component) {
         path: "/book-online"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Book_Online_BookOnline_jsx__WEBPACK_IMPORTED_MODULE_14__["BookOnline"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         path: "/book-online-detailed/:courseId"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Book_Online_Book_Online_Detailed_BookOnlineDetailed_jsx__WEBPACK_IMPORTED_MODULE_15__["BookOnlineDetailed"], null)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer_Footer_jsx__WEBPACK_IMPORTED_MODULE_13__["Footer"], null)));
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Book_Online_Book_Online_Detailed_BookOnlineDetailed_jsx__WEBPACK_IMPORTED_MODULE_15__["BookOnlineDetailed"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+        path: "/plans"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Plans_Plans_jsx__WEBPACK_IMPORTED_MODULE_16__["Plans"], null)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer_Footer_jsx__WEBPACK_IMPORTED_MODULE_13__["Footer"], null)));
     }
   }]);
 

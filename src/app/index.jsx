@@ -14,6 +14,7 @@ import { BookApp } from "./components/Book-App/BookApp.jsx";
 import { Footer } from "./components/Footer/Footer.jsx";
 import { BookOnline } from "./components/Book-Online/BookOnline.jsx";
 import { BookOnlineDetailed } from "./components/Book-Online/Book-Online-Detailed/BookOnlineDetailed.jsx";
+import { Plans } from "./components/Plans/Plans.jsx";
 
 class App extends React.Component {
   constructor() {
@@ -84,6 +85,9 @@ class App extends React.Component {
               </Route>
               <Route path="/book-online-detailed/:courseId">
                 <BookOnlineDetailed />
+              </Route>
+              <Route path="/plans">
+                <Plans />
               </Route>
             </Switch>
           </main>
