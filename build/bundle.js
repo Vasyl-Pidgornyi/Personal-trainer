@@ -33638,6 +33638,222 @@ var BookApp = /*#__PURE__*/function (_Component) {
 
 /***/ }),
 
+/***/ "./src/app/components/Book-Online/Book-Online-Detailed/BookOnlineDetailed.jsx":
+/*!************************************************************************************!*\
+  !*** ./src/app/components/Book-Online/Book-Online-Detailed/BookOnlineDetailed.jsx ***!
+  \************************************************************************************/
+/*! exports provided: BookOnlineDetailed */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BookOnlineDetailed", function() { return BookOnlineDetailed; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap/Button */ "./node_modules/react-bootstrap/esm/Button.js");
+/* harmony import */ var _BookOnlineDetailed_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./BookOnlineDetailed.scss */ "./src/app/components/Book-Online/Book-Online-Detailed/BookOnlineDetailed.scss");
+/* harmony import */ var _BookOnlineDetailed_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_BookOnlineDetailed_scss__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+function BookOnlineDetailed() {
+  var location = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useLocation"])();
+  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bookOnlineDetailed__container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    onClick: function onClick() {
+      history.location.hash = history.goBack();
+    },
+    className: "bookOnlineDetailed__goBack-btn"
+  }, "\u2B9C Back"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bookOnlineDetailed__content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "bookOnlineDetailed__content_header"
+  }, location.state.item.courseName), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "bookOnlineDetailed__content_hoursAndPrice"
+  }, "".concat(location.state.item.duration, " hr | ").concat(location.state.item.price, "$")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "bookOnlineDetailed__content_btn"
+  }, "Book Now"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bookOnlineDetailed__content_image ".concat(location.state.item.image)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "bookOnlineDetailed__content_description"
+  }, location.state.item.description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bookOnlineDetailed__content_detailedTextBlock bookOnlineDetailed__detailedTextBlock"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bookOnlineDetailed__detailedTextBlock_hederCover"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "bookOnlineDetailed__detailedTextBlock_headerText"
+  }, "Book Online")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bookOnlineDetailed__detailedTextBlock_descriptionCover"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "bookOnlineDetailed__detailedTextBlock_descriptionText"
+  }, location.state.item.courseName), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "bookOnlineDetailed__detailedTextBlock_descriptionText"
+  }, "".concat(location.state.item.duration, " hr | $").concat(location.state.item.price)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "bookOnlineDetailed__detailedTextBlock_descriptionText"
+  }, location.state.item.weekDay)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "bookOnlineDetailed__content_btn"
+  }, "Book Now"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "bookOnlineDetailed__detailedTextBlock_locationContact"
+  }, "Location & Contact Details"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "bookOnlineDetailed__detailedTextBlock_eMail"
+  }, "Email: ilyaillych@gmail.com"))));
+}
+
+/***/ }),
+
+/***/ "./src/app/components/Book-Online/Book-Online-Detailed/BookOnlineDetailed.scss":
+/*!*************************************************************************************!*\
+  !*** ./src/app/components/Book-Online/Book-Online-Detailed/BookOnlineDetailed.scss ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./src/app/components/Book-Online/Book-Online-Item/BookOnlineItem.jsx":
+/*!****************************************************************************!*\
+  !*** ./src/app/components/Book-Online/Book-Online-Item/BookOnlineItem.jsx ***!
+  \****************************************************************************/
+/*! exports provided: BookOnlineItem */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BookOnlineItem", function() { return BookOnlineItem; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _BookOnlineItem_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./BookOnlineItem.scss */ "./src/app/components/Book-Online/Book-Online-Item/BookOnlineItem.scss");
+/* harmony import */ var _BookOnlineItem_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_BookOnlineItem_scss__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+function BookOnlineItem(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bookOnlineItem__content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: {
+      pathname: "/book-online-detailed/".concat(props.item.courseId),
+      state: {
+        item: props.item
+      }
+    },
+    className: "bookOnlineItem__content_image-container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bookOnlineItem__content_image ".concat(props.item.image)
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: {
+      pathname: "/book-online-detailed/".concat(props.item.courseId),
+      state: {
+        item: props.item
+      }
+    },
+    className: "bookOnlineItem__content_header"
+  }, props.item.courseName), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "bookOnlineItem__content_priceAndHours"
+  }, "".concat(props.item.duration, " hr")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "bookOnlineItem__content_priceAndHours"
+  }, "$".concat(props.item.price)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "bookOnlineItem__content_btn"
+  }, "Book Now"));
+}
+
+/***/ }),
+
+/***/ "./src/app/components/Book-Online/Book-Online-Item/BookOnlineItem.scss":
+/*!*****************************************************************************!*\
+  !*** ./src/app/components/Book-Online/Book-Online-Item/BookOnlineItem.scss ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./src/app/components/Book-Online/BookOnline.jsx":
+/*!*******************************************************!*\
+  !*** ./src/app/components/Book-Online/BookOnline.jsx ***!
+  \*******************************************************/
+/*! exports provided: BookOnline */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BookOnline", function() { return BookOnline; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Book_Online_Item_BookOnlineItem_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Book-Online-Item/BookOnlineItem.jsx */ "./src/app/components/Book-Online/Book-Online-Item/BookOnlineItem.jsx");
+/* harmony import */ var _BookOnline_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./BookOnline.scss */ "./src/app/components/Book-Online/BookOnline.scss");
+/* harmony import */ var _BookOnline_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_BookOnline_scss__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+function BookOnline() {
+  var data = [{
+    id: 0,
+    image: "first-image-booking",
+    courseName: "BoxFit",
+    description: "1Describe your service here. What makes it great? Use short catchy text to tell people what you offer, and the benefits they will receive. \n      A great description gets readers in the mood, and makes them more likely to go ahead and book.",
+    price: 60,
+    duration: 1,
+    weekDay: ["Mon,", " Wed"],
+    courseId: "box-fit"
+  }, {
+    id: 1,
+    image: "second-image-booking",
+    courseName: "Boxing for Beginners",
+    description: "2Describe your service here. What makes it great? Use short catchy text to tell people what you offer, and the benefits they will receive. \n      A great description gets readers in the mood, and makes them more likely to go ahead and book.",
+    price: 70,
+    duration: 2,
+    weekDay: ["Tue,", " Thu"],
+    courseId: "boxing-for-beginners"
+  }, {
+    id: 2,
+    image: "third-image-booking",
+    courseName: "Boxing for Pros",
+    description: "3Describe your service here. What makes it great? Use short catchy text to tell people what you offer, and the benefits they will receive. \n      A great description gets readers in the mood, and makes them more likely to go ahead and book.",
+    price: 80,
+    duration: 1.5,
+    weekDay: ["Fri,", " Sat"],
+    courseId: "boxing-for-pros"
+  }];
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bookOnline__container",
+    id: "book-online"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bookOnline__content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "bookOnline__content_header"
+  }, "MY CLASSES"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bookOnlineItem__container"
+  }, data.map(function (i) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Book_Online_Item_BookOnlineItem_jsx__WEBPACK_IMPORTED_MODULE_1__["BookOnlineItem"], {
+      key: i.id,
+      item: i
+    });
+  }))));
+}
+
+/***/ }),
+
+/***/ "./src/app/components/Book-Online/BookOnline.scss":
+/*!********************************************************!*\
+  !*** ./src/app/components/Book-Online/BookOnline.scss ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "./src/app/components/Footer/Footer.jsx":
 /*!**********************************************!*\
   !*** ./src/app/components/Footer/Footer.jsx ***!
@@ -33797,10 +34013,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function GalleryDetailed(props) {
+function GalleryDetailed() {
   var location = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useLocation"])();
   var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
-  console.log(location);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "galleryDetailed__container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -34045,21 +34260,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_hash_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-hash-link */ "./node_modules/react-router-hash-link/lib/index.js");
 /* harmony import */ var react_router_hash_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_router_hash_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _HeaderItem_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HeaderItem.scss */ "./src/app/components/Header/Header-Item/HeaderItem.scss");
-/* harmony import */ var _HeaderItem_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_HeaderItem_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _HeaderItem_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./HeaderItem.scss */ "./src/app/components/Header/Header-Item/HeaderItem.scss");
+/* harmony import */ var _HeaderItem_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_HeaderItem_scss__WEBPACK_IMPORTED_MODULE_3__);
+
 
 
 
 function HeaderItem(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_1__["HashLink"], {
-    to: "/#".concat(props.linkName),
-    scroll: function scroll(el) {
-      return el.scrollIntoView({
-        behavior: "smooth"
-      });
-    },
-    className: "page-header__nav-link ".concat(props.isSelected ? "selected" : null)
-  }, props.label);
+  if (props.openNewPage) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+      to: "/".concat(props.linkName),
+      className: "page-header__nav-link ".concat(props.isSelected ? "selected" : null)
+    }, props.label);
+  } else {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_1__["HashLink"], {
+      to: "/#".concat(props.linkName),
+      scroll: function scroll(el) {
+        return el.scrollIntoView({
+          behavior: "smooth"
+        });
+      },
+      className: "page-header__nav-link ".concat(props.isSelected ? "selected" : null)
+    }, props.label);
+  }
 }
 
 /***/ }),
@@ -34100,35 +34324,43 @@ function Header(props) {
   var data = [{
     id: 0,
     linkName: "home",
-    label: "Home"
+    label: "Home",
+    openNewPage: false
   }, {
     id: 1,
     linkName: "training",
-    label: "Training"
+    label: "Training",
+    openNewPage: false
   }, {
     id: 2,
     linkName: "about",
-    label: "About"
+    label: "About",
+    openNewPage: false
   }, {
     id: 3,
     linkName: "winnings",
-    label: "Winnings"
+    label: "Winnings",
+    openNewPage: false
   }, {
     id: 4,
     linkName: "the-studio",
-    label: "The studio"
+    label: "The studio",
+    openNewPage: false
   }, {
     id: 5,
     linkName: "book-online",
-    label: "Book online"
+    label: "Book online",
+    openNewPage: true
   }, {
     id: 6,
     linkName: "plans",
-    label: "Plans"
+    label: "Plans",
+    openNewPage: true
   }, {
     id: 7,
     linkName: "contact",
-    label: "Contact"
+    label: "Contact",
+    openNewPage: false
   }];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
     className: "page-header"
@@ -34139,7 +34371,8 @@ function Header(props) {
       key: i.id,
       isSelected: props.sectionInFocus == i.id ? true : false,
       linkName: i.linkName,
-      label: i.label
+      label: i.label,
+      openNewPage: i.openNewPage
     });
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "page-header__logIn"
@@ -34670,6 +34903,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Gallery_Gallery_Detailed_GalleryDetailed_jsx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/Gallery/Gallery-Detailed/GalleryDetailed.jsx */ "./src/app/components/Gallery/Gallery-Detailed/GalleryDetailed.jsx");
 /* harmony import */ var _components_Book_App_BookApp_jsx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/Book-App/BookApp.jsx */ "./src/app/components/Book-App/BookApp.jsx");
 /* harmony import */ var _components_Footer_Footer_jsx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/Footer/Footer.jsx */ "./src/app/components/Footer/Footer.jsx");
+/* harmony import */ var _components_Book_Online_BookOnline_jsx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/Book-Online/BookOnline.jsx */ "./src/app/components/Book-Online/BookOnline.jsx");
+/* harmony import */ var _components_Book_Online_Book_Online_Detailed_BookOnlineDetailed_jsx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/Book-Online/Book-Online-Detailed/BookOnlineDetailed.jsx */ "./src/app/components/Book-Online/Book-Online-Detailed/BookOnlineDetailed.jsx");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -34693,6 +34928,8 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
 
 
 
@@ -34789,17 +35026,21 @@ var App = /*#__PURE__*/function (_React$Component) {
   _createClass(App, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["HashRouter"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
-        exact: true,
-        path: "/"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["HashRouter"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "page-container",
         id: "mainPage"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header_Header_jsx__WEBPACK_IMPORTED_MODULE_3__["Header"], {
         sectionInFocus: this.state.sectionInFocus
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Trainer_booking_TrainerBooking_jsx__WEBPACK_IMPORTED_MODULE_4__["TrainerBooking"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Beginner_Or_Pro_BeginnerOrPro_jsx__WEBPACK_IMPORTED_MODULE_5__["BeginnerOrPro"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MeetTheCoach_MeetTheCoach_jsx__WEBPACK_IMPORTED_MODULE_6__["MeetTheCoach"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Winnings_Winnings_jsx__WEBPACK_IMPORTED_MODULE_7__["Winnings"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Start_Training_Today_StartTrainingToday_jsx__WEBPACK_IMPORTED_MODULE_8__["StartTrainingToday"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Gallery_Gallery_jsx__WEBPACK_IMPORTED_MODULE_10__["Gallery"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_The_Studio_TheStudio_jsx__WEBPACK_IMPORTED_MODULE_9__["TheStudio"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Book_App_BookApp_jsx__WEBPACK_IMPORTED_MODULE_12__["BookApp"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer_Footer_jsx__WEBPACK_IMPORTED_MODULE_13__["Footer"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+        exact: true,
+        path: "/"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Trainer_booking_TrainerBooking_jsx__WEBPACK_IMPORTED_MODULE_4__["TrainerBooking"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Beginner_Or_Pro_BeginnerOrPro_jsx__WEBPACK_IMPORTED_MODULE_5__["BeginnerOrPro"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MeetTheCoach_MeetTheCoach_jsx__WEBPACK_IMPORTED_MODULE_6__["MeetTheCoach"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Winnings_Winnings_jsx__WEBPACK_IMPORTED_MODULE_7__["Winnings"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Start_Training_Today_StartTrainingToday_jsx__WEBPACK_IMPORTED_MODULE_8__["StartTrainingToday"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Gallery_Gallery_jsx__WEBPACK_IMPORTED_MODULE_10__["Gallery"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_The_Studio_TheStudio_jsx__WEBPACK_IMPORTED_MODULE_9__["TheStudio"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Book_App_BookApp_jsx__WEBPACK_IMPORTED_MODULE_12__["BookApp"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         path: "/Gallery-detailed"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Gallery_Gallery_Detailed_GalleryDetailed_jsx__WEBPACK_IMPORTED_MODULE_11__["GalleryDetailed"], null)));
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Gallery_Gallery_Detailed_GalleryDetailed_jsx__WEBPACK_IMPORTED_MODULE_11__["GalleryDetailed"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+        path: "/book-online"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Book_Online_BookOnline_jsx__WEBPACK_IMPORTED_MODULE_14__["BookOnline"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+        path: "/book-online-detailed/:courseId"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Book_Online_Book_Online_Detailed_BookOnlineDetailed_jsx__WEBPACK_IMPORTED_MODULE_15__["BookOnlineDetailed"], null)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer_Footer_jsx__WEBPACK_IMPORTED_MODULE_13__["Footer"], null)));
     }
   }]);
 

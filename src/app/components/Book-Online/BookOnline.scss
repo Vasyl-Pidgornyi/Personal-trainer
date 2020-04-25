@@ -1,0 +1,45 @@
+@import "../../../sass/variables.scss";
+@import "../../../sass/mixin.scss";
+
+.bookOnline__container {
+  height: 100%;
+  width: 100%;
+  background-color: $main-dark-color;
+  padding: 80px 20px;
+}
+
+.bookOnline__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &_header {
+    color: $main-white-color;
+    text-align: center;
+    font-size: 4.5rem;
+    line-height: 5rem;
+    letter-spacing: 5px;
+    margin-top: 55px;
+  }
+}
+
+.bookOnlineItem__container {
+  width: 980px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-image-booking {
+  background-image: url("../../../assets/images/gallery/first.webp");
+  @include background-image-style;
+}
+
+.second-image-booking {
+  background-image: url("../../../assets/images/gallery/forth.webp");
+  @include background-image-style;
+}
+
+.third-image-booking {
+  background-image: url("../../../assets/images/gallery/sixth.webp");
+  @include background-image-style;
+}

@@ -1,0 +1,94 @@
+@import "../../../../sass/variables.scss";
+@import "../../../../sass/mixin.scss";
+
+.bookOnlineDetailed__container {
+  padding: 115px 350px 80px;
+  height: 100%;
+  background-color: $main-dark-color;
+}
+
+.bookOnlineDetailed__goBack-btn {
+  background-color: transparent;
+  border: none;
+  color: $main-orange-color;
+}
+
+.bookOnlineDetailed__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $main-white-color;
+  margin-top: 70px;
+
+  &_hoursAndPrice {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+  }
+
+  &_btn {
+    margin-top: 35px;
+    width: 95px;
+    height: 42px;
+    @include bookNowBtn;
+  }
+
+  &_btn:hover {
+    background-color: #e77353;
+  }
+
+  &_image {
+    width: 724px;
+    height: 448px;
+    margin-top: 40px;
+  }
+
+  &_description {
+    max-width: 606px;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    margin-top: 80px;
+  }
+}
+
+.bookOnlineDetailed__detailedTextBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 60px;
+  width: 596px;
+
+  &_hederCover {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $main-underLine-color;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  &_headerText {
+    font-size: 1.3rem;
+  }
+
+  &_descriptionCover {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $main-underLine-color;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  &_descriptionText {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  &_locationContact {
+    font-size: 1.4rem;
+    margin-top: 80px;
+  }
+
+  &_eMail {
+    font-size: 1.1rem;
+    margin-top: 30px;
+  }
+}

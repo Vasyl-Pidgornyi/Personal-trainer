@@ -3,10 +3,9 @@ import { Link, useLocation, useHistory } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import "./GalleryDetailed.scss";
 
-export function GalleryDetailed(props) {
+export function GalleryDetailed() {
   let location = useLocation();
   let history = useHistory();
-  console.log(location);
   return (
     <div className="galleryDetailed__container">
       <div className="galleryDetailed__content detailedContent">

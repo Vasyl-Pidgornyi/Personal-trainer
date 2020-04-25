@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import { HashRouter as Router, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Header } from "./components/Header/Header.jsx";
 import { TrainerBooking } from "./components/Trainer-booking/TrainerBooking.jsx";
 import { BeginnerOrPro } from "./components/Beginner-Or-Pro/BeginnerOrPro.jsx";
@@ -12,6 +12,8 @@ import { Gallery } from "./components/Gallery/Gallery.jsx";
 import { GalleryDetailed } from "./components/Gallery/Gallery-Detailed/GalleryDetailed.jsx";
 import { BookApp } from "./components/Book-App/BookApp.jsx";
 import { Footer } from "./components/Footer/Footer.jsx";
+import { BookOnline } from "./components/Book-Online/BookOnline.jsx";
+import { BookOnlineDetailed } from "./components/Book-Online/Book-Online-Detailed/BookOnlineDetailed.jsx";
 
 class App extends React.Component {
   constructor() {
@@ -60,25 +62,33 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <Route exact path="/">
-          <div className="page-container" id="mainPage">
-            <Header sectionInFocus={this.state.sectionInFocus} />
-            <main>
-              <TrainerBooking />
-              <BeginnerOrPro />
-              <MeetTheCoach />
-              <Winnings />
-              <StartTrainingToday />
-              <Gallery />
-              <TheStudio />
-              <BookApp />
-            </main>
-            <Footer />
-          </div>
-        </Route>
-        <Route path="/Gallery-detailed">
-          <GalleryDetailed />
-        </Route>
+        <div className="page-container" id="mainPage">
+          <Header sectionInFocus={this.state.sectionInFocus} />
+          <main>
+            <Switch>
+              <Route exact path="/">
+                <TrainerBooking />
+                <BeginnerOrPro />
+                <MeetTheCoach />
+                <Winnings />
+                <StartTrainingToday />
+                <Gallery />
+                <TheStudio />
+                <BookApp />
+              </Route>
+              <Route path="/Gallery-detailed">
+                <GalleryDetailed />
+              </Route>
+              <Route path="/book-online">
+                <BookOnline />
+              </Route>
+              <Route path="/book-online-detailed/:courseId">
+                <BookOnlineDetailed />
+              </Route>
+            </Switch>
+          </main>
+          <Footer />
+        </div>
       </Router>
     );
   }

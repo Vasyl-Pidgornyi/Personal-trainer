@@ -5,14 +5,14 @@ import { HeaderItem } from "./Header-Item/HeaderItem.jsx";
 
 export function Header(props) {
   const data = [
-    { id: 0, linkName: "home", label: "Home" },
-    { id: 1, linkName: "training", label: "Training" },
-    { id: 2, linkName: "about", label: "About" },
-    { id: 3, linkName: "winnings", label: "Winnings" },
-    { id: 4, linkName: "the-studio", label: "The studio" },
-    { id: 5, linkName: "book-online", label: "Book online" },
-    { id: 6, linkName: "plans", label: "Plans" },
-    { id: 7, linkName: "contact", label: "Contact" }
+    { id: 0, linkName: "home", label: "Home", openNewPage: false },
+    { id: 1, linkName: "training", label: "Training", openNewPage: false },
+    { id: 2, linkName: "about", label: "About", openNewPage: false },
+    { id: 3, linkName: "winnings", label: "Winnings", openNewPage: false },
+    { id: 4, linkName: "the-studio", label: "The studio", openNewPage: false },
+    { id: 5, linkName: "book-online", label: "Book online", openNewPage: true },
+    { id: 6, linkName: "plans", label: "Plans", openNewPage: true },
+    { id: 7, linkName: "contact", label: "Contact", openNewPage: false }
   ];
 
   return (
@@ -24,6 +24,7 @@ export function Header(props) {
             isSelected={props.sectionInFocus == i.id ? true : false}
             linkName={i.linkName}
             label={i.label}
+            openNewPage={i.openNewPage}
           />
         ))}
       </nav>
