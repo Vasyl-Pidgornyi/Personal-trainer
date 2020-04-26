@@ -38,7 +38,17 @@ export function PlansItem(props) {
         >
           {props.item.validationTerm}
         </p>
-        <button className="plansItem__content_btn">Select</button>
+        <Link
+          to={{
+            pathname: "/Payment"
+            // state: {
+            //   item: props
+            // }
+          }}
+          className="plansItem__content_btn"
+        >
+          Select
+        </Link>
       </div>
       <div
         className={`plansItem__content-wrapper topUnderscore ${

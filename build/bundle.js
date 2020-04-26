@@ -34504,6 +34504,95 @@ var MeetTheCoach = /*#__PURE__*/function (_Component) {
 
 /***/ }),
 
+/***/ "./src/app/components/Plans/Payment/Payment.jsx":
+/*!******************************************************!*\
+  !*** ./src/app/components/Plans/Payment/Payment.jsx ***!
+  \******************************************************/
+/*! exports provided: Payment */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Payment", function() { return Payment; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _Payment_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Payment.scss */ "./src/app/components/Plans/Payment/Payment.scss");
+/* harmony import */ var _Payment_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Payment_scss__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+function Payment() {
+  var location = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useLocation"])();
+  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "payment__container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "plans__content_header"
+  }, "PLANS & PRICING"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "payment__content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "payment__content_header-container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "payment__content_header-text"
+  }, "Checkout")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "payment__content_info-container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "payment__signUp-container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "payment__signUp-container_header"
+  }, "1 Sign Up"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "payment__signUp-container_description"
+  }, "To purchase this plan and use its benefits in the future, log in to your account or sign up."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "payment__signUp-container_buttons"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/log-in",
+    className: "payment__signUp-container_btn payment-signUp-btn"
+  }, "Sign Up"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/log-in",
+    className: "payment__signUp-container_btn payment-logIn-btn"
+  }, "Log In")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "payment__signUp-container_header payment-second-header"
+  }, "2 Payment")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "payment__summery-container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "payment__summery-container_header"
+  }, "Order Summary"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "payment__summery-container_planAndDuration-container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "payment__summery-container_planAndDuration-wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "payment__summery-container_planAndDuration-description"
+  }, "Plan"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "payment__summery-container_planAndDuration-description"
+  }, "Silver Membership")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "payment__summery-container_planAndDuration-wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "payment__summery-container_planAndDuration-description"
+  }, "Duration"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "payment__summery-container_planAndDuration-description"
+  }, "1 month"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "payment__summery-container_totalPrice-wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "payment__summery-container_totalPrice-text"
+  }, "Total"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "payment__summery-container_totalPrice-text"
+  }, "$30"))))));
+}
+
+/***/ }),
+
+/***/ "./src/app/components/Plans/Payment/Payment.scss":
+/*!*******************************************************!*\
+  !*** ./src/app/components/Plans/Payment/Payment.scss ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "./src/app/components/Plans/Plans-Item/PlansItem.jsx":
 /*!***********************************************************!*\
   !*** ./src/app/components/Plans/Plans-Item/PlansItem.jsx ***!
@@ -34543,7 +34632,13 @@ function PlansItem(props) {
     className: "plansItem__content_planForWho"
   }, props.item.planForWho), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "plansItem__content_validationTerm ".concat(props.item.validationHidden ? "transparentText" : "")
-  }, props.item.validationTerm), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+  }, props.item.validationTerm), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: {
+      pathname: "/Payment" // state: {
+      //   item: props
+      // }
+
+    },
     className: "plansItem__content_btn"
   }, "Select")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "plansItem__content-wrapper topUnderscore ".concat(props.item.bestValue ? "bestValue-lowerBlock" : "")
@@ -35070,6 +35165,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Book_Online_BookOnline_jsx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/Book-Online/BookOnline.jsx */ "./src/app/components/Book-Online/BookOnline.jsx");
 /* harmony import */ var _components_Book_Online_Book_Online_Detailed_BookOnlineDetailed_jsx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/Book-Online/Book-Online-Detailed/BookOnlineDetailed.jsx */ "./src/app/components/Book-Online/Book-Online-Detailed/BookOnlineDetailed.jsx");
 /* harmony import */ var _components_Plans_Plans_jsx__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/Plans/Plans.jsx */ "./src/app/components/Plans/Plans.jsx");
+/* harmony import */ var _components_Plans_Payment_Payment_jsx__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/Plans/Payment/Payment.jsx */ "./src/app/components/Plans/Payment/Payment.jsx");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -35093,6 +35189,7 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 
 
 
@@ -35208,7 +35305,9 @@ var App = /*#__PURE__*/function (_React$Component) {
         path: "/book-online-detailed/:courseId"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Book_Online_Book_Online_Detailed_BookOnlineDetailed_jsx__WEBPACK_IMPORTED_MODULE_15__["BookOnlineDetailed"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         path: "/plans"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Plans_Plans_jsx__WEBPACK_IMPORTED_MODULE_16__["Plans"], null)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer_Footer_jsx__WEBPACK_IMPORTED_MODULE_13__["Footer"], null)));
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Plans_Plans_jsx__WEBPACK_IMPORTED_MODULE_16__["Plans"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+        path: "/payment"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Plans_Payment_Payment_jsx__WEBPACK_IMPORTED_MODULE_17__["Payment"], null)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer_Footer_jsx__WEBPACK_IMPORTED_MODULE_13__["Footer"], null)));
     }
   }]);
 

@@ -15,6 +15,7 @@ import { Footer } from "./components/Footer/Footer.jsx";
 import { BookOnline } from "./components/Book-Online/BookOnline.jsx";
 import { BookOnlineDetailed } from "./components/Book-Online/Book-Online-Detailed/BookOnlineDetailed.jsx";
 import { Plans } from "./components/Plans/Plans.jsx";
+import { Payment } from "./components/Plans/Payment/Payment.jsx";
 
 class App extends React.Component {
   constructor() {
@@ -88,6 +89,9 @@ class App extends React.Component {
               </Route>
               <Route path="/plans">
                 <Plans />
+              </Route>
+              <Route path="/payment">
+                <Payment />
               </Route>
             </Switch>
           </main>
