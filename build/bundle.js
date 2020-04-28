@@ -34005,13 +34005,9 @@ function GalleryDetailed() {
     className: "detailedContent__imageSlider"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "detailedContent__imageSection"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    className: "detailedContent__imageSection_btn"
-  }, "\uD83E\uDC94"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "detailedContent__imageSection_photo ".concat(location.state.info.image, "-detailed")
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    className: "detailedContent__imageSection_btn"
-  }, "\uD83E\uDC96")))));
+  })))));
 }
 
 /***/ }),

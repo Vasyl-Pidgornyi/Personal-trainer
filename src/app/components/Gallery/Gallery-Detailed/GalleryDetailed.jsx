@@ -29,11 +29,11 @@ export function GalleryDetailed() {
         </div>
         <div className="detailedContent__imageSlider">
           <div className="detailedContent__imageSection">
-            <Button className="detailedContent__imageSection_btn">🢔</Button>
+            {/* <Button className="detailedContent__imageSection_btn">🢔</Button> */}
             <div
               className={`detailedContent__imageSection_photo ${location.state.info.image}-detailed`}
             ></div>
-            <Button className="detailedContent__imageSection_btn">🢖</Button>
+            {/* <Button className="detailedContent__imageSection_btn">🢖</Button> */}
           </div>
         </div>
       </div>

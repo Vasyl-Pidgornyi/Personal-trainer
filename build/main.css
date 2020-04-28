@@ -1430,7 +1430,7 @@
   color: #fff;
   font-size: 30px;
   transform: scaleX(1.2);
-  margin-right: 20px;
+  margin-right: 50px;
   outline: none;
 }
 .detailedContent__description {
@@ -1439,22 +1439,23 @@
   align-items: flex-end;
   color: white;
   margin-top: 40px;
+  margin-right: 75px;
 }
 .detailedContent__description_header-text {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   text-align: left;
-  width: 250px;
+  width: 404px;
 }
 .detailedContent__description_text {
-  margin-top: 20px;
-  font-size: 1.2rem;
+  margin-top: 30px;
+  font-size: 1.1rem;
   text-align: left;
-  max-width: 250px;
+  width: 404px;
 }
 .detailedContent__imageSlider {
   display: flex;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 .detailedContent__imageSection {
   display: flex;
@@ -2251,6 +2252,19 @@
   align-items: center;
   background-color: rgba(0, 0, 0, 0.3);
 }
+.popUp__container_close-btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.popUp__container_close-button {
+  width: 24px;
+  height: 24px;
+  font-size: inherit;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
 
 .popUp__content {
   width: 580px;
@@ -2258,16 +2272,9 @@
   background-color: #fff;
   color: #000;
   padding: 20px;
-}
-.popUp__content_close-btn-container {
-  width: 100%;
   display: flex;
-  justify-content: flex-end;
-}
-.popUp__content_close-button {
-  width: 24px;
-  height: 24px;
-  font-size: inherit;
+  flex-direction: column;
+  align-items: center;
 }
 .popUp__content_message {
   max-width: 440px;
@@ -2275,6 +2282,8 @@
   font-size: 0.9rem;
   letter-spacing: 0.5px;
   line-height: 1.3rem;
+  text-align: center;
+  margin: 45px auto;
 }
 .popUp__content_gotIt-button {
   width: 132px;
@@ -2282,6 +2291,7 @@
   padding: 8px 16px;
   color: #fff;
   background-color: #000;
+  border: none;
 }
 .popUp__content_gotIt-button:hover {
   background-color: grey;

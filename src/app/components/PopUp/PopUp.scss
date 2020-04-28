@@ -12,14 +12,6 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.3);
-}
-
-.popUp__content {
-  width: 580px;
-  height: 284px;
-  background-color: $main-white-color;
-  color: $main-black-color;
-  padding: 20px;
 
   &_close-btn-container {
     width: 100%;
@@ -31,7 +23,21 @@
     width: 24px;
     height: 24px;
     font-size: inherit;
+    background-color: transparent;
+    border: none;
+    outline: none;
   }
+}
+
+.popUp__content {
+  width: 580px;
+  height: 284px;
+  background-color: $main-white-color;
+  color: $main-black-color;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &_message {
     max-width: 440px;
@@ -39,6 +45,8 @@
     font-size: 0.9rem;
     letter-spacing: 0.5px;
     line-height: 1.3rem;
+    text-align: center;
+    margin: 45px auto;
   }
 
   &_gotIt-button {
@@ -47,6 +55,7 @@
     padding: 8px 16px;
     color: $main-white-color;
     background-color: $main-black-color;
+    border: none;
   }
 
   &_gotIt-button:hover {
