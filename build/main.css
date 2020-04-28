@@ -1406,10 +1406,12 @@
   max-height: 800px;
 }
 .galleryDetailed__container {
-  padding: 80px 30px;
+  padding: 40px 30px;
   background-color: #2f2b32;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 15;
 }
 
 .detailedContent {
@@ -1795,6 +1797,7 @@
   width: 100%;
   background-color: #252128;
   padding: 80px 20px;
+  position: relative;
 }
 
 .bookOnline__content {
@@ -2169,6 +2172,119 @@
   font-size: 1.5rem;
   font-weight: 800;
   letter-spacing: 1px;
+}
+.logIn__container {
+  width: 100%;
+  height: 100vh;
+  background-color: #252128;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 15;
+}
+.logIn__container_close-button {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 30px;
+  transform: scaleX(1.2);
+  margin-right: 20px;
+  outline: none;
+}
+
+.logIn__content {
+  text-align: center;
+  color: #fff;
+}
+.logIn__content_header {
+  font-size: 2.7rem;
+}
+.logIn__content_info-section {
+  font-size: 1rem;
+  margin-top: 20px;
+}
+.logIn__content_info-section-link {
+  color: #fe6148;
+}
+.logIn__content_socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 15px;
+}
+.logIn__content_socials_link {
+  margin-bottom: 15px;
+}
+.logIn__content_button-cover {
+  margin-top: 50px;
+  width: 320px;
+  height: 48px;
+}
+.logIn__content_logIn-btn {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #bdbdbd;
+  text-align: center;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 15px 114px;
+}
+.logIn__content_logIn-btn:hover {
+  border: 1px solid #fff;
+}
+.popUp__container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.popUp__content {
+  width: 580px;
+  height: 284px;
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+}
+.popUp__content_close-btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.popUp__content_close-button {
+  width: 24px;
+  height: 24px;
+  font-size: inherit;
+}
+.popUp__content_message {
+  max-width: 440px;
+  margin-bottom: 40px;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  line-height: 1.3rem;
+}
+.popUp__content_gotIt-button {
+  width: 132px;
+  height: 40px;
+  padding: 8px 16px;
+  color: #fff;
+  background-color: #000;
+}
+.popUp__content_gotIt-button:hover {
+  background-color: grey;
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -3052,6 +3168,7 @@ button {
 .page-container {
   max-width: 100vw;
   height: 100vh;
+  position: relative;
 }
 
 /*# sourceMappingURL=main.css.map*/

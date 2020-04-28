@@ -1,10 +1,9 @@
 import React from "react";
-import { Link, useLocation, useHistory } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Payment.scss";
 
 export function Payment() {
   let location = useLocation();
-  let history = useHistory();
   return (
     <div className="payment__container">
       <h1 className="plans__content_header">PLANS & PRICING</h1>
@@ -45,8 +44,7 @@ export function Payment() {
                   Plan
                 </p>
                 <p className="payment__summery-container_planAndDuration-description">
-                  Silver Membership
-                  {/* {location.state.item.membership} */}
+                  {location.state.item.membership}
                 </p>
               </div>
               <div className="payment__summery-container_planAndDuration-wrapper">
@@ -54,7 +52,7 @@ export function Payment() {
                   Duration
                 </p>
                 <p className="payment__summery-container_planAndDuration-description">
-                  1 month
+                  {location.state.item.duration}
                 </p>
               </div>
             </div>
@@ -62,7 +60,9 @@ export function Payment() {
               <p className="payment__summery-container_totalPrice-text">
                 Total
               </p>
-              <p className="payment__summery-container_totalPrice-text">$30</p>
+              <p className="payment__summery-container_totalPrice-text">
+                ${location.state.item.price}
+              </p>
             </div>
           </div>
         </div>

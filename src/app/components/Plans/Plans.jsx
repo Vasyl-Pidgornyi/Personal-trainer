@@ -11,9 +11,12 @@ export function Plans() {
       monthlyPay: "no text here",
       planForWho: "Short-term trial for beginners",
       validationTerm: "Valid for one month",
-      planPrivilege1: "Unlimited classes",
-      planPrivilege2: "Fitness assessment",
-      planPrivilege3: "Locker room with showers",
+      duration: "One month",
+      planPrivileges: [
+        { privilegeName: "Unlimited classes", id: 0 },
+        { privilegeName: "Fitness assessment", id: 1 },
+        { privilegeName: "Locker room with showers", id: 2 }
+      ],
       bestValue: false,
       monthlyPayShow: false,
       validationHidden: false,
@@ -26,12 +29,14 @@ export function Plans() {
       monthlyPay: "Evety month",
       planForWho: "Ideal for advanced trainers",
       validationTerm: "Valid for 12 months",
-      planPrivilege1: "Unlimited classes",
-      planPrivilege2: "Fitness assessment",
-      planPrivilege3: "Locker room with showers",
-      planPrivilege4: "Free parking",
+      duration: "12 month",
+      planPrivileges: [
+        { privilegeName: "Unlimited classes", id: 0 },
+        { privilegeName: "Fitness assessment", id: 1 },
+        { privilegeName: "Locker room with showers", id: 2 },
+        { privilegeName: "Free parking", id: 3 }
+      ],
       bestValue: true,
-      monthlyPayShow: true,
       monthlyPayShow: true,
       validationHidden: false,
       planId: "gold"
@@ -43,13 +48,15 @@ export function Plans() {
       monthlyPay: "Evety month",
       planForWho: "Perfect for committed trainers",
       validationTerm: "no text here",
-      planPrivilege1: "Unlimited classes",
-      planPrivilege2: "Fitness assessment",
-      planPrivilege3: "Locker room with showers",
-      planPrivilege4: "Free parking",
-      planPrivilege5: "Guest privileges",
+      duration: "Until Canceled",
+      planPrivileges: [
+        { privilegeName: "Unlimited classes", id: 0 },
+        { privilegeName: "Fitness assessment", id: 1 },
+        { privilegeName: "Locker room with showers", id: 2 },
+        { privilegeName: "Free parking", id: 3 },
+        { privilegeName: "Guest privileges", id: 4 }
+      ],
       bestValue: false,
-      monthlyPayShow: true,
       monthlyPayShow: true,
       validationHidden: true,
       planId: "platinum"

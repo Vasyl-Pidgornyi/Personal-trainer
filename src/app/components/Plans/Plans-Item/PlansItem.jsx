@@ -40,10 +40,10 @@ export function PlansItem(props) {
         </p>
         <Link
           to={{
-            pathname: "/Payment"
-            // state: {
-            //   item: props
-            // }
+            pathname: `/Payment/${props.item.planId}`,
+            state: {
+              item: props.item
+            }
           }}
           className="plansItem__content_btn"
         >
@@ -55,21 +55,11 @@ export function PlansItem(props) {
           props.item.bestValue ? "bestValue-lowerBlock" : ""
         }`}
       >
-        <p className="plansItem__content_planPrivileges">
-          {props.item.planPrivilege1}
-        </p>
-        <p className="plansItem__content_planPrivileges">
-          {props.item.planPrivilege2}
-        </p>
-        <p className="plansItem__content_planPrivileges">
-          {props.item.planPrivilege3}
-        </p>
-        <p className="plansItem__content_planPrivileges">
-          {props.item.planPrivilege4}
-        </p>
-        <p className="plansItem__content_planPrivileges">
-          {props.item.planPrivilege5}
-        </p>
+        {props.item.planPrivileges.map(item => (
+          <p className="plansItem__content_planPrivileges" key={item.id}>
+            {item.privilegeName}
+          </p>
+        ))}
       </div>
     </div>
   );

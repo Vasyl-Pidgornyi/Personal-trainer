@@ -16,6 +16,8 @@ import { BookOnline } from "./components/Book-Online/BookOnline.jsx";
 import { BookOnlineDetailed } from "./components/Book-Online/Book-Online-Detailed/BookOnlineDetailed.jsx";
 import { Plans } from "./components/Plans/Plans.jsx";
 import { Payment } from "./components/Plans/Payment/Payment.jsx";
+import { LogIn } from "./components/LogIn-Page/LogIn.jsx";
+import { PopUp } from "./components/PopUp/PopUp.jsx";
 
 class App extends React.Component {
   constructor() {
@@ -23,7 +25,8 @@ class App extends React.Component {
 
     this.state = {
       sectionInFocus: 0,
-      distanceFromTop: null
+      distanceFromTop: null,
+      showPopUp: false
     };
   }
 
@@ -61,6 +64,12 @@ class App extends React.Component {
     );
   };
 
+  togglePopUpState = () => {
+    this.setState(prevState => ({
+      showPopUp: !prevState.showPopUp
+    }));
+  };
+
   render() {
     return (
       <Router>
@@ -82,7 +91,7 @@ class App extends React.Component {
                 <GalleryDetailed />
               </Route>
               <Route path="/book-online">
-                <BookOnline />
+                <BookOnline togglePopUpState={this.togglePopUpState} />
               </Route>
               <Route path="/book-online-detailed/:courseId">
                 <BookOnlineDetailed />
@@ -90,10 +99,17 @@ class App extends React.Component {
               <Route path="/plans">
                 <Plans />
               </Route>
-              <Route path="/payment">
+              <Route path="/payment/:planId">
                 <Payment />
               </Route>
+              <Route path="/log-in">
+                <LogIn />
+              </Route>
             </Switch>
+            <PopUp
+              show={this.state.showPopUp}
+              closePopUp={this.togglePopUpState}
+            />
           </main>
           <Footer />
         </div>

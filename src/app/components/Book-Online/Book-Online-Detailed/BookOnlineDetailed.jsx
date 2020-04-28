@@ -21,7 +21,12 @@ export function BookOnlineDetailed() {
           {location.state.item.courseName}
         </h1>
         <span className="bookOnlineDetailed__content_hoursAndPrice">{`${location.state.item.duration} hr | ${location.state.item.price}$`}</span>
-        <button className="bookOnlineDetailed__content_btn">Book Now</button>
+        <button
+          className="bookOnlineDetailed__content_btn"
+          onClick={location.state.showPopUp}
+        >
+          Book Now
+        </button>
         <div
           className={`bookOnlineDetailed__content_image ${location.state.item.image}`}
         ></div>
@@ -43,7 +48,12 @@ export function BookOnlineDetailed() {
               {location.state.item.weekDay}
             </p>
           </div>
-          <button className="bookOnlineDetailed__content_btn">Book Now</button>
+          <button
+            className="bookOnlineDetailed__content_btn"
+            onClick={location.state.showPopUp}
+          >
+            Book Now
+          </button>
           <p className="bookOnlineDetailed__detailedTextBlock_locationContact">
             Location & Contact Details
           </p>

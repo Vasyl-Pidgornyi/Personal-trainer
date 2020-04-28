@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { BookOnlineItem } from "./Book-Online-Item/BookOnlineItem.jsx";
 import "./BookOnline.scss";
 
-export function BookOnline() {
+export function BookOnline({ togglePopUpState }) {
   const data = [
     {
       id: 0,
@@ -38,14 +38,13 @@ export function BookOnline() {
       courseId: "boxing-for-pros"
     }
   ];
-
   return (
     <div className="bookOnline__container" id="book-online">
       <div className="bookOnline__content">
         <h1 className="bookOnline__content_header">MY CLASSES</h1>
         <div className="bookOnlineItem__container">
           {data.map(i => (
-            <BookOnlineItem key={i.id} item={i} />
+            <BookOnlineItem key={i.id} item={i} showPopUp={togglePopUpState} />
           ))}
         </div>
       </div>
