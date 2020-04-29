@@ -34275,16 +34275,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Header", function() { return Header; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_hash_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-hash-link */ "./node_modules/react-router-hash-link/lib/index.js");
-/* harmony import */ var react_router_hash_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_router_hash_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Header_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header.scss */ "./src/app/components/Header/Header.scss");
-/* harmony import */ var _Header_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Header_scss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _Header_Item_HeaderItem_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Header-Item/HeaderItem.jsx */ "./src/app/components/Header/Header-Item/HeaderItem.jsx");
+/* harmony import */ var _Header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header.scss */ "./src/app/components/Header/Header.scss");
+/* harmony import */ var _Header_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Header_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Header_Item_HeaderItem_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header-Item/HeaderItem.jsx */ "./src/app/components/Header/Header-Item/HeaderItem.jsx");
+/* harmony import */ var _LogIn_SignUp_Pages_constants_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../LogIn-SignUp-Pages/constants.jsx */ "./src/app/components/LogIn-SignUp-Pages/constants.jsx");
 
 
 
 
-function Header(props) {
+function Header(_ref) {
+  var sectionInFocus = _ref.sectionInFocus,
+      openLoginWindow = _ref.openLoginWindow;
   var data = [{
     id: 0,
     linkName: "home",
@@ -34331,14 +34332,19 @@ function Header(props) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
     className: "page-header__global-nav"
   }, data.map(function (i) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header_Item_HeaderItem_jsx__WEBPACK_IMPORTED_MODULE_3__["HeaderItem"], {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header_Item_HeaderItem_jsx__WEBPACK_IMPORTED_MODULE_2__["HeaderItem"], {
       key: i.id,
-      isSelected: props.sectionInFocus == i.id ? true : false,
+      isSelected: sectionInFocus == i.id ? true : false,
       linkName: i.linkName,
       label: i.label,
       openNewPage: i.openNewPage
     });
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    onClick: function onClick() {
+      return openLoginWindow(_LogIn_SignUp_Pages_constants_jsx__WEBPACK_IMPORTED_MODULE_3__["authenticationPages"].Login);
+    },
+    className: "page-header__logIn_button"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "page-header__logIn"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "page-header__logIn_icon"
@@ -34353,10 +34359,7 @@ function Header(props) {
     d: "M25 48.077c-5.924 0-11.31-2.252-15.396-5.921 2.254-5.362 7.492-8.267 15.373-8.267 7.889 0 13.139 3.044 15.408 8.418-4.084 3.659-9.471 5.77-15.385 5.77m.278-35.3c4.927 0 8.611 3.812 8.611 8.878 0 5.21-3.875 9.456-8.611 9.456s-8.611-4.246-8.611-9.456c0-5.066 3.684-8.878 8.611-8.878M25 0C11.193 0 0 11.193 0 25c0 .915.056 1.816.152 2.705.032.295.091.581.133.873.085.589.173 1.176.298 1.751.073.338.169.665.256.997.135.515.273 1.027.439 1.529.114.342.243.675.37 1.01.18.476.369.945.577 1.406.149.331.308.657.472.98.225.446.463.883.714 1.313.182.312.365.619.56.922.272.423.56.832.856 1.237.207.284.41.568.629.841.325.408.671.796 1.02 1.182.22.244.432.494.662.728.405.415.833.801 1.265 1.186.173.154.329.325.507.475l.004-.011A24.886 24.886 0 0 0 25 50a24.881 24.881 0 0 0 16.069-5.861.126.126 0 0 1 .003.01c.172-.144.324-.309.49-.458.442-.392.88-.787 1.293-1.209.228-.232.437-.479.655-.72.352-.389.701-.78 1.028-1.191.218-.272.421-.556.627-.838.297-.405.587-.816.859-1.24a26.104 26.104 0 0 0 1.748-3.216c.208-.461.398-.93.579-1.406.127-.336.256-.669.369-1.012.167-.502.305-1.014.44-1.53.087-.332.183-.659.256-.996.126-.576.214-1.164.299-1.754.042-.292.101-.577.133-.872.095-.89.152-1.791.152-2.707C50 11.193 38.807 0 25 0"
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "page-header__logIn_text"
-  }, "Log In"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_1__["HashLink"], {
-    to: "/log-in",
-    className: "page-header__logIn_link"
-  })));
+  }, "Log In"))));
 }
 
 /***/ }),
@@ -34372,10 +34375,155 @@ function Header(props) {
 
 /***/ }),
 
-/***/ "./src/app/components/LogIn-Page/LogIn.jsx":
-/*!*************************************************!*\
-  !*** ./src/app/components/LogIn-Page/LogIn.jsx ***!
-  \*************************************************/
+/***/ "./src/app/components/LogIn-SignUp-Pages/Forgot-Password/ForgotPassword.jsx":
+/*!**********************************************************************************!*\
+  !*** ./src/app/components/LogIn-SignUp-Pages/Forgot-Password/ForgotPassword.jsx ***!
+  \**********************************************************************************/
+/*! exports provided: ForgotPassword */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForgotPassword", function() { return ForgotPassword; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _ForgotPassword_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ForgotPassword.scss */ "./src/app/components/LogIn-SignUp-Pages/Forgot-Password/ForgotPassword.scss");
+/* harmony import */ var _ForgotPassword_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_ForgotPassword_scss__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+function ForgotPassword() {
+  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "forgotPassword__container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "forgotPassword__content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "forgotPassword__content_header"
+  }, "Reset Password"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "forgotPassword__content_description"
+  }, "Please enter your email address"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "forgotPassword__content_input-wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "email",
+    placeholder: "Email",
+    className: "forgotPassword__content_input"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "forgotPassword__content_button-cover"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "forgotPassword__content_logInAndSignUp-btn"
+  }, "Reset Password"))));
+}
+
+/***/ }),
+
+/***/ "./src/app/components/LogIn-SignUp-Pages/Forgot-Password/ForgotPassword.scss":
+/*!***********************************************************************************!*\
+  !*** ./src/app/components/LogIn-SignUp-Pages/Forgot-Password/ForgotPassword.scss ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./src/app/components/LogIn-SignUp-Pages/LogIn/EmailLogIn.jsx":
+/*!********************************************************************!*\
+  !*** ./src/app/components/LogIn-SignUp-Pages/LogIn/EmailLogIn.jsx ***!
+  \********************************************************************/
+/*! exports provided: EmailLogIn */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EmailLogIn", function() { return EmailLogIn; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _EmailLogin_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./EmailLogin.scss */ "./src/app/components/LogIn-SignUp-Pages/LogIn/EmailLogin.scss");
+/* harmony import */ var _EmailLogin_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_EmailLogin_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _constants_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../constants.jsx */ "./src/app/components/LogIn-SignUp-Pages/constants.jsx");
+
+
+
+
+function EmailLogIn(_ref) {
+  var onForgetPasswordClick = _ref.onForgetPasswordClick;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "emailLogIn__container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "emailLogIn__content_input-wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "email",
+    placeholder: "Email",
+    className: "emailLogIn__content_input"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "password",
+    placeholder: "Password",
+    className: "emailLogIn__content_input"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "emailLogIn__content_forgotPasswod-wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    onClick: function onClick() {
+      return onForgetPasswordClick(_constants_jsx__WEBPACK_IMPORTED_MODULE_3__["authenticationPages"].ForgotPassword);
+    },
+    className: "emailLogIn__content_forgotPasswod-btn"
+  }, "Forgot password?"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "emailLogIn__content_button-cover"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "emailLogIn__content_logIn-btn"
+  }, "Log In")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "emailLogIn__content_socials"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "http://facebook.com",
+    className: "emailLogIn__content_socials_link"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    xlink: "http://www.w3.org/1999/xlink",
+    width: "26px",
+    height: "26px"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("image", {
+    x: "0px",
+    y: "0px",
+    width: "26px",
+    height: "26px",
+    href: "data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAbFBMVEU0SHY7WJY7WZhEYZ1sg7KClb2Xp8iPoMSHmcCAlLx5jrlzibVMZ6GRosXS2ej////m6vJUbqVAXZqjsc9heqz6+vyisM7g5e/c4ex3jLidrMvW3OrO1eX3+PvZ3+u7xtuKnMJ4jLhlfa5SbaS09N/TAAAAAWJLR0QPGLoA2QAAAAd0SU1FB+QEHAwiFW075nwAAACpSURBVEjH7dfJDsIwDEXRpJiWsS4tY5jh//+RRLRZIFDqBxsk32WiI2+8SIwxNhNnjU/OQtC850zM+ZEK2wY0zPNiNJ5MSQBn85JjAkgVMwIXzBCsSxA2jMHlCoRrBuEmim2zo1BPGJ17vekJ9xkIDwp/AKktwu4gBR2/74jCEwrPKHQovKDwisIbCu/oAtQp2PUHS65QocIvoMWgTTzmP8LwDbBy6Oc9AFlgOhKJfs6CAAAAAElFTkSuQmCC"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "http://google.com",
+    className: "emailLogIn__content_socials_link"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    xlink: "http://www.w3.org/1999/xlink",
+    width: "28px",
+    height: "28px"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("image", {
+    x: "0px",
+    y: "0px",
+    width: "28px",
+    height: "28px",
+    href: "data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA6CAYAAADhu0ooAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAAB3RJTUUH5AQcDCMO/kUe0QAACOVJREFUaN7VmntQVNcdx7/nvnaXffGGRURZBYVgMRYp0TCzmail8ZFMTZTQSdOaNg2YavqHjtPpH22dNtYxNdZJS22SqZNGx2S0CW21ipUkGhxFgvhCkSBPgWV5LOx776N/CMhLuHfZBfL9a+8553fu73PP3XN+95wfSUlejGmQZYK6z6bDASYUUNE0iU1V0Y+lslR6qopONzFUgp4m4TqKQE8BAgAbL6GTF602UbLaeKnjjle4VekWLnUIYmso4EkQR9SySsuuW6Vj1q7SsgF3etsruCs9Qvl1j3C1zMWfFiSpdDaAWow0idxs4F5epWPXmVmKCtZTA4A6n8CXOPzHSvr8HzlEqQ9TGOmAQWlg9WYj9/ImI/eDRCaofGPU6hfxL4f/kyO9vnddkvSfgPyNiohWamPJ0TA//H2c5uAGPfdtA0VCCgkABpogS8MsztEyz7b4JdznRRpAQyhBLS8ZVa/+Nlbz8xiG4kJOOEoxNMWt07NPeyQprNoj2JTAKnl1Lb+J1fxxrY59fLoBx9NZp//2rg53mtz2cpYXCwDsidP8ZSqzaTD11x7vJ3/r8R5QYjMZqAUATszVlSWxoZ1w5Gpnh2vvOSd/Cgpn4ElH9HyyvkxDQj/hTKYWXsS2NtcrTX6xXinkZKCW9+Zoj88GyDInX7ujw/WzgUvFkBOBWnZFq3+XqaIjp+okD6DKw7dfdgkXugXJ1iWINo6AS2Jp83yWWpDEUsnzWCrcSI//QA/1eEsO9Xj3Bwo4IWiejn3ueQO3YiodV7p560kHf+ILl/9/PYJkG+soP/RQAWC9nn1hvZ7btExND613Ozpce8qc/OmpQgLjLC86imx4xxT2j8dUtD6QDivcQvtRu/f9L1x8aQAOWpaqmeznDexLxd3efS282BgMyHFBXwlXHS+MVH0/kM52d7qLP+33HwuWc8HUiDVDxUrpbxQ2rBU5UXFHL7Y4t85WyNGg5oKnegrpZLtK++PrILEu2Z1k1fc9ddcn3JqtkCNAow18/I9Wd78OACTCC82WG2BSejyTdbCrw/3WwM9ZCzkCNC+rf2OMkR9RyW28q2ayOvofZfxWl+eDs07/v2c75HBQc26G45nxGnCrGvWq7zY4Rpd/7uS/Pmr3vf9NgBwCVXOSOjfD+ciAnX7cqlMX3PaDSENl7/Z6D35TIIdAl6c6LZM2TOpjNa9fhd/gxRmHv73GK1TPtPNKxACAOd63SE5jovXDWFSN2n0Lu2BlPgv0pto5Wa9NJ6Sz9UoxAwDJcT7Z35l+geDvtcyGqdxYm5hlic1+bfN0QHZVHz3jbL1STAHA/HhfqlzD8lvaG9PhYLDEaKPigQf/UXO4TpD9lVJVpykHUD/TAHLFhsXEA0ijAMAYJhjkGnb1MdaZdl6JaG10LDAw6xq1gmxDWx/dMdPOKxEbFoUhUCXScFLYTDuvTOQhqN1JyzZbkOCVvcU4G8S7uoeBuug+BaDpAMwzDSAb1N3dMwha3+ugu+UaZpo92TPtvEJQK4AaCgAa2rlauYamCD/MJvkBxkxLcHVbgYEQsLGTqwWwRq6x2ULNrz86NQecLVfaA7XVJmbFy23Lu7segrba2Ea5hoeFeV9WLDD9CegEgD8H4qj1UnF+gIxpKQUfVykxcLZWfg4MTEY3m9Rfef2Tb1T/is+o2McvWumI09AkU5MboLMBKzz1e/mqqBSV3PaCxw5H08WzQ6CtNrahtEpf/igDO1jk+3LaPhUSlg+WkRW6tQCKppEzzbjomQIlBv2NFyoGfw8GDPWllfp/jte4Qoyoz/Pm4qZkMA0vJ+kaPcnWrp4m2LSopQXb9PNzFyoxcjSWnwZQMxwUpVX6E/fauRGbYUeEpItb/MvNjkecXFCrDc8hiUsNNaw6JvVbsdmFir5h/Q4r+hsvnBnydVhd/blqfcngxZv84otv8oufmLC3eBbU1tjtJEOTEypYVZR5Y+KaPUdolbKDg+7rxw4LHrtt8HrE0f7tZnVT/hr7T7fxy26fFE2yTrYJS0CytJnoE2g0+4wAKuTYyVCaOnrRmrl5e4+qI82KYnJfbwPun9tdKAm+q4NlI97JHgdtW395WW3n0gjFAQGVH5knGelI8aQdCHDZGQ4ZueSFV+NWbH+D5nSKjbuufVQs+Bz24WWjkzV6HK1iArVYnQud/EB/UCRFPYfM4bKlJr8BLjENyka3CMByapl2B7clbf980/4nKVp5PojbWuO4X7a7EJJ0c6RvY5M1ikiu7llqU6TsSGm0JLcE3PV0S3Wea9J19wXY+LaBqtEjXQQAxEBH4jvaPCpHtxKxD14yho9AcuMBMEK4ons3lmz9RX/jl2+PHYTxs1KKqJ9E/5pkhsUECjsCvMUPXHddluxCN+xCJxjCIp6dR+KYeYhlExDPgnDjByzzmvfYw9zpRjn3aS8/eNhW+d4fMLCkyAF9ALsz/h0yd9rTicbI1L69Kbzv6aSJ2tjrSq81n9qRPx4kMMkOg7i3favkUn6EGGy1xR9IskZ/8PWj6r1ddf6O8gO/fBQkMHHmWAWA5dLZvpPUSt1aqGc2/catuRXpUzW1GPpXGga3RwDA1Vbd1XRqR76/r3XCHMHJUuQewJ7rP0mSuCdJLKueSVgv12xw6C55te5Mhhb0cDSVNzT/d2cB77ROmuoqJxewAkCFVOnqIyY2i5hY5QtbEMUzvUyv/hTExv5bbcf3vCj4HBfl2ClJeqyQqlwuQhBDUtRzZhJWPNN7xfnx+UOSyJfItVGa3Vkh3fVyuO/rRxKXQcKUBxVTkdTJQ/qw64h0wVEChdFXIPm6Fejg46Rq92UICCdzORPoEGeXOUWIl5x3pA+7DqLJd0cpJDD1VPMiYmKTSa5uPcnSLYImuMDSPZ+AKud58StXGeyCLRDAYIE+BNZTkVgSlkMyNE+QJZqAU+ukOx4X6r03pHveGqnGc3kqcKEAHQltoCORyC0kCWwyErmFiGISiIZA0lAgGgoQJaBXgGQXPejlbbALnVKd55pU77sBj+gKFlyoQceAT1IfdKjx9H8mkEw54Y4WywAAAABJRU5ErkJggg=="
+  })))));
+}
+
+/***/ }),
+
+/***/ "./src/app/components/LogIn-SignUp-Pages/LogIn/EmailLogin.scss":
+/*!*********************************************************************!*\
+  !*** ./src/app/components/LogIn-SignUp-Pages/LogIn/EmailLogin.scss ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./src/app/components/LogIn-SignUp-Pages/LogIn/LogIn.jsx":
+/*!***************************************************************!*\
+  !*** ./src/app/components/LogIn-SignUp-Pages/LogIn/LogIn.jsx ***!
+  \***************************************************************/
 /*! exports provided: LogIn */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -34385,34 +34533,111 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _LogIn_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LogIn.scss */ "./src/app/components/LogIn-Page/LogIn.scss");
+/* harmony import */ var _LogIn_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LogIn.scss */ "./src/app/components/LogIn-SignUp-Pages/LogIn/LogIn.scss");
 /* harmony import */ var _LogIn_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_LogIn_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _SocialsLogIn_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SocialsLogIn.jsx */ "./src/app/components/LogIn-SignUp-Pages/LogIn/SocialsLogIn.jsx");
+/* harmony import */ var _EmailLogIn_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./EmailLogIn.jsx */ "./src/app/components/LogIn-SignUp-Pages/LogIn/EmailLogIn.jsx");
+/* harmony import */ var _constants_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../constants.jsx */ "./src/app/components/LogIn-SignUp-Pages/constants.jsx");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-function LogIn() {
-  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
+
+
+
+
+function LogIn(_ref) {
+  var changeLogin = _ref.changeLogin;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      showEmailLogIn = _useState2[0],
+      setShowEmailLogIn = _useState2[1];
+
+  var logInWithEmail = function logInWithEmail() {
+    setShowEmailLogIn(true);
+  };
+
+  var component;
+
+  if (showEmailLogIn) {
+    component = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_EmailLogIn_jsx__WEBPACK_IMPORTED_MODULE_4__["EmailLogIn"], {
+      onForgetPasswordClick: changeLogin
+    });
+  } else {
+    component = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SocialsLogIn_jsx__WEBPACK_IMPORTED_MODULE_3__["SocialsLogIn"], {
+      onLogInWithEmailClick: logInWithEmail
+    });
+  }
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "logIn__container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    className: "logIn__container_close-button",
-    onClick: function onClick() {
-      history.location.hash = history.goBack();
-    }
-  }, "\u2573"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "logIn__content"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "logIn__content_header"
   }, "Log In"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "logIn__content_info-section"
-  }, "New to this site?", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/sign-up",
+  }, "New to this site?", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    onClick: function onClick() {
+      return changeLogin(_constants_jsx__WEBPACK_IMPORTED_MODULE_5__["authenticationPages"].SignUp);
+    },
     className: "logIn__content_info-section-link"
   }, "Sign Up")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "logIn__content_socials"
+    className: "logIn__content_socialsOrEmail"
+  }, component)));
+}
+
+/***/ }),
+
+/***/ "./src/app/components/LogIn-SignUp-Pages/LogIn/LogIn.scss":
+/*!****************************************************************!*\
+  !*** ./src/app/components/LogIn-SignUp-Pages/LogIn/LogIn.scss ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./src/app/components/LogIn-SignUp-Pages/LogIn/SocialsLogIn.jsx":
+/*!**********************************************************************!*\
+  !*** ./src/app/components/LogIn-SignUp-Pages/LogIn/SocialsLogIn.jsx ***!
+  \**********************************************************************/
+/*! exports provided: SocialsLogIn */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SocialsLogIn", function() { return SocialsLogIn; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _SocialsLogIn_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SocialsLogIn.scss */ "./src/app/components/LogIn-SignUp-Pages/LogIn/SocialsLogIn.scss");
+/* harmony import */ var _SocialsLogIn_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_SocialsLogIn_scss__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+function SocialsLogIn(_ref) {
+  var onLogInWithEmailClick = _ref.onLogInWithEmailClick;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "socialsLogIn__container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "socialsLogIn__content_socials"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "http://facebook.com",
-    className: "logIn__content_socials_link"
+    className: "socialsLogIn__content_socials_link"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     xlink: "http://www.w3.org/1999/xlink",
@@ -34426,7 +34651,7 @@ function LogIn() {
     href: "data:img/png;base64,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"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "http://google.com",
-    className: "logIn__content_socials_link"
+    className: "socialsLogIn__content_socials_link"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     xlink: "http://www.w3.org/1999/xlink",
@@ -34439,23 +34664,360 @@ function LogIn() {
     height: "48px",
     href: "data:img/png;base64,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"
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "logIn__content_button-cover"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/sign-in",
-    className: "logIn__content_logIn-btn"
-  }, "Log in with Email"))));
+    className: "socialsLogIn__content_button-cover"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    onClick: onLogInWithEmailClick,
+    className: "socialsLogIn__content_emailLogIn-btn"
+  }, "Log in with Email")));
 }
 
 /***/ }),
 
-/***/ "./src/app/components/LogIn-Page/LogIn.scss":
-/*!**************************************************!*\
-  !*** ./src/app/components/LogIn-Page/LogIn.scss ***!
-  \**************************************************/
+/***/ "./src/app/components/LogIn-SignUp-Pages/LogIn/SocialsLogIn.scss":
+/*!***********************************************************************!*\
+  !*** ./src/app/components/LogIn-SignUp-Pages/LogIn/SocialsLogIn.scss ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./src/app/components/LogIn-SignUp-Pages/LoginModalWindow.jsx":
+/*!********************************************************************!*\
+  !*** ./src/app/components/LogIn-SignUp-Pages/LoginModalWindow.jsx ***!
+  \********************************************************************/
+/*! exports provided: LoginModalWindow */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginModalWindow", function() { return LoginModalWindow; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _LogIn_LogIn_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LogIn/LogIn.jsx */ "./src/app/components/LogIn-SignUp-Pages/LogIn/LogIn.jsx");
+/* harmony import */ var _SignUp_SignUp_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SignUp/SignUp.jsx */ "./src/app/components/LogIn-SignUp-Pages/SignUp/SignUp.jsx");
+/* harmony import */ var _Forgot_Password_ForgotPassword_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Forgot-Password/ForgotPassword.jsx */ "./src/app/components/LogIn-SignUp-Pages/Forgot-Password/ForgotPassword.jsx");
+/* harmony import */ var _constants_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./constants.jsx */ "./src/app/components/LogIn-SignUp-Pages/constants.jsx");
+/* harmony import */ var _LoginModalWindow_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./LoginModalWindow.scss */ "./src/app/components/LogIn-SignUp-Pages/LoginModalWindow.scss");
+/* harmony import */ var _LoginModalWindow_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_LoginModalWindow_scss__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+
+function LoginModalWindow(_ref) {
+  var selectedPage = _ref.selectedPage,
+      changeLoginWindow = _ref.changeLoginWindow;
+
+  if (!selectedPage) {
+    return null;
+  } else {
+    var loginPageComponent;
+
+    switch (selectedPage) {
+      case _constants_jsx__WEBPACK_IMPORTED_MODULE_4__["authenticationPages"].Login:
+        loginPageComponent = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_LogIn_LogIn_jsx__WEBPACK_IMPORTED_MODULE_1__["LogIn"], {
+          changeLogin: changeLoginWindow
+        });
+        break;
+
+      case _constants_jsx__WEBPACK_IMPORTED_MODULE_4__["authenticationPages"].SignUp:
+        loginPageComponent = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SignUp_SignUp_jsx__WEBPACK_IMPORTED_MODULE_2__["SignUp"], {
+          changeSignUp: changeLoginWindow
+        });
+        break;
+
+      case _constants_jsx__WEBPACK_IMPORTED_MODULE_4__["authenticationPages"].ForgotPassword:
+        loginPageComponent = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Forgot_Password_ForgotPassword_jsx__WEBPACK_IMPORTED_MODULE_3__["ForgotPassword"], null);
+        break;
+
+      default:
+        loginPageComponent = null;
+    }
+
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "loginModalWindow__container"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      className: "loginModalWindow__container_close-button",
+      onClick: function onClick() {
+        return changeLoginWindow(null);
+      }
+    }, "\u2573"), loginPageComponent);
+  }
+}
+
+/***/ }),
+
+/***/ "./src/app/components/LogIn-SignUp-Pages/LoginModalWindow.scss":
+/*!*********************************************************************!*\
+  !*** ./src/app/components/LogIn-SignUp-Pages/LoginModalWindow.scss ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./src/app/components/LogIn-SignUp-Pages/SignUp/EmailSignUp.jsx":
+/*!**********************************************************************!*\
+  !*** ./src/app/components/LogIn-SignUp-Pages/SignUp/EmailSignUp.jsx ***!
+  \**********************************************************************/
+/*! exports provided: EmailSignUp */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EmailSignUp", function() { return EmailSignUp; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _EmailSignUp_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./EmailSignUp.scss */ "./src/app/components/LogIn-SignUp-Pages/SignUp/EmailSignUp.scss");
+/* harmony import */ var _EmailSignUp_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_EmailSignUp_scss__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+function EmailSignUp() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "emailSignUp__conteiner"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "emailSignUp__content_input-wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "email",
+    placeholder: "Email",
+    className: "emailSignUp__content_input"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "password",
+    placeholder: "Password",
+    className: "emailSignUp__content_input"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "emailSignUp__content_button-cover"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "emailSignUp__content_emailSignUp-btn"
+  }, "Sign Up")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "emailSignUp__content_socials"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "http://facebook.com",
+    className: "emailSignUp__content_socials_link"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    xlink: "http://www.w3.org/1999/xlink",
+    width: "26px",
+    height: "26px"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("image", {
+    x: "0px",
+    y: "0px",
+    width: "26px",
+    height: "26px",
+    href: "data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAbFBMVEU0SHY7WJY7WZhEYZ1sg7KClb2Xp8iPoMSHmcCAlLx5jrlzibVMZ6GRosXS2ej////m6vJUbqVAXZqjsc9heqz6+vyisM7g5e/c4ex3jLidrMvW3OrO1eX3+PvZ3+u7xtuKnMJ4jLhlfa5SbaS09N/TAAAAAWJLR0QPGLoA2QAAAAd0SU1FB+QEHAwiFW075nwAAACpSURBVEjH7dfJDsIwDEXRpJiWsS4tY5jh//+RRLRZIFDqBxsk32WiI2+8SIwxNhNnjU/OQtC850zM+ZEK2wY0zPNiNJ5MSQBn85JjAkgVMwIXzBCsSxA2jMHlCoRrBuEmim2zo1BPGJ17vekJ9xkIDwp/AKktwu4gBR2/74jCEwrPKHQovKDwisIbCu/oAtQp2PUHS65QocIvoMWgTTzmP8LwDbBy6Oc9AFlgOhKJfs6CAAAAAElFTkSuQmCC"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "http://google.com",
+    className: "emailSignUp__content_socials_link"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    xlink: "http://www.w3.org/1999/xlink",
+    width: "28px",
+    height: "28px"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("image", {
+    x: "0px",
+    y: "0px",
+    width: "28px",
+    height: "28px",
+    href: "data:img/png;base64,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"
+  })))));
+}
+
+/***/ }),
+
+/***/ "./src/app/components/LogIn-SignUp-Pages/SignUp/EmailSignUp.scss":
+/*!***********************************************************************!*\
+  !*** ./src/app/components/LogIn-SignUp-Pages/SignUp/EmailSignUp.scss ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./src/app/components/LogIn-SignUp-Pages/SignUp/SignUp.jsx":
+/*!*****************************************************************!*\
+  !*** ./src/app/components/LogIn-SignUp-Pages/SignUp/SignUp.jsx ***!
+  \*****************************************************************/
+/*! exports provided: SignUp */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SignUp", function() { return SignUp; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _SignUp_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SignUp.scss */ "./src/app/components/LogIn-SignUp-Pages/SignUp/SignUp.scss");
+/* harmony import */ var _SignUp_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_SignUp_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _EmailSignUp_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./EmailSignUp.jsx */ "./src/app/components/LogIn-SignUp-Pages/SignUp/EmailSignUp.jsx");
+/* harmony import */ var _SocialsSignUp_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SocialsSignUp.jsx */ "./src/app/components/LogIn-SignUp-Pages/SignUp/SocialsSignUp.jsx");
+/* harmony import */ var _constants_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../constants.jsx */ "./src/app/components/LogIn-SignUp-Pages/constants.jsx");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+function SignUp(_ref) {
+  var changeSignUp = _ref.changeSignUp;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      showEmailSignUp = _useState2[0],
+      setShowEmailSignUp = _useState2[1];
+
+  var signUpWithEmail = function signUpWithEmail() {
+    setShowEmailSignUp(true);
+  };
+
+  var component;
+
+  if (showEmailSignUp) {
+    component = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_EmailSignUp_jsx__WEBPACK_IMPORTED_MODULE_2__["EmailSignUp"], null);
+  } else {
+    component = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SocialsSignUp_jsx__WEBPACK_IMPORTED_MODULE_3__["SocialsSignUp"], {
+      onSignUpWithEmailClick: signUpWithEmail
+    });
+  }
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "signUp__container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "signUp__content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "signUp__content_header"
+  }, "Sign Up"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "signUp__content_info-section"
+  }, "Already a member?", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    onClick: function onClick() {
+      return changeSignUp(_constants_jsx__WEBPACK_IMPORTED_MODULE_4__["authenticationPages"].Login);
+    },
+    className: "signUp__content_info-section-link"
+  }, "Log In")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "signUp__content_socialsOrEmail"
+  }, component)));
+}
+
+/***/ }),
+
+/***/ "./src/app/components/LogIn-SignUp-Pages/SignUp/SignUp.scss":
+/*!******************************************************************!*\
+  !*** ./src/app/components/LogIn-SignUp-Pages/SignUp/SignUp.scss ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./src/app/components/LogIn-SignUp-Pages/SignUp/SocialsSignUp.jsx":
+/*!************************************************************************!*\
+  !*** ./src/app/components/LogIn-SignUp-Pages/SignUp/SocialsSignUp.jsx ***!
+  \************************************************************************/
+/*! exports provided: SocialsSignUp */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SocialsSignUp", function() { return SocialsSignUp; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _SocialsSignUp_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SocialsSignUp.scss */ "./src/app/components/LogIn-SignUp-Pages/SignUp/SocialsSignUp.scss");
+/* harmony import */ var _SocialsSignUp_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_SocialsSignUp_scss__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+function SocialsSignUp(_ref) {
+  var onSignUpWithEmailClick = _ref.onSignUpWithEmailClick;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "socialsSignUp__conteiner"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "socialsSignUp__content_socials"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "http://facebook.com",
+    className: "socialsSignUp__content_socials_link"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    xlink: "http://www.w3.org/1999/xlink",
+    width: "317px",
+    height: "48px"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("image", {
+    x: "0px",
+    y: "0px",
+    width: "312px",
+    height: "48px",
+    href: "data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAxYAAAB4CAMAAABYdpQiAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACIlBMVEUpKjs2TH07WZjCzN/z9fn///++yN309vnY3uqercyHmcB0irdziLWAk7uPoMOerMytudTR2efl6fH6+vzN1OVsgrJFYp6pttJcdak7WphFYp1IZJ/p7fJCX5xQaqNbdKmjsc9ed6ru8PaOocQ/XZt5jrnByt7p7fT4+fv+/v/3+Puzv9ff5O5uhLPq7fT6+/2frs18kbpmfa/U2+j9/f7Z3utyh7XL0+TEzeCGmcBzibXn6/Lu8fbM0+RFYZ3S2efw8ve0wNh7j7p/kry4w9rj5/CMnsP29/rc4ezQ1+aqt9K2wdny9PiAlLzt8Pbg5e/N1eXZ3+tRa6O8xtx2i7eWpsje4+7J0ePx8/j8/P3s7/WyvteClr719/qTpMantNF8kLpYcqfh5u/R2Ofm6vKisM7b4Oyls9Dw8/fS2ejc4u29x9xsg7KYqMn5+vzM1OSkss+gr82Clb20v9dkfK2Fl7+To8bHz+J4jLjV3Oni5vDd4u3k6PG3wtnFzuGOn8TDzN/9/v7v8fexvdaLncKdrMyhsM5HZJ/I0eLj6PDr7vSQocTX3eq1wdiaqsquu9XAyt6ruNPa4Oy7xttYcaems9D7/P2ntdG5xNqVpceJm8HT2uivu9VvhrO7xdudrMuMncKXp8icq8twhrSqt9NqgbHz9fg+W5rp7PNGYp2RosWwvNVSbKS/yd1ie6zW3OrP1+agrs2PoMTV2+nP1ua4wtkp9O2UAAAAAWJLR0QF+G/pxwAAAAd0SU1FB+QEHAsYOAgCcvUAAAyOSURBVHja7Zz/QxPnHcfh5CEb+8ZMre2+Zd8ouYDSYQBFkjJFCROjRoFEiAoiFdBYxdZOK4p1dljXzblZ1nVsbdet6750X/+/fZ7n7p67y5NAzBcTjvfrp+ThnrvPXZ7X3ef5ctTV1WsAAAf1dbACgGzq66odAQC1B7QAQAFaAKAALQBQgBYAKEALABSgBQAK0AIABWgBgAK0AEABWgCgAC0AUIAWAChACwAUoAUACtACAAVoAYACtABAAVoAoAAtAFCAFgAoQAsAFKAFAAprabGlgZVEw5Zqnx0ARbGGFqU5YVDt0wOgGPJr0VgOLRqrfX4AFEF+LXzl0MJX7fMDoAjya1EOK5BFgQ0JtABAAVoAoAAtAFCAFgAoQAsAFMqmxec+3/SFL37py19pbvzqVj+0ABua8mjxzLZnnVW3QwuwoSmLFs89764KLcDGphxafC27KrQAG5syaKFWhRZgY1O6Fs+qVaEF2NiUrMVzOapCC7CxKVWLZ57PURVagI1NqVpsy1UVWoCNTalafD1XVWgBNjYlavENZ41vfiuwTQAtwMamRC2+7ajwne/m2KDa5wdAEZSoxffs7b+f8y3Xap+f1vJCa5AxPdT6QotV1MZYe3WD2rGTdbzoKlkzJtrcTVblJ6P403+xg+3cUYXL9fQpUYsf2Ntvy7lBlU+vc1dYhqJ3dRuFtaRFZ8/u9WOCFk+bErVwDETtqUEteve6gunbI0prSIvtDSyyfkzQ4mlTPi2259ygqicXfYki6P/hvqgW3T/QT58PBHhxDWnRzgrVIlK2g0OL9fG0FgcHGYsFzC+BIZ2Ff1TVeFSgRW3iaS0OMTZ8WH7rjTPWVdV4VKBFbeJpLSKMHYnaX4/qoWOJqgakAC1qE09rcZx62SfUYrtdREdGg0z39XRT+xTJPv3wEa17LKmz1MnxRFa9ibTd16V9iBbSxhvsqVE/0xt6Wtybn07Jo5OfyTPi0+QUY8fNvoXsSUfMmFrO+nTmnz4XzTpwPi0S52bSOmOp/jH70InxvX5GO3lZRt8ydj5M4c1OOE+/aY5CTo512/VengrSruLzF+z9GzUHZ0bMgGwtDqWYPhPQPIuntbiYYfqlhFIstbhwTDeiDL7i0OJy2oy99Yq7Xj4tqI0IOhZc7flEn7X51Wk5ePSqjwVH8mix0GF81UcvuA+cR4vX+uRlTg2Yh74s/8u8GX3iWsrapicgT7/RLMyMR7P3JYsCPVZN/cDrokRqwa34sYet8LYWkzMUQf9Ab1axpUUgxlvB9RvDOsv4pBZvZFg4HtvKm8QB9y+fR4vpDhZujfWRYeGbru27GFsUH26FaGe3xcfmJTZ91dTiak/Mx9idWOxNsZ+OMN+POPBL7udFbi3ukgF68kZM/EeJzE9E2b0Mlfna+SmxVn7egRn+OGmNXed/mLEG4uhQqa3OkHk9NtguivSxqLw6YaMmS97VNFsLbsWQl60oUou3JPb2dtlbtaKFOW+h+2Jt+xyllha7dRb+Kf91R/jgraUF09t5atE5p0wP5NGCsWV+M226z1jobef2hgLEAn8oGb2cWaFKzgFapj/gT4nXlxnzveo6cE4tJinABnG8xM8o6ln+aX+SseF36EP05xmjCp2jPsR3m/gFteV5eShxjjLkPcOMpR/yAJu2kgvNfLMxqvlLvlXiEe1+ulOTWnArcjyEvUSRWqy5z1/VjBZap0wE/FO/tu5vphaHh5neY9yW+Y1XamE+I/bdse7wFvm0WO4URS2Uhww5t6cDhG7xD7P8aSQ6F2ZilVuLB0Ywb4fYUrPrwNnTeW28kB5Bj981NxhihoCLZMpdo2he50d0nKO2ssSS+81DmcPWVsjU9wn9xtiqt5WxvXRC79El+W3CKLsZZkvva5YW3Iqx7O6Px6iEFr+rHS2o/zAft9Z/hB4lRJGpBd3D+6yuKjUiSwvZJOeyb9F5tMhcNMtWdatjbRAdZfqCJlr18gxLndbk/TanFtTnEPCeSJvrwDm1+H08JG7hjmj4dotm0Zk7vtE/8JDu7DNLOvca4bQ5nmr0974TYujaqsc7ZI9fEX+Rg9vRY4xNTZrRj1POuOhxKyqixcFa0oIIfNBjqGEn11yLLjPz4NCt19JicI9ZFilQCyNRIvYMMv+HzgokHp8oGQmy24eMR8+iccycWpz8yKxGhWOuA+fUwokZDZ2F5ZbJnHOq5qjxhTZenrTPm0KmAO163MoxcXXsmpQONhw2tFilG8cWr1tRES3+WGNacBIjD3i3QSQUhhb85z9k/dlqp/TDyxt+oVocdezE3WIPDooh2uP0pKCWR22RjikeGjm1kG21PfvAa85bJJoG2jNGNBR9w2Hn3z5uFV16k53GMdSQqdU7HnMkxJy4OnYKSdFz4Wn/j3lSKp9SnqUSWlyqQS00oy87eFCztHA1YocWcsKqUC3kRkr2M7nM8xHKpZJnPjrJWyzdnEX7W3tNVMFatMzfGLb+sSmPxgrKVdGFuVXEuUFbVr0ID8WtuHnmvOfF9CXqWlT7t6w0ldDiT7WphehFHteeohZ8PjGinUmy0Sjdg+k5sWpkVeXRorvLnHVhKd/T0yI10KNbw8HepQJa/JnViBYLab/M+znRI0aDMJogTzByJVHFa0E70d901aDkY/rq6RSXkfoZEXpuiBGdsmjBh4yYnr5+tq0pYUZzOTuJUtI6LStkeogtNatJVJeaRPHOB12djnFtxyeMfeLxNSAV0OIvtaIF/dqhTx3fKadxaMG7o7LLTb3lJ9Pitq2FXHZFO8nq8VLjCt2KiFLKn5YnkuaMRDm0GGKsY94cc87V5e4K9v+V7+podkVnyEYNV5ebH+x2Vpd7wRhjM6/OvYzn06gKaPG3WtHCta5csycEzCZIGU3cmgBf1QvQghqMNXpL932phRzHpJ1kr6SLMH1lWowxUWXfaoqnU1pZtOAPO1k2qw7Q9sZ5sGRvX9ZSLVfIfxcVXQO0dAn4sIBzgJbPHC5PyqsTpc5j5l41f9mKUwEt/lErWkQfUJbxWaf19cp9ZnigTufxaa31teCJhbks417GMZ13yZ4TXMwKgfZ3ZNC47c6y1B2mr4riMmhh3tTd0Tim81ZEYkR3BjmdFzjgT+/KHfKi3c55bsavEl0deU+5GTYCt65O731zaYln8fSaKL6mgXU8uEg/5dWLfIA2zKezXIs/riU0YxFEAVqIvIUvB4w+TDOHFvo/O+nTp6SWmEV2wu/ZuphE4ykdM2e9bS2OMrYr6oyJU5AWPCM01n4EjvNVS2LWgy/+6ON5Y3Shg+n8LXG+hMN4h30/VRDT4nbI7wybIfN6jsUfC+bVcSz+EJ0JeXXefWzb5kk8rYU2MuwKxpydzVoqyNfHdYQL0YKyMKYP32in5GxvSGphr7vLkVnMSheo5yHnJqQWlOTo07GFYvoWC2Gq2xeLtaboxHSWFuvGxVLBpIjQuNcbC/7isRtJ3TFtcz7Mz7ufioL/0qx6hS8VFG8DezqN8rYWWneX/Z8/WMND4wZnLywfNYc4G8bThWihPQwa2+uf3UpLLdoXzWMMj6gBnE5Z0+A8BbPSHqnFXbEOnHrAT65FdMwan9Xn/i3XsMuF5fp/OkVB4L/WZiyzYt0VLll1ZciOheUr6sLyN66IEvvq8KzTy2mUx7WgNGZgeZDfV9Mz5xJmkeM1pHNTfvEa0kTauN2uo4XxhpJ/6lx0wqGFNjKdYqmTbbmWWp9JyrGgiL3syf6HOK9RVT4VXsx03qmZQUoDz599T4wbmb2eQBt/DSk4ekpuNtFDDwfmly8YiQFaHnI4/j87ZOs1pEed9gGs15CsfTmuTnNYdlC8iOe1KIyRYNaIf6FU/7+IgAqwibVoDsWvWcuQ3l9irR8XsxNo4Uk2sRYf+o0lUhofu8x6VaJgoIUn2cRa8EmsI2LssrtdZ8EPitoJtPAkm1gLMcQZjsdi/GWM8O7i9gEtPMlm1iK6krHClKOSTwq08CSbWQvKnq7FU86xyycHWniSza0FADmBFgAoQAsAFKAFAArQAgAFaAGAArQAQAFaAKAALQBQgBYAKEALABSgBQAK+bVoKIcWDdU+PwCKIL8WW8qhxZZqnx8ARZBfi4KyqPW0qPbpAVAMa2ihNfpK08LXWO2zA6Ao6krfBQBeA1oAoAAtAFCAFgAoQAsAFKAFAArQAgAFaAGAArQAQAFaAKAALQBQgBYAKEALABSgBQAK0AIABWgBgAK0AEABWgCgAC0AUIAWAChACwAUoAUACtACAIW6+mpHAECtUV8HLwBwU1/3f6Zln8MNOHOSAAAAAElFTkSuQmCC"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "http://google.com",
+    className: "socialsSignUp__content_socials_link"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    xlink: "http://www.w3.org/1999/xlink",
+    width: "316px",
+    height: "48px"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("image", {
+    x: "0px",
+    y: "0px",
+    width: "312px",
+    height: "48px",
+    href: "data:img/png;base64,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"
+  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "socialsSignUp__content_button-cover"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    onClick: onSignUpWithEmailClick,
+    className: "socialsSignUp__content_emailSignUp-btn"
+  }, "Sign up with Email")));
+}
+
+/***/ }),
+
+/***/ "./src/app/components/LogIn-SignUp-Pages/SignUp/SocialsSignUp.scss":
+/*!*************************************************************************!*\
+  !*** ./src/app/components/LogIn-SignUp-Pages/SignUp/SocialsSignUp.scss ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./src/app/components/LogIn-SignUp-Pages/constants.jsx":
+/*!*************************************************************!*\
+  !*** ./src/app/components/LogIn-SignUp-Pages/constants.jsx ***!
+  \*************************************************************/
+/*! exports provided: authenticationPages */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "authenticationPages", function() { return authenticationPages; });
+var authenticationPages = {
+  Login: "Login",
+  SignUp: "SignUp",
+  ForgotPassword: "ForgotPassword"
+};
 
 /***/ }),
 
@@ -34570,10 +35132,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _Payment_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Payment.scss */ "./src/app/components/Plans/Payment/Payment.scss");
 /* harmony import */ var _Payment_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Payment_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _LogIn_SignUp_Pages_constants_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../LogIn-SignUp-Pages/constants.jsx */ "./src/app/components/LogIn-SignUp-Pages/constants.jsx");
 
 
 
-function Payment() {
+
+function Payment(_ref) {
+  var openLoginWindow = _ref.openLoginWindow;
   var location = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useLocation"])();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "payment__container"
@@ -34595,11 +35160,15 @@ function Payment() {
     className: "payment__signUp-container_description"
   }, "To purchase this plan and use its benefits in the future, log in to your account or sign up."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "payment__signUp-container_buttons"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/log-in",
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    onClick: function onClick() {
+      return openLoginWindow(_LogIn_SignUp_Pages_constants_jsx__WEBPACK_IMPORTED_MODULE_3__["authenticationPages"].SignUp);
+    },
     className: "payment__signUp-container_btn payment-signUp-btn"
-  }, "Sign Up"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/log-in",
+  }, "Sign Up"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    onClick: function onClick() {
+      return openLoginWindow(_LogIn_SignUp_Pages_constants_jsx__WEBPACK_IMPORTED_MODULE_3__["authenticationPages"].Login);
+    },
     className: "payment__signUp-container_btn payment-logIn-btn"
   }, "Log In")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "payment__signUp-container_header payment-second-header"
@@ -35295,8 +35864,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Book_Online_Book_Online_Detailed_BookOnlineDetailed_jsx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/Book-Online/Book-Online-Detailed/BookOnlineDetailed.jsx */ "./src/app/components/Book-Online/Book-Online-Detailed/BookOnlineDetailed.jsx");
 /* harmony import */ var _components_Plans_Plans_jsx__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/Plans/Plans.jsx */ "./src/app/components/Plans/Plans.jsx");
 /* harmony import */ var _components_Plans_Payment_Payment_jsx__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/Plans/Payment/Payment.jsx */ "./src/app/components/Plans/Payment/Payment.jsx");
-/* harmony import */ var _components_LogIn_Page_LogIn_jsx__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/LogIn-Page/LogIn.jsx */ "./src/app/components/LogIn-Page/LogIn.jsx");
-/* harmony import */ var _components_PopUp_PopUp_jsx__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/PopUp/PopUp.jsx */ "./src/app/components/PopUp/PopUp.jsx");
+/* harmony import */ var _components_PopUp_PopUp_jsx__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/PopUp/PopUp.jsx */ "./src/app/components/PopUp/PopUp.jsx");
+/* harmony import */ var _components_LogIn_SignUp_Pages_constants_jsx__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/LogIn-SignUp-Pages/constants.jsx */ "./src/app/components/LogIn-SignUp-Pages/constants.jsx");
+/* harmony import */ var _components_LogIn_SignUp_Pages_LoginModalWindow_jsx__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/LogIn-SignUp-Pages/LoginModalWindow.jsx */ "./src/app/components/LogIn-SignUp-Pages/LoginModalWindow.jsx");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -35320,6 +35890,7 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 
 
 
@@ -35415,15 +35986,22 @@ var App = /*#__PURE__*/function (_React$Component) {
     _defineProperty(_assertThisInitialized(_this), "togglePopUpState", function () {
       _this.setState(function (prevState) {
         return {
-          showPopUp: !prevState.showPopUp
+          showErrorMessage: !prevState.showErrorMessage
         };
+      });
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "changeAutenticationPage", function (selectedPage) {
+      _this.setState({
+        logInPage: selectedPage
       });
     });
 
     _this.state = {
       sectionInFocus: 0,
       distanceFromTop: null,
-      showPopUp: false
+      showErrorMessage: false,
+      logInPage: null
     };
     return _this;
   }
@@ -35435,7 +36013,8 @@ var App = /*#__PURE__*/function (_React$Component) {
         className: "page-container",
         id: "mainPage"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header_Header_jsx__WEBPACK_IMPORTED_MODULE_3__["Header"], {
-        sectionInFocus: this.state.sectionInFocus
+        sectionInFocus: this.state.sectionInFocus,
+        openLoginWindow: this.changeAutenticationPage
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         exact: true,
         path: "/"
@@ -35451,11 +36030,14 @@ var App = /*#__PURE__*/function (_React$Component) {
         path: "/plans"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Plans_Plans_jsx__WEBPACK_IMPORTED_MODULE_16__["Plans"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         path: "/payment/:planId"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Plans_Payment_Payment_jsx__WEBPACK_IMPORTED_MODULE_17__["Payment"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
-        path: "/log-in"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LogIn_Page_LogIn_jsx__WEBPACK_IMPORTED_MODULE_18__["LogIn"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_PopUp_PopUp_jsx__WEBPACK_IMPORTED_MODULE_19__["PopUp"], {
-        show: this.state.showPopUp,
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Plans_Payment_Payment_jsx__WEBPACK_IMPORTED_MODULE_17__["Payment"], {
+        openLoginWindow: this.changeAutenticationPage
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_PopUp_PopUp_jsx__WEBPACK_IMPORTED_MODULE_18__["PopUp"], {
+        show: this.state.showErrorMessage,
         closePopUp: this.togglePopUpState
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LogIn_SignUp_Pages_LoginModalWindow_jsx__WEBPACK_IMPORTED_MODULE_20__["LoginModalWindow"], {
+        selectedPage: this.state.logInPage,
+        changeLoginWindow: this.changeAutenticationPage
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer_Footer_jsx__WEBPACK_IMPORTED_MODULE_13__["Footer"], null)));
     }
   }]);

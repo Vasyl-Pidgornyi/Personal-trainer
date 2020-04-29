@@ -1,0 +1,37 @@
+@import "../../../../sass/variables.scss";
+@import "../../../../sass/mixin.scss";
+
+.socialsSignUp__content {
+  &_socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    border-bottom: 1px solid $main-white-color;
+    padding-bottom: 15px;
+
+    &_link {
+      margin-bottom: 15px;
+    }
+  }
+
+  &_button-cover {
+    margin-top: 50px;
+    width: 320px;
+    height: 48px;
+  }
+
+  &_emailSignUp-btn {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(189, 189, 189, 1);
+    text-align: center;
+    color: $main-white-color;
+    font-size: 0.9rem;
+    padding: 15px 110px;
+  }
+
+  &_emailSignUp-btn:hover {
+    border: 1px solid $main-white-color;
+  }
+}

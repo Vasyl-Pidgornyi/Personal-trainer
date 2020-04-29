@@ -46,10 +46,12 @@
   color: #fe6148;
   padding-left: 15px;
 }
-.page-header__logIn_link {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.page-header__logIn_button {
+  width: 110px;
+  height: 55px;
+  border: none;
+  background-color: transparent;
+  outline: none;
 }
 .selected {
   color: #fff;
@@ -2174,72 +2176,6 @@
   font-weight: 800;
   letter-spacing: 1px;
 }
-.logIn__container {
-  width: 100%;
-  height: 100vh;
-  background-color: #252128;
-  padding-top: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  z-index: 15;
-}
-.logIn__container_close-button {
-  position: absolute;
-  top: 40px;
-  right: 50px;
-  background-color: transparent;
-  border: none;
-  color: #fff;
-  font-size: 30px;
-  transform: scaleX(1.2);
-  margin-right: 20px;
-  outline: none;
-}
-
-.logIn__content {
-  text-align: center;
-  color: #fff;
-}
-.logIn__content_header {
-  font-size: 2.7rem;
-}
-.logIn__content_info-section {
-  font-size: 1rem;
-  margin-top: 20px;
-}
-.logIn__content_info-section-link {
-  color: #fe6148;
-}
-.logIn__content_socials {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
-  border-bottom: 1px solid #fff;
-  padding-bottom: 15px;
-}
-.logIn__content_socials_link {
-  margin-bottom: 15px;
-}
-.logIn__content_button-cover {
-  margin-top: 50px;
-  width: 320px;
-  height: 48px;
-}
-.logIn__content_logIn-btn {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #bdbdbd;
-  text-align: center;
-  color: #fff;
-  font-size: 0.9rem;
-  padding: 15px 114px;
-}
-.logIn__content_logIn-btn:hover {
-  border: 1px solid #fff;
-}
 .popUp__container {
   width: 100%;
   height: 100vh;
@@ -2295,6 +2231,406 @@
 }
 .popUp__content_gotIt-button:hover {
   background-color: grey;
+}
+.logIn__container {
+  width: 100%;
+  height: 100vh;
+  background-color: #252128;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 15;
+}
+
+.logIn__content {
+  text-align: center;
+  color: #fff;
+}
+.logIn__content_header {
+  font-size: 2.7rem;
+}
+.logIn__content_info-section {
+  font-size: 1rem;
+  margin-top: 20px;
+}
+.logIn__content_info-section-link {
+  color: #fe6148;
+}
+.socialsLogIn__content_socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 15px;
+}
+.socialsLogIn__content_socials_link {
+  margin-bottom: 15px;
+}
+.socialsLogIn__content_button-cover {
+  margin-top: 50px;
+  width: 320px;
+  height: 48px;
+}
+.socialsLogIn__content_emailLogIn-btn {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #bdbdbd;
+  background-color: transparent;
+  color: #fff;
+  font-size: 0.9rem;
+}
+.socialsLogIn__content_emailLogIn-btn:hover {
+  border: 1px solid #fff;
+}
+.emailLogIn__content_input-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 65px;
+  width: 320px;
+}
+.emailLogIn__content_input {
+  width: 100%;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 5px;
+  background-color: transparent;
+  outline: none;
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 0.9rem;
+}
+.emailLogIn__content_input:focus {
+  border-bottom: 1px solid #fe6148;
+}
+.emailLogIn__content_forgotPasswod-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.emailLogIn__content_forgotPasswod-btn {
+  color: #e8e8e8;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  margin-top: 25px;
+  background-color: transparent;
+  border: none;
+}
+.emailLogIn__content_forgotPasswod-btn:hover {
+  color: #b8b8b8;
+}
+.emailLogIn__content_button-cover {
+  margin-top: 25px;
+  width: 100%;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.emailLogIn__content_logIn-btn {
+  width: 320px;
+  height: 48px;
+  border: none;
+  background-color: #fe6148;
+  color: #fff;
+  font-size: 0.9rem;
+}
+.emailLogIn__content_logIn-btn:hover {
+  background-color: #e77353;
+}
+.emailLogIn__content_socials {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.emailLogIn__content_socials_link {
+  margin: 0 15px 0 15px;
+}
+
+.emailLogIn__content_input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #e8e8e8;
+  opacity: 1;
+}
+
+.emailLogIn__content_input::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #e8e8e8;
+}
+
+.emailLogIn__content_input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #e8e8e8;
+  opacity: 1;
+}
+
+.emailLogIn__content_input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #e8e8e8;
+  opacity: 1;
+}
+
+.emailLogIn__content_input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #e8e8e8;
+}
+.signUp__container {
+  width: 100%;
+  height: 100vh;
+  background-color: #252128;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 15;
+}
+
+.signUp__content {
+  text-align: center;
+  color: #fff;
+}
+.signUp__content_header {
+  font-size: 2.7rem;
+}
+.signUp__content_info-section {
+  font-size: 1rem;
+  margin-top: 20px;
+}
+.signUp__content_info-section-link {
+  color: #fe6148;
+}
+.emailSignUp__content_input-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 65px;
+  width: 320px;
+}
+.emailSignUp__content_input {
+  width: 100%;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 5px;
+  background-color: transparent;
+  outline: none;
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 0.9rem;
+}
+.emailSignUp__content_input:focus {
+  border-bottom: 1px solid #fe6148;
+}
+.emailSignUp__content_forgotPasswod-link {
+  width: 320px;
+  text-align: left;
+  color: #e8e8e8;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  margin-top: 25px;
+}
+.emailSignUp__content_forgotPasswod-link:hover {
+  color: #b8b8b8;
+}
+.emailSignUp__content_button-cover {
+  margin-top: 25px;
+  width: 100%;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.emailSignUp__content_emailSignUp-btn {
+  width: 320px;
+  height: 48px;
+  border: none;
+  background-color: #fe6148;
+  color: #fff;
+  font-size: 0.9rem;
+}
+.emailSignUp__content_emailSignUp-btn:hover {
+  background-color: #e77353;
+}
+.emailSignUp__content_socials {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.emailSignUp__content_socials_link {
+  margin: 0 15px 0 15px;
+}
+
+.emailSignUp__content_input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #e8e8e8;
+  opacity: 1;
+}
+
+.emailSignUp__content_input::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #e8e8e8;
+}
+
+.emailSignUp__content_input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #e8e8e8;
+  opacity: 1;
+}
+
+.emailSignUp__content_input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #e8e8e8;
+  opacity: 1;
+}
+
+.emailSignUp__content_input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #e8e8e8;
+}
+.socialsSignUp__content_socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 15px;
+}
+.socialsSignUp__content_socials_link {
+  margin-bottom: 15px;
+}
+.socialsSignUp__content_button-cover {
+  margin-top: 50px;
+  width: 320px;
+  height: 48px;
+}
+.socialsSignUp__content_emailSignUp-btn {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #bdbdbd;
+  text-align: center;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 15px 110px;
+}
+.socialsSignUp__content_emailSignUp-btn:hover {
+  border: 1px solid #fff;
+}
+.forgotPassword__container {
+  width: 100%;
+  height: 100vh;
+  background-color: #252128;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 15;
+}
+.forgotPassword__container_close-button {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 30px;
+  transform: scaleX(1.2);
+  margin-right: 20px;
+  outline: none;
+}
+
+.forgotPassword__content {
+  text-align: center;
+  color: #fff;
+}
+.forgotPassword__content_header {
+  font-size: 2.7rem;
+}
+.forgotPassword__content_description {
+  font-size: 1rem;
+  margin-top: 20px;
+}
+.forgotPassword__content_input-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 65px;
+  width: 320px;
+}
+.forgotPassword__content_input {
+  width: 100%;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 5px;
+  background-color: transparent;
+  outline: none;
+  color: #fff;
+  font-size: 0.9rem;
+}
+.forgotPassword__content_input:focus {
+  border-bottom: 1px solid #fe6148;
+}
+.forgotPassword__content_button-cover {
+  margin-top: 50px;
+  width: 100%;
+}
+.forgotPassword__content_logInAndSignUp-btn {
+  width: 320px;
+  height: 48px;
+  border: none;
+  background-color: #fe6148;
+  color: #fff;
+  font-size: 0.9rem;
+}
+.forgotPassword__content_logInAndSignUp-btn:hover {
+  background-color: #e77353;
+}
+
+.forgotPassword__content_input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #e8e8e8;
+  opacity: 1;
+}
+
+.forgotPassword__content_input::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #e8e8e8;
+}
+
+.forgotPassword__content_input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #e8e8e8;
+  opacity: 1;
+}
+
+.forgotPassword__content_input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #e8e8e8;
+  opacity: 1;
+}
+
+.forgotPassword__content_input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #e8e8e8;
+}
+.loginModalWindow__container {
+  position: fixed;
+  z-index: 15;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+.loginModalWindow__container_close-button {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  z-index: 16;
+  height: 20px;
+  width: 20px;
+  color: white;
+  border: none;
+  background-color: transparent;
+  outline: none;
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document

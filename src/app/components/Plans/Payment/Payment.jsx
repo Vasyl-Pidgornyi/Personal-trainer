@@ -1,8 +1,9 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Payment.scss";
+import { authenticationPages } from "../../LogIn-SignUp-Pages/constants.jsx";
 
-export function Payment() {
+export function Payment({ openLoginWindow }) {
   let location = useLocation();
   return (
     <div className="payment__container">
@@ -19,18 +20,18 @@ export function Payment() {
               to your account or sign up.
             </p>
             <div className="payment__signUp-container_buttons">
-              <Link
-                to="/log-in"
+              <button
+                onClick={() => openLoginWindow(authenticationPages.SignUp)}
                 className="payment__signUp-container_btn payment-signUp-btn"
               >
                 Sign Up
-              </Link>
-              <Link
-                to="/log-in"
+              </button>
+              <button
+                onClick={() => openLoginWindow(authenticationPages.Login)}
                 className="payment__signUp-container_btn payment-logIn-btn"
               >
                 Log In
-              </Link>
+              </button>
             </div>
             <h1 className="payment__signUp-container_header payment-second-header">
               2 Payment

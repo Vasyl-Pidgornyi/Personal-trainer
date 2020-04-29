@@ -16,8 +16,9 @@ import { BookOnline } from "./components/Book-Online/BookOnline.jsx";
 import { BookOnlineDetailed } from "./components/Book-Online/Book-Online-Detailed/BookOnlineDetailed.jsx";
 import { Plans } from "./components/Plans/Plans.jsx";
 import { Payment } from "./components/Plans/Payment/Payment.jsx";
-import { LogIn } from "./components/LogIn-Page/LogIn.jsx";
 import { PopUp } from "./components/PopUp/PopUp.jsx";
+import { authenticationPages } from "./components/LogIn-SignUp-Pages/constants.jsx";
+import { LoginModalWindow } from "./components/LogIn-SignUp-Pages/LoginModalWindow.jsx";
 
 class App extends React.Component {
   constructor() {
@@ -26,7 +27,8 @@ class App extends React.Component {
     this.state = {
       sectionInFocus: 0,
       distanceFromTop: null,
-      showPopUp: false
+      showErrorMessage: false,
+      logInPage: null
     };
   }
 
@@ -66,15 +68,22 @@ class App extends React.Component {
 
   togglePopUpState = () => {
     this.setState(prevState => ({
-      showPopUp: !prevState.showPopUp
+      showErrorMessage: !prevState.showErrorMessage
     }));
+  };
+
+  changeAutenticationPage = selectedPage => {
+    this.setState({ logInPage: selectedPage });
   };
 
   render() {
     return (
       <Router>
         <div className="page-container" id="mainPage">
-          <Header sectionInFocus={this.state.sectionInFocus} />
+          <Header
+            sectionInFocus={this.state.sectionInFocus}
+            openLoginWindow={this.changeAutenticationPage}
+          />
           <main>
             <Switch>
               <Route exact path="/">
@@ -100,15 +109,16 @@ class App extends React.Component {
                 <Plans />
               </Route>
               <Route path="/payment/:planId">
-                <Payment />
-              </Route>
-              <Route path="/log-in">
-                <LogIn />
+                <Payment openLoginWindow={this.changeAutenticationPage} />
               </Route>
             </Switch>
             <PopUp
-              show={this.state.showPopUp}
+              show={this.state.showErrorMessage}
               closePopUp={this.togglePopUpState}
+            />
+            <LoginModalWindow
+              selectedPage={this.state.logInPage}
+              changeLoginWindow={this.changeAutenticationPage}
             />
           </main>
           <Footer />

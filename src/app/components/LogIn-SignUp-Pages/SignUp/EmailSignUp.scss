@@ -1,0 +1,95 @@
+@import "../../../../sass/variables.scss";
+@import "../../../../sass/mixin.scss";
+
+.emailSignUp__content {
+  &_input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 65px;
+    width: 320px;
+  }
+
+  &_input {
+    width: 100%;
+    border: 1px solid transparent;
+    border-bottom: 1px solid $main-dark-white-color;
+    padding-bottom: 5px;
+    background-color: transparent;
+    outline: none;
+    color: $main-white-color;
+    margin-bottom: 40px;
+    font-size: 0.9rem;
+  }
+
+  &_input:focus {
+    border-bottom: 1px solid $main-orange-color;
+  }
+
+  &_forgotPasswod-link {
+    width: 320px;
+    text-align: left;
+    color: $main-dark-white-color;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    margin-top: 25px;
+  }
+
+  &_forgotPasswod-link:hover {
+    color: rgb(184, 184, 184);
+  }
+
+  &_button-cover {
+    margin-top: 25px;
+    width: 100%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid $main-dark-white-color;
+  }
+
+  &_emailSignUp-btn {
+    width: 320px;
+    height: 48px;
+    border: none;
+    background-color: $main-orange-color;
+    color: $main-white-color;
+    font-size: 0.9rem;
+  }
+
+  &_emailSignUp-btn:hover {
+    background-color: $button-hover-color;
+  }
+
+  &_socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    &_link {
+      margin: 0 15px 0 15px;
+    }
+  }
+}
+
+.emailSignUp__content_input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: $main-dark-white-color;
+  opacity: 1;
+}
+.emailSignUp__content_input::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: $main-dark-white-color;
+}
+.emailSignUp__content_input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: $main-dark-white-color;
+  opacity: 1;
+}
+.emailSignUp__content_input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: $main-dark-white-color;
+  opacity: 1;
+}
+.emailSignUp__content_input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $main-dark-white-color;
+}
