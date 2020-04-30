@@ -23,7 +23,7 @@ export function SignUp({ changeSignUp }) {
           Already a member?{" "}
           <button
             onClick={() => changeSignUp(authenticationPages.Login)}
-            className="signUp__content_info-section-link"
+            className="signUp__content_info-section-btn"
           >
             Log In
           </button>

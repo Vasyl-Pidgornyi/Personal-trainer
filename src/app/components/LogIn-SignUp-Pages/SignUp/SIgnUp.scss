@@ -25,7 +25,11 @@
     font-size: 1rem;
     margin-top: 20px;
   }
-  &_info-section-link {
+  &_info-section-btn {
     color: $main-orange-color;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
   }
 }

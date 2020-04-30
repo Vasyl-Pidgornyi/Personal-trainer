@@ -42,6 +42,7 @@
     margin-top: 25px;
     background-color: transparent;
     border: none;
+    cursor: pointer;
   }
 
   &_forgotPasswod-btn:hover {
@@ -62,6 +63,7 @@
     background-color: $main-orange-color;
     color: $main-white-color;
     font-size: 0.9rem;
+    cursor: pointer;
   }
 
   &_logIn-btn:hover {

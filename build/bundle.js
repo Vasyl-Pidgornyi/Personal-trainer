@@ -34592,7 +34592,7 @@ function LogIn(_ref) {
     onClick: function onClick() {
       return changeLogin(_constants_jsx__WEBPACK_IMPORTED_MODULE_5__["authenticationPages"].SignUp);
     },
-    className: "logIn__content_info-section-link"
+    className: "logIn__content_info-section-btn"
   }, "Sign Up")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "logIn__content_socialsOrEmail"
   }, component)));
@@ -34911,7 +34911,7 @@ function SignUp(_ref) {
     onClick: function onClick() {
       return changeSignUp(_constants_jsx__WEBPACK_IMPORTED_MODULE_4__["authenticationPages"].Login);
     },
-    className: "signUp__content_info-section-link"
+    className: "signUp__content_info-section-btn"
   }, "Log In")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "signUp__content_socialsOrEmail"
   }, component)));

@@ -24,7 +24,7 @@ export function LogIn({ changeLogin }) {
           New to this site?{" "}
           <button
             onClick={() => changeLogin(authenticationPages.SignUp)}
-            className="logIn__content_info-section-link"
+            className="logIn__content_info-section-btn"
           >
             Sign Up
           </button>
