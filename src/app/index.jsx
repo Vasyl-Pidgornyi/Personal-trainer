@@ -28,7 +28,7 @@ class App extends React.Component {
       sectionInFocus: 0,
       distanceFromTop: null,
       showErrorMessage: false,
-      logInPage: null
+      logInPage: null,
     };
   }
 
@@ -67,19 +67,24 @@ class App extends React.Component {
   };
 
   togglePopUpState = () => {
-    this.setState(prevState => ({
-      showErrorMessage: !prevState.showErrorMessage
+    this.setState((prevState) => ({
+      showErrorMessage: !prevState.showErrorMessage,
     }));
   };
 
-  changeAutenticationPage = selectedPage => {
+  changeAutenticationPage = (selectedPage) => {
     this.setState({ logInPage: selectedPage });
   };
 
   render() {
     return (
       <Router>
-        <div className="page-container" id="mainPage">
+        <div
+          className={`page-container ${
+            this.state.logInPage != null ? "hideScrollBar" : ""
+          }`}
+          id="mainPage"
+        >
           <Header
             sectionInFocus={this.state.sectionInFocus}
             openLoginWindow={this.changeAutenticationPage}

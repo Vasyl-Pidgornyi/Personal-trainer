@@ -1,27 +1,65 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import "./EmailSignUp.scss";
 
 export function EmailSignUp() {
+  var [email, setEmail] = useState("");
+  var [password, setPassword] = useState("");
+  var [emailError, setEmailError] = useState(false);
+  var [passwordError, setPasswordError] = useState(false);
+
+  const signUpSubmitHandler = (event) => {
+    event.preventDefault();
+
+    if (!String(email)) {
+      setEmailError(true);
+    } else if (!String(password)) {
+      setPasswordError(true);
+    } else {
+      console.log([email, password]);
+      setEmail("");
+      setPassword("");
+      setEmailError(false);
+      setPasswordError(false);
+    }
+  };
+
+  const emailChangeHandler = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const passwordChangeHandler = (event) => {
+    setPassword(event.target.value);
+  };
   return (
     <div className="emailSignUp__conteiner">
-      <div className="emailSignUp__content_input-wrapper">
+      <form
+        className="emailSignUp__content_input-wrapper"
+        onSubmit={signUpSubmitHandler}
+      >
         <input
+          onChange={emailChangeHandler}
+          value={email}
           type="email"
           placeholder="Email"
-          className="emailSignUp__content_input"
+          className={`emailSignUp__content_input ${
+            emailError ? "errorSignUpInput" : ""
+          }`}
         />
         <input
+          onChange={passwordChangeHandler}
+          value={password}
           type="password"
           placeholder="Password"
-          className="emailSignUp__content_input"
+          className={`emailSignUp__content_input ${
+            passwordError ? "errorSignUpInput" : ""
+          }`}
         />
-      </div>
-      <div className="emailSignUp__content_button-cover">
-        <button className="emailSignUp__content_emailSignUp-btn">
-          Sign Up
-        </button>
-      </div>
+        <div className="emailSignUp__content_button-cover">
+          <button className="emailSignUp__content_emailSignUp-btn">
+            Sign Up
+          </button>
+        </div>
+      </form>
       <div className="emailSignUp__content_socials">
         <a
           href="http://facebook.com"

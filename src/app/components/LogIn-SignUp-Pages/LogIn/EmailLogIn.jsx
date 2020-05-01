@@ -1,21 +1,59 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import "./EmailLogin.scss";
 import { authenticationPages } from "../constants.jsx";
 
 export function EmailLogIn({ onForgetPasswordClick }) {
+  var [email, setEmail] = useState("");
+  var [password, setPassword] = useState("");
+  var [emailError, setEmailError] = useState(false);
+  var [passwordError, setPasswordError] = useState(false);
+
+  const logInSubmitHandler = (event) => {
+    event.preventDefault();
+
+    if (!String(email)) {
+      setEmailError(true);
+    } else if (!String(password)) {
+      setPasswordError(true);
+    } else {
+      console.log([email, password]);
+      setEmail("");
+      setPassword("");
+      setEmailError(false);
+      setPasswordError(false);
+    }
+  };
+
+  const emailChangeHandler = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const passwordChangeHandler = (event) => {
+    setPassword(event.target.value);
+  };
   return (
     <div className="emailLogIn__container">
-      <div className="emailLogIn__content_input-wrapper">
+      <form
+        className="emailLogIn__content_input-wrapper"
+        onSubmit={logInSubmitHandler}
+      >
         <input
+          onChange={emailChangeHandler}
+          value={email}
           type="email"
           placeholder="Email"
-          className="emailLogIn__content_input"
+          className={`emailLogIn__content_input ${
+            emailError ? "errorLogInInput" : ""
+          }`}
         />
         <input
+          onChange={passwordChangeHandler}
+          value={password}
           type="password"
           placeholder="Password"
-          className="emailLogIn__content_input"
+          className={`emailLogIn__content_input ${
+            passwordError ? "errorLogInInput" : ""
+          }`}
         />
         <div className="emailLogIn__content_forgotPasswod-wrapper">
           <button
@@ -27,10 +65,12 @@ export function EmailLogIn({ onForgetPasswordClick }) {
             Forgot password?
           </button>
         </div>
-      </div>
-      <div className="emailLogIn__content_button-cover">
-        <button className="emailLogIn__content_logIn-btn">Log In</button>
-      </div>
+        <div className="emailLogIn__content_button-cover">
+          <button type="submit" className="emailLogIn__content_logIn-btn">
+            Log In
+          </button>
+        </div>
+      </form>
       <div className="emailLogIn__content_socials">
         <a
           href="http://facebook.com"

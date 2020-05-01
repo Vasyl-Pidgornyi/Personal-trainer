@@ -1,8 +1,56 @@
-import React from "react";
+import React, { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import "./Footer.scss";
 
 export function Footer() {
+  var [name, setName] = useState("");
+  var [email, setEmail] = useState("");
+  var [subject, setSubject] = useState("");
+  var [message, setMessage] = useState("");
+  var [nameError, setNameError] = useState(false);
+  var [emailError, setEmailError] = useState(false);
+  var [subjectError, setSubjectError] = useState(false);
+  var [messageError, setMessageError] = useState(false);
+
+  const messageSubmitHandler = (event) => {
+    event.preventDefault();
+
+    if (!String(name)) {
+      setNameError(true);
+    } else if (!String(email)) {
+      setEmailError(true);
+    } else if (!String(subject)) {
+      setSubjectError(true);
+    } else if (!String(message)) {
+      setMessageError(true);
+    } else {
+      console.log([name, email, subject, message]);
+      setName("");
+      setEmail("");
+      setSubject("");
+      setMessage("");
+      setNameError(false);
+      setEmailError(false);
+      setSubjectError(false);
+      setMessageError(false);
+    }
+  };
+
+  const nameChangeHandler = (event) => {
+    setName(event.target.value);
+  };
+
+  const emailChangeHandler = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const subjectChangeHandler = (event) => {
+    setSubject(event.target.value);
+  };
+
+  const messageChangeHandler = (event) => {
+    setMessage(event.target.value);
+  };
   return (
     <footer className="footer__container" id="contact">
       <div className="footer__content">
@@ -24,35 +72,49 @@ export function Footer() {
             <a href="https://www.instagram.com" className="instagram"></a>
           </div>
         </div>
-        <div className="footer__input-block">
+        <form className="footer__input-block" onSubmit={messageSubmitHandler}>
           <input
+            onChange={nameChangeHandler}
+            value={name}
             type="text"
             placeholder="Name"
-            className="footer__input-block_field"
+            className={`footer__input-block_field ${
+              nameError ? "inputError" : ""
+            }`}
           />
           <input
+            onChange={emailChangeHandler}
+            value={email}
             type="email"
             placeholder="Email"
-            className="footer__input-block_field"
+            className={`footer__input-block_field ${
+              emailError ? "inputError" : ""
+            }`}
           />
           <input
+            onChange={subjectChangeHandler}
+            value={subject}
             type="text"
             placeholder="Subject"
-            className="footer__input-block_field"
+            className={`footer__input-block_field ${
+              subjectError ? "inputError" : ""
+            }`}
           />
           <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="10"
+            onChange={messageChangeHandler}
+            value={message}
             placeholder="Message"
-            className="footer__input-block_field footer-message-field"
+            className={`footer__input-block_field footer-message-field ${
+              messageError ? "inputError" : ""
+            }`}
           ></textarea>
-          <button className="footer__input-block_btn">Submit</button>
+          <button type="submit" className="footer__input-block_btn">
+            Submit
+          </button>
           <div className="footer__copyright">
             <Link
               to="/#home"
-              scroll={el => el.scrollIntoView({ behavior: "smooth" })}
+              scroll={(el) => el.scrollIntoView({ behavior: "smooth" })}
               className="footer__copyright_goHome"
             >
               ^
@@ -61,7 +123,7 @@ export function Footer() {
               ©2023 BY JOEY DIXON. PROUDLY CREATED WITH WIX.COM
             </p>
           </div>
-        </div>
+        </form>
       </div>
     </footer>
   );

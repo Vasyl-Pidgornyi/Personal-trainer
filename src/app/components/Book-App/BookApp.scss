@@ -72,5 +72,39 @@ $input-field-padding: 2px 5px;
     color: $main-dark-color;
     background-color: $main-orange-color;
     border: none;
+    outline: none;
+    cursor: pointer;
   }
+
+  &_button:hover {
+    background-color: $button-hover-color;
+  }
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.input-field-placeHolder-color:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: $main-dark-white-color;
+  opacity: 1;
+}
+.input-field-placeHolder-color::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: $main-dark-white-color;
+}
+.emailLogIn__content_input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: $main-dark-white-color;
+  opacity: 1;
+}
+.input-field-placeHolder-color::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: $main-dark-white-color;
+  opacity: 1;
+}
+.input-field-placeHolder-color:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $main-dark-white-color;
 }

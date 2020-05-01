@@ -1586,6 +1586,43 @@
   color: #252128;
   background-color: #fe6148;
   border: none;
+  outline: none;
+  cursor: pointer;
+}
+.app__input_button:hover {
+  background-color: #e77353;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.input-field-placeHolder-color:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #e8e8e8;
+  opacity: 1;
+}
+
+.input-field-placeHolder-color::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #e8e8e8;
+}
+
+.emailLogIn__content_input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #e8e8e8;
+  opacity: 1;
+}
+
+.input-field-placeHolder-color::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #e8e8e8;
+  opacity: 1;
+}
+
+.input-field-placeHolder-color:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #e8e8e8;
 }
 .footer__container {
   width: 100%;
@@ -1697,6 +1734,7 @@
   color: #000;
   font-size: 1.1rem;
   margin-bottom: 5px;
+  outline: none;
 }
 .footer__input-block_btn {
   width: 142px;
@@ -1707,6 +1745,8 @@
   color: #fe6148;
   font-size: 1.1rem;
   line-height: 20px;
+  cursor: pointer;
+  outline: none;
 }
 .footer__input-block_btn:hover {
   color: black;
@@ -1717,6 +1757,10 @@
   height: 115px;
   padding: 15px 10px 3px 12px;
   resize: none;
+}
+
+.inputError {
+  border: 1px solid red;
 }
 
 .footer__input-block_field:-moz-placeholder {
@@ -2325,6 +2369,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  outline: none;
 }
 .emailLogIn__content_forgotPasswod-btn:hover {
   color: #b8b8b8;
@@ -2343,6 +2388,7 @@
   color: #fff;
   font-size: 0.9rem;
   cursor: pointer;
+  outline: none;
 }
 .emailLogIn__content_logIn-btn:hover {
   background-color: #e77353;
@@ -2354,6 +2400,10 @@
 }
 .emailLogIn__content_socials_link {
   margin: 0 15px 0 15px;
+}
+
+.errorLogInInput {
+  border-bottom: 1px solid red;
 }
 
 .emailLogIn__content_input:-moz-placeholder {
@@ -2459,6 +2509,7 @@
   color: #fff;
   font-size: 0.9rem;
   cursor: pointer;
+  outline: none;
 }
 .emailSignUp__content_emailSignUp-btn:hover {
   background-color: #e77353;
@@ -2470,6 +2521,10 @@
 }
 .emailSignUp__content_socials_link {
   margin: 0 15px 0 15px;
+}
+
+.errorSignUpInput {
+  border-bottom: 1px solid red;
 }
 
 .emailSignUp__content_input:-moz-placeholder {
@@ -2582,20 +2637,22 @@
 .forgotPassword__content_input:focus {
   border-bottom: 1px solid #fe6148;
 }
-.forgotPassword__content_button-cover {
+.forgotPassword__content_forgotPassword-btn {
   margin-top: 50px;
-  width: 100%;
-}
-.forgotPassword__content_logInAndSignUp-btn {
   width: 320px;
   height: 48px;
   border: none;
   background-color: #fe6148;
   color: #fff;
   font-size: 0.9rem;
+  outline: none;
 }
-.forgotPassword__content_logInAndSignUp-btn:hover {
+.forgotPassword__content_forgotPassword-btn:hover {
   background-color: #e77353;
+}
+
+.forgotPasswordError {
+  border-bottom: 1px solid red;
 }
 
 .forgotPassword__content_input:-moz-placeholder {
@@ -3035,500 +3092,14 @@ button {
   height: 100vh;
 }
 
-.grid-container {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-
-.col-1 {
-  width: 8.3333333333%;
-}
-
-.col-offset-1 {
-  margin-left: 8.3333333333%;
-}
-
-.col-2 {
-  width: 16.6666666667%;
-}
-
-.col-offset-2 {
-  margin-left: 16.6666666667%;
-}
-
-.col-3 {
-  width: 25%;
-}
-
-.col-offset-3 {
-  margin-left: 25%;
-}
-
-.col-4 {
-  width: 33.3333333333%;
-}
-
-.col-offset-4 {
-  margin-left: 33.3333333333%;
-}
-
-.col-5 {
-  width: 41.6666666667%;
-}
-
-.col-offset-5 {
-  margin-left: 41.6666666667%;
-}
-
-.col-6 {
-  width: 50%;
-}
-
-.col-offset-6 {
-  margin-left: 50%;
-}
-
-.col-7 {
-  width: 58.3333333333%;
-}
-
-.col-offset-7 {
-  margin-left: 58.3333333333%;
-}
-
-.col-8 {
-  width: 66.6666666667%;
-}
-
-.col-offset-8 {
-  margin-left: 66.6666666667%;
-}
-
-.col-9 {
-  width: 75%;
-}
-
-.col-offset-9 {
-  margin-left: 75%;
-}
-
-.col-10 {
-  width: 83.3333333333%;
-}
-
-.col-offset-10 {
-  margin-left: 83.3333333333%;
-}
-
-.col-11 {
-  width: 91.6666666667%;
-}
-
-.col-offset-11 {
-  margin-left: 91.6666666667%;
-}
-
-.col-12 {
-  width: 100%;
-}
-
-.col-offset-12 {
-  margin-left: 100%;
-}
-
-@media (max-width: 1399px) {
-  .col-lg-1 {
-    width: 8.3333333333%;
-  }
-
-  .col-lg-offset-1 {
-    margin-left: 8.3333333333%;
-  }
-
-  .col-lg-2 {
-    width: 16.6666666667%;
-  }
-
-  .col-lg-offset-2 {
-    margin-left: 16.6666666667%;
-  }
-
-  .col-lg-3 {
-    width: 25%;
-  }
-
-  .col-lg-offset-3 {
-    margin-left: 25%;
-  }
-
-  .col-lg-4 {
-    width: 33.3333333333%;
-  }
-
-  .col-lg-offset-4 {
-    margin-left: 33.3333333333%;
-  }
-
-  .col-lg-5 {
-    width: 41.6666666667%;
-  }
-
-  .col-lg-offset-5 {
-    margin-left: 41.6666666667%;
-  }
-
-  .col-lg-6 {
-    width: 50%;
-  }
-
-  .col-lg-offset-6 {
-    margin-left: 50%;
-  }
-
-  .col-lg-7 {
-    width: 58.3333333333%;
-  }
-
-  .col-lg-offset-7 {
-    margin-left: 58.3333333333%;
-  }
-
-  .col-lg-8 {
-    width: 66.6666666667%;
-  }
-
-  .col-lg-offset-8 {
-    margin-left: 66.6666666667%;
-  }
-
-  .col-lg-9 {
-    width: 75%;
-  }
-
-  .col-lg-offset-9 {
-    margin-left: 75%;
-  }
-
-  .col-lg-10 {
-    width: 83.3333333333%;
-  }
-
-  .col-lg-offset-10 {
-    margin-left: 83.3333333333%;
-  }
-
-  .col-lg-11 {
-    width: 91.6666666667%;
-  }
-
-  .col-lg-offset-11 {
-    margin-left: 91.6666666667%;
-  }
-
-  .col-lg-12 {
-    width: 100%;
-  }
-
-  .col-lg-offset-12 {
-    margin-left: 100%;
-  }
-}
-@media (max-width: 991px) {
-  .col-md-1 {
-    width: 8.3333333333%;
-  }
-
-  .col-md-offset-1 {
-    margin-left: 8.3333333333%;
-  }
-
-  .col-md-2 {
-    width: 16.6666666667%;
-  }
-
-  .col-md-offset-2 {
-    margin-left: 16.6666666667%;
-  }
-
-  .col-md-3 {
-    width: 25%;
-  }
-
-  .col-md-offset-3 {
-    margin-left: 25%;
-  }
-
-  .col-md-4 {
-    width: 33.3333333333%;
-  }
-
-  .col-md-offset-4 {
-    margin-left: 33.3333333333%;
-  }
-
-  .col-md-5 {
-    width: 41.6666666667%;
-  }
-
-  .col-md-offset-5 {
-    margin-left: 41.6666666667%;
-  }
-
-  .col-md-6 {
-    width: 50%;
-  }
-
-  .col-md-offset-6 {
-    margin-left: 50%;
-  }
-
-  .col-md-7 {
-    width: 58.3333333333%;
-  }
-
-  .col-md-offset-7 {
-    margin-left: 58.3333333333%;
-  }
-
-  .col-md-8 {
-    width: 66.6666666667%;
-  }
-
-  .col-md-offset-8 {
-    margin-left: 66.6666666667%;
-  }
-
-  .col-md-9 {
-    width: 75%;
-  }
-
-  .col-md-offset-9 {
-    margin-left: 75%;
-  }
-
-  .col-md-10 {
-    width: 83.3333333333%;
-  }
-
-  .col-md-offset-10 {
-    margin-left: 83.3333333333%;
-  }
-
-  .col-md-11 {
-    width: 91.6666666667%;
-  }
-
-  .col-md-offset-11 {
-    margin-left: 91.6666666667%;
-  }
-
-  .col-md-12 {
-    width: 100%;
-  }
-
-  .col-md-offset-12 {
-    margin-left: 100%;
-  }
-}
-@media (max-width: 767px) {
-  .col-sm-1 {
-    width: 8.3333333333%;
-  }
-
-  .col-sm-offset-1 {
-    margin-left: 8.3333333333%;
-  }
-
-  .col-sm-2 {
-    width: 16.6666666667%;
-  }
-
-  .col-sm-offset-2 {
-    margin-left: 16.6666666667%;
-  }
-
-  .col-sm-3 {
-    width: 25%;
-  }
-
-  .col-sm-offset-3 {
-    margin-left: 25%;
-  }
-
-  .col-sm-4 {
-    width: 33.3333333333%;
-  }
-
-  .col-sm-offset-4 {
-    margin-left: 33.3333333333%;
-  }
-
-  .col-sm-5 {
-    width: 41.6666666667%;
-  }
-
-  .col-sm-offset-5 {
-    margin-left: 41.6666666667%;
-  }
-
-  .col-sm-6 {
-    width: 50%;
-  }
-
-  .col-sm-offset-6 {
-    margin-left: 50%;
-  }
-
-  .col-sm-7 {
-    width: 58.3333333333%;
-  }
-
-  .col-sm-offset-7 {
-    margin-left: 58.3333333333%;
-  }
-
-  .col-sm-8 {
-    width: 66.6666666667%;
-  }
-
-  .col-sm-offset-8 {
-    margin-left: 66.6666666667%;
-  }
-
-  .col-sm-9 {
-    width: 75%;
-  }
-
-  .col-sm-offset-9 {
-    margin-left: 75%;
-  }
-
-  .col-sm-10 {
-    width: 83.3333333333%;
-  }
-
-  .col-sm-offset-10 {
-    margin-left: 83.3333333333%;
-  }
-
-  .col-sm-11 {
-    width: 91.6666666667%;
-  }
-
-  .col-sm-offset-11 {
-    margin-left: 91.6666666667%;
-  }
-
-  .col-sm-12 {
-    width: 100%;
-  }
-
-  .col-sm-offset-12 {
-    margin-left: 100%;
-  }
-}
-@media (max-width: 575px) {
-  .col-xs-1 {
-    width: 8.3333333333%;
-  }
-
-  .col-xs-offset-1 {
-    margin-left: 8.3333333333%;
-  }
-
-  .col-xs-2 {
-    width: 16.6666666667%;
-  }
-
-  .col-xs-offset-2 {
-    margin-left: 16.6666666667%;
-  }
-
-  .col-xs-3 {
-    width: 25%;
-  }
-
-  .col-xs-offset-3 {
-    margin-left: 25%;
-  }
-
-  .col-xs-4 {
-    width: 33.3333333333%;
-  }
-
-  .col-xs-offset-4 {
-    margin-left: 33.3333333333%;
-  }
-
-  .col-xs-5 {
-    width: 41.6666666667%;
-  }
-
-  .col-xs-offset-5 {
-    margin-left: 41.6666666667%;
-  }
-
-  .col-xs-6 {
-    width: 50%;
-  }
-
-  .col-xs-offset-6 {
-    margin-left: 50%;
-  }
-
-  .col-xs-7 {
-    width: 58.3333333333%;
-  }
-
-  .col-xs-offset-7 {
-    margin-left: 58.3333333333%;
-  }
-
-  .col-xs-8 {
-    width: 66.6666666667%;
-  }
-
-  .col-xs-offset-8 {
-    margin-left: 66.6666666667%;
-  }
-
-  .col-xs-9 {
-    width: 75%;
-  }
-
-  .col-xs-offset-9 {
-    margin-left: 75%;
-  }
-
-  .col-xs-10 {
-    width: 83.3333333333%;
-  }
-
-  .col-xs-offset-10 {
-    margin-left: 83.3333333333%;
-  }
-
-  .col-xs-11 {
-    width: 91.6666666667%;
-  }
-
-  .col-xs-offset-11 {
-    margin-left: 91.6666666667%;
-  }
-
-  .col-xs-12 {
-    width: 100%;
-  }
-
-  .col-xs-offset-12 {
-    margin-left: 100%;
-  }
-}
 .page-container {
   max-width: 100vw;
   height: 100vh;
   position: relative;
+}
+
+.hideScrollBar {
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=main.css.map*/

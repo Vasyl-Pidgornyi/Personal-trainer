@@ -1,9 +1,26 @@
-import React from "react";
-import { Link, useHistory } from "react-router-dom";
+import React, { useState } from "react";
 import "./ForgotPassword.scss";
 
 export function ForgotPassword() {
-  let history = useHistory();
+  var [email, setEmail] = useState("");
+  var [emailError, setEmailError] = useState(false);
+
+  const forgotPasswordSubmitHandler = (event) => {
+    event.preventDefault();
+
+    if (!String(email)) {
+      setEmailError(true);
+    } else {
+      console.log(email);
+      setEmail("");
+      setEmailError(false);
+    }
+  };
+
+  const emailChangeHandler = (event) => {
+    setEmail(event.target.value);
+  };
+
   return (
     <div className="forgotPassword__container">
       <div className="forgotPassword__content">
@@ -11,18 +28,23 @@ export function ForgotPassword() {
         <p className="forgotPassword__content_description">
           Please enter your email address
         </p>
-        <div className="forgotPassword__content_input-wrapper">
+        <form
+          className="forgotPassword__content_input-wrapper"
+          onSubmit={forgotPasswordSubmitHandler}
+        >
           <input
+            onChange={emailChangeHandler}
+            value={email}
             type="email"
             placeholder="Email"
-            className="forgotPassword__content_input"
+            className={`forgotPassword__content_input ${
+              emailError ? "forgotPasswordError" : ""
+            }`}
           />
-        </div>
-        <div className="forgotPassword__content_button-cover">
-          <button className="forgotPassword__content_logInAndSignUp-btn">
+          <button className="forgotPassword__content_forgotPassword-btn">
             Reset Password
           </button>
-        </div>
+        </form>
       </div>
     </div>
   );
