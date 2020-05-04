@@ -62,3 +62,10 @@
     background-color: grey;
   }
 }
+
+@media (max-width: 414px) {
+  .popUp__content {
+    width: 90%;
+    position: fixed;
+  }
+}

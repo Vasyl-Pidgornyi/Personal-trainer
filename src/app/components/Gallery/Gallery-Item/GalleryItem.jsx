@@ -7,7 +7,7 @@ export class GalleryItem extends Component {
     super(props);
 
     this.state = {
-      showBox: false
+      showBox: false,
     };
     this.handleBoxToggle = () =>
       this.setState({ showBox: !this.state.showBox });
@@ -15,7 +15,7 @@ export class GalleryItem extends Component {
 
   render() {
     return (
-      <div className="col-4 gallery__item">
+      <div className="col-4 col-xs-12 gallery__item">
         <div className={`gallery__item_cover ${this.props.image}`}>
           <div
             onMouseEnter={this.handleBoxToggle}
@@ -36,8 +36,8 @@ export class GalleryItem extends Component {
                 to={{
                   pathname: "/Gallery-detailed",
                   state: {
-                    info: this.props
-                  }
+                    info: this.props,
+                  },
                 }}
               />
             </div>

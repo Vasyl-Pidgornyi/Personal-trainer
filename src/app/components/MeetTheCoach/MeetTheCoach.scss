@@ -53,3 +53,16 @@
     }
   }
 }
+
+@media (max-width: 414px) {
+  .meetTheCoach-cover {
+    padding: 40px 20px;
+    background-position: top center;
+    &__description {
+      &_header {
+        font-size: 2.8rem;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

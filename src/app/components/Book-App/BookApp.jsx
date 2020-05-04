@@ -7,7 +7,7 @@ export function BookApp() {
   var [phoneNumber, setPhoneNumber] = useState("");
   var [validationError, setValidationError] = useState(false);
 
-  const phoneSubmitHandler = event => {
+  const phoneSubmitHandler = (event) => {
     event.preventDefault();
 
     if (!Number(phoneNumber)) {
@@ -21,10 +21,10 @@ export function BookApp() {
     }
   };
 
-  const countryCodeChangeHandler = event => {
+  const countryCodeChangeHandler = (event) => {
     setCountryCode(event.target.value);
   };
-  const phoneNumberChangeHandler = event => {
+  const phoneNumberChangeHandler = (event) => {
     setPhoneNumber(event.target.value);
   };
 
@@ -65,7 +65,10 @@ export function BookApp() {
             </button>
           </form>
           <div className="app__links">
-            <a href="https://play.google.com/store/apps?hl=ru">
+            <a
+              className="app__links_ref"
+              href="https://play.google.com/store/apps?hl=ru"
+            >
               <svg width="135px" height="41px" viewBox="0 0 135 41">
                 <desc>Created with Sketch.</desc>
                 <defs>
@@ -256,7 +259,10 @@ export function BookApp() {
                 </g>
               </svg>
             </a>
-            <a href="https://www.apple.com/ru/ios/app-store/">
+            <a
+              className="app__links_ref"
+              href="https://www.apple.com/ru/ios/app-store/"
+            >
               <svg width="135px" height="40px" viewBox="0 0 135 40">
                 <desc>Created with Sketch.</desc>
                 <defs>

@@ -10,7 +10,7 @@
 
   &__content {
     width: 50%;
-    height: $image-height;
+    height: 600px;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -83,4 +83,39 @@
 
 .right-background {
   background-image: url("../../../assets/images/selector_first/professional.webp");
+}
+
+@media (max-width: 414px) {
+  .beginnerOrPro-cover {
+    width: 100%;
+    height: 452px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__content {
+      width: 100%;
+      height: 226px;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      &.left {
+        justify-content: center;
+      }
+
+      &.right {
+        justify-content: center;
+      }
+
+      &_description-cover {
+        &.padding-right {
+          padding-right: 0;
+        }
+
+        &.padding-left {
+          padding-left: 0;
+        }
+      }
+    }
+  }
 }

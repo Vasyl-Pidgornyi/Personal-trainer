@@ -44,3 +44,24 @@
   background-image: url("../../../assets/images/gallery/sixth.webp");
   @include background-image-style;
 }
+
+@media (max-width: 414px) {
+  .bookOnline__container {
+    padding: 0 20px 30px;
+  }
+
+  .bookOnline__content {
+    &_header {
+      font-size: 2.5rem;
+      margin-top: 15px;
+    }
+  }
+
+  .bookOnlineItem__container {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

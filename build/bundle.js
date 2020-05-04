@@ -33365,6 +33365,7 @@ function BookApp() {
   }, "Send")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "app__links"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "app__links_ref",
     href: "https://play.google.com/store/apps?hl=ru"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
     width: "135px",
@@ -33548,6 +33549,7 @@ function BookApp() {
     fill: "#FFFFFF",
     opacity: "0.25"
   })))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "app__links_ref",
     href: "https://www.apple.com/ru/ios/app-store/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
     width: "135px",
@@ -34203,7 +34205,7 @@ var GalleryItem = /*#__PURE__*/function (_Component) {
     key: "render",
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-4 gallery__item"
+        className: "col-4 col-xs-12 gallery__item"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "gallery__item_cover ".concat(this.props.image)
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -36025,7 +36027,6 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
- // import { Link } from "react-router-dom";
 
 
 var Winnings = /*#__PURE__*/function (_Component) {

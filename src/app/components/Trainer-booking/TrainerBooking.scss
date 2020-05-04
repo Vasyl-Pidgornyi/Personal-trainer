@@ -8,7 +8,6 @@
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  //   background-attachment: scroll;
   background-image: url("../../../assets/images/background/man_top.webp");
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,5 +43,25 @@
   &__btn:hover {
     background-color: $main-orange-color;
     color: $main-dark-color;
+  }
+}
+
+@media (max-width: 414px) {
+  .trainerBooking-continer {
+    width: 100%;
+    height: 525px;
+    padding: 120px 0 40px;
+    background-position: top center;
+
+    &__header {
+      font-size: 2.5rem;
+      letter-spacing: 12px;
+    }
+
+    &__description {
+      font-size: 1.1rem;
+      letter-spacing: 6px;
+      text-align: center;
+    }
   }
 }

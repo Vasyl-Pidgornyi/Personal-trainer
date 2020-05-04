@@ -59,3 +59,47 @@
     color: $main-dark-color;
   }
 }
+
+@media (max-width: 414px) {
+  .winnings-cover {
+    padding: 40px 20px;
+    background-position: center;
+  }
+
+  .content {
+    &__header {
+      font-size: 2.3rem;
+      margin-bottom: 40px;
+    }
+
+    &__description {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      width: 100%;
+
+      &_element {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-right: 40px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .element {
+    &__number {
+      width: 87px;
+
+      &_text {
+        font-size: 2.3rem;
+      }
+    }
+    &__description {
+      font-size: 1rem;
+      max-width: 87px;
+    }
+  }
+}

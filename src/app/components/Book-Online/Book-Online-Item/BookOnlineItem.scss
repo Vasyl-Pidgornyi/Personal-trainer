@@ -52,3 +52,24 @@
     background-color: $button-hover-color;
   }
 }
+
+@media (max-width: 414px) {
+  .bookOnlineItem__content {
+    width: 100%;
+    &_image-container {
+      height: auto;
+      width: 100%;
+    }
+
+    &_image {
+      height: 220px;
+      width: 100%;
+    }
+
+    &_btn {
+      margin: 30px 0 40px;
+      width: 90%;
+      height: 50px;
+    }
+  }
+}

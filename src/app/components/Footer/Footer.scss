@@ -160,3 +160,56 @@
   /* Internet Explorer 10-11 */
   color: $main-black-color;
 }
+
+@media (max-width: 414px) {
+  .footer__container {
+    width: 100%;
+    height: 730px;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    background-color: $main-orange-color;
+  }
+
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  .description {
+    &__text {
+      margin-top: 30px;
+    }
+
+    &__socials {
+      margin-top: 40px;
+    }
+  }
+
+  .footer-phone {
+    margin-top: 5px;
+  }
+
+  .footer__input-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    height: auto;
+    padding: 3px;
+    margin: 25px 0 0;
+  }
+
+  .footer__copyright {
+    position: relative;
+    margin-top: 20px;
+
+    &_goHome {
+      position: absolute;
+      top: -370px;
+      right: 20px;
+    }
+  }
+}

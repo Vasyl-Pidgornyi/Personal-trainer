@@ -12,7 +12,7 @@
 
   &__header {
     color: $main-white-color;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     letter-spacing: 13px;
   }
 
@@ -31,5 +31,23 @@
   &__btn:hover {
     background-color: $main-orange-color;
     color: $main-dark-color;
+  }
+}
+
+@media (max-width: 414px) {
+  .startTrainingToday-continer {
+    padding: 60px 40px;
+
+    &__header {
+      font-size: 1.5rem;
+      letter-spacing: 7px;
+      max-width: 145px;
+      line-height: 2rem;
+      text-align: center;
+    }
+
+    &__btn {
+      margin-top: 25px;
+    }
   }
 }

@@ -86,3 +86,11 @@
   background-image: url("../../../../assets/images/gallery/sixth.webp");
   @include background-image-style;
 }
+
+@media (max-width: 414px) {
+  .gallery__item {
+    &_content {
+      height: 182px;
+    }
+  }
+}
