@@ -55,6 +55,10 @@
   cursor: pointer;
 }
 
+.mobileBurgerMenu__cover {
+  display: none;
+}
+
 @media (max-width: 414px) {
   .page-header {
     position: static;
@@ -62,7 +66,73 @@
     height: 90px;
   }
   .page-header__global-nav {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .page-header__logIn {
+    justify-content: flex-end;
+  }
+
+  .mobileBurgerMenu__cover {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .mobileBurgerMenu__btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    z-index: 15;
+  }
+  .mobileBurgerMenu__content {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    color: white;
+    height: 100vh;
+    width: 80vw;
+    position: absolute;
+    top: 0;
+    right: -80vw;
+    background-color: #252128;
+    padding: 80px 20px 20px;
+    z-index: 3;
+  }
+  .mobileBurgerMenu__content.show {
+    right: 0;
+    transition: all 0.5s;
+  }
+  .mobileBurgerMenu__content.hide {
+    right: -80vw;
+    transition: all 0.5s;
+  }
+
+  .burgerButton__cover {
+    display: flex;
+    flex-direction: column;
+    width: 27px;
+    height: 30px;
+  }
+  .burgerButton__content {
+    margin-top: 7px;
+    background-color: #fe6148;
+    height: 3px;
+    width: 100%;
+    border-radius: 3px;
+    transition: all 0.25s ease-in-out;
+  }
+  .burgerButton__content.line1 {
+    transform: translateY(10px) rotate(-45deg);
+    background-color: white;
+  }
+  .burgerButton__content.line2 {
+    opacity: 0;
+    background-color: white;
+  }
+  .burgerButton__content.line3 {
+    transform: translateY(-10px) rotate(45deg);
+    background-color: white;
   }
 }
 .selected {
@@ -3522,6 +3592,15 @@ button {
 
 .hideScrollBar {
   overflow: hidden;
+}
+
+@media (max-width: 414px) {
+  .page-container {
+    overflow-x: hidden;
+  }
+  .page-container.preventScroll {
+    overflow-y: hidden;
+  }
 }
 
 /*# sourceMappingURL=main.css.map*/

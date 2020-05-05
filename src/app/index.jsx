@@ -17,7 +17,6 @@ import { BookOnlineDetailed } from "./components/Book-Online/Book-Online-Detaile
 import { Plans } from "./components/Plans/Plans.jsx";
 import { Payment } from "./components/Plans/Payment/Payment.jsx";
 import { PopUp } from "./components/PopUp/PopUp.jsx";
-import { authenticationPages } from "./components/LogIn-SignUp-Pages/constants.jsx";
 import { LoginModalWindow } from "./components/LogIn-SignUp-Pages/LoginModalWindow.jsx";
 
 class App extends React.Component {
@@ -29,6 +28,7 @@ class App extends React.Component {
       distanceFromTop: null,
       showErrorMessage: false,
       logInPage: null,
+      showBurgerMenu: false,
     };
   }
 
@@ -76,18 +76,24 @@ class App extends React.Component {
     this.setState({ logInPage: selectedPage });
   };
 
+  showMenuHandler = (showMenu) => {
+    this.setState({ showBurgerMenu: showMenu });
+  };
+
   render() {
     return (
       <Router>
         <div
           className={`page-container ${
             this.state.logInPage != null ? "hideScrollBar" : ""
-          }`}
+          } ${this.state.showBurgerMenu ? "preventScroll" : ""}`}
           id="mainPage"
         >
           <Header
             sectionInFocus={this.state.sectionInFocus}
             openLoginWindow={this.changeAutenticationPage}
+            showBurgerMenu={this.state.showBurgerMenu}
+            showMenuHandler={this.showMenuHandler}
           />
           <main>
             <Switch>

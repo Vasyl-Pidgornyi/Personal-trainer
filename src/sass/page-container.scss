@@ -7,3 +7,12 @@
 .hideScrollBar {
   overflow: hidden;
 }
+
+@media (max-width: 414px) {
+  .page-container {
+    overflow-x: hidden;
+    &.preventScroll {
+      overflow-y: hidden;
+    }
+  }
+}
