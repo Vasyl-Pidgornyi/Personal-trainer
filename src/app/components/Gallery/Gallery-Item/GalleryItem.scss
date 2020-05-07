@@ -18,14 +18,11 @@
   }
 
   &_description {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: none;
     height: 100%;
     width: 100%;
     background-color: $main-white-color;
     opacity: 0.5;
-    display: none;
   }
 
   &_link {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { BookOnlineItem } from "./Book-Online-Item/BookOnlineItem.jsx";
 import "./BookOnline.scss";
 
@@ -13,7 +13,7 @@ export function BookOnline({ togglePopUpState }) {
       price: 60,
       duration: 1,
       weekDay: ["Mon,", " Wed"],
-      courseId: "box-fit"
+      courseId: "box-fit",
     },
     {
       id: 1,
@@ -24,7 +24,7 @@ export function BookOnline({ togglePopUpState }) {
       price: 70,
       duration: 2,
       weekDay: ["Tue,", " Thu"],
-      courseId: "boxing-for-beginners"
+      courseId: "boxing-for-beginners",
     },
     {
       id: 2,
@@ -35,15 +35,15 @@ export function BookOnline({ togglePopUpState }) {
       price: 80,
       duration: 1.5,
       weekDay: ["Fri,", " Sat"],
-      courseId: "boxing-for-pros"
-    }
+      courseId: "boxing-for-pros",
+    },
   ];
   return (
     <div className="bookOnline__container" id="book-online">
       <div className="bookOnline__content">
         <h1 className="bookOnline__content_header">MY CLASSES</h1>
         <div className="bookOnlineItem__container">
-          {data.map(i => (
+          {data.map((i) => (
             <BookOnlineItem key={i.id} item={i} showPopUp={togglePopUpState} />
           ))}
         </div>

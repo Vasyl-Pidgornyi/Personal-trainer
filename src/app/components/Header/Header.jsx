@@ -3,12 +3,7 @@ import "./Header.scss";
 import { HeaderItem } from "./Header-Item/HeaderItem.jsx";
 import { authenticationPages } from "../LogIn-SignUp-Pages/constants.jsx";
 import { useEffect } from "react";
-import {
-  BrowserView,
-  MobileView,
-  isBrowser,
-  isMobile,
-} from "react-device-detect";
+import { BrowserView, MobileView } from "react-device-detect";
 
 export function Header({
   sectionInFocus,
@@ -51,14 +46,7 @@ export function Header({
       <BrowserView viewClassName="page-header">
         <nav className="page-header__global-nav">
           {data.map((i) => (
-            <HeaderItem
-              key={i.id}
-              isSelected={sectionInFocus == i.id ? true : false}
-              linkName={i.linkName}
-              label={i.label}
-              openNewPage={i.openNewPage}
-              showMenuHandler={showMenuHandler}
-            />
+            <HeaderItem key={i.id} item={i} showMenuHandler={showMenuHandler} />
           ))}
         </nav>
         <button
@@ -141,10 +129,8 @@ export function Header({
                 {data.map((i) => (
                   <HeaderItem
                     key={i.id}
-                    isSelected={sectionInFocus == i.id ? true : false}
-                    linkName={i.linkName}
-                    label={i.label}
-                    openNewPage={i.openNewPage}
+                    item={i}
+                    showMenuHandler={showMenuHandler}
                   />
                 ))}
               </nav>

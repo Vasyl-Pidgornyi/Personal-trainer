@@ -3,28 +3,30 @@ import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 import "./HeaderItem.scss";
 
-export function HeaderItem(props) {
-  if (props.openNewPage) {
+export function HeaderItem({ item, showMenuHandler }) {
+  if (item.openNewPage) {
     return (
       <Link
-        to={`/${props.linkName}`}
+        onClick={() => showMenuHandler(false)}
+        to={`/${item.linkName}`}
         className={`page-header__nav-link ${
-          props.isSelected ? "selected" : null
+          item.isSelected ? "selected" : null
         }`}
       >
-        {props.label}
+        {item.label}
       </Link>
     );
   } else {
     return (
       <HashLink
-        to={`/#${props.linkName}`}
-        scroll={el => el.scrollIntoView({ behavior: "smooth" })}
+        onClick={() => showMenuHandler(false)}
+        to={`/#${item.linkName}`}
+        scroll={(el) => el.scrollIntoView({ behavior: "smooth" })}
         className={`page-header__nav-link ${
-          props.isSelected ? "selected" : null
+          item.isSelected ? "selected" : null
         }`}
       >
-        {props.label}
+        {item.label}
       </HashLink>
     );
   }
