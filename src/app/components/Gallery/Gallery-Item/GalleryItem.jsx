@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { isMobile, isBrowser } from "react-device-detect";
 import "./GalleryItem.scss";
+import { GalleryData } from "../GalleryData/GalleryData.jsx";
 
-export function GalleryItem({ item }) {
+export function GalleryItem({ itemId }) {
   var [showBox, setShowBox] = useState(false);
   var [enableLink, setEnableLink] = useState(false);
 
@@ -13,6 +14,10 @@ export function GalleryItem({ item }) {
       setEnableLink(true);
     }
   };
+
+  var item = GalleryData.find((element) => {
+    return element.id === itemId;
+  });
 
   return (
     <div className="col-4 col-xs-12 gallery__item">
@@ -44,7 +49,7 @@ export function GalleryItem({ item }) {
                 to={{
                   pathname: "/Gallery-detailed",
                   state: {
-                    info: item,
+                    item: item,
                   },
                 }}
               />

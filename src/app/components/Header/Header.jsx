@@ -46,7 +46,12 @@ export function Header({
       <BrowserView viewClassName="page-header">
         <nav className="page-header__global-nav">
           {data.map((i) => (
-            <HeaderItem key={i.id} item={i} showMenuHandler={showMenuHandler} />
+            <HeaderItem
+              key={i.id}
+              item={i}
+              showMenuHandler={showMenuHandler}
+              isSelected={sectionInFocus === i.id}
+            />
           ))}
         </nav>
         <button
