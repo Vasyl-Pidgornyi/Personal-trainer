@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./PlansItem.scss";
+import { MobileView } from "react-device-detect";
 
 export function PlansItem(props) {
+  let [toggleMenu, setToggleMenu] = useState(false);
+
+  const toggleMenuHandler = () => {
+    setToggleMenu(!toggleMenu);
+    console.log(toggleMenu);
+  };
+
   return (
     <div className="plansItem__content">
       <div
@@ -42,8 +50,8 @@ export function PlansItem(props) {
           to={{
             pathname: `/Payment/${props.item.planId}`,
             state: {
-              item: props.item
-            }
+              item: props.item,
+            },
           }}
           className="plansItem__content_btn"
         >
@@ -53,13 +61,34 @@ export function PlansItem(props) {
       <div
         className={`plansItem__content-wrapper topUnderscore ${
           props.item.bestValue ? "bestValue-lowerBlock" : ""
+        } ${toggleMenu ? "plansItem__content-wrapper_hidden" : ""} ${
+          props.item.bestValue && toggleMenu
+            ? "best-value__hidden-background-color"
+            : ""
         }`}
       >
-        {props.item.planPrivileges.map(item => (
-          <p className="plansItem__content_planPrivileges" key={item.id}>
+        {props.item.planPrivileges.map((item) => (
+          <p
+            className={`plansItem__content_planPrivileges ${
+              toggleMenu ? "hide-privilege-text" : ""
+            }`}
+            key={item.id}
+          >
             {item.privilegeName}
           </p>
         ))}
+        <MobileView>
+          <div className="plansItem__content_slider">
+            <button
+              onClick={toggleMenuHandler}
+              className={`plansItem__content_slider-button ${
+                toggleMenu ? "plansItem__content_slider-button-animation" : ""
+              }`}
+            >
+              ˄
+            </button>
+          </div>
+        </MobileView>
       </div>
     </div>
   );

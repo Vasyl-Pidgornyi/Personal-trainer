@@ -36452,10 +36452,35 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _PlansItem_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PlansItem.scss */ "./src/app/components/Plans/Plans-Item/PlansItem.scss");
 /* harmony import */ var _PlansItem_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_PlansItem_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_device_detect__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-device-detect */ "./node_modules/react-device-detect/main.js");
+/* harmony import */ var react_device_detect__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_device_detect__WEBPACK_IMPORTED_MODULE_3__);
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
 
 
 
 function PlansItem(props) {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      toggleMenu = _useState2[0],
+      setToggleMenu = _useState2[1];
+
+  var toggleMenuHandler = function toggleMenuHandler() {
+    setToggleMenu(!toggleMenu);
+    console.log(toggleMenu);
+  };
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "plansItem__content"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -36485,13 +36510,18 @@ function PlansItem(props) {
     },
     className: "plansItem__content_btn"
   }, "Select")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "plansItem__content-wrapper topUnderscore ".concat(props.item.bestValue ? "bestValue-lowerBlock" : "")
+    className: "plansItem__content-wrapper topUnderscore ".concat(props.item.bestValue ? "bestValue-lowerBlock" : "", " ").concat(toggleMenu ? "plansItem__content-wrapper_hidden" : "", " ").concat(props.item.bestValue && toggleMenu ? "best-value__hidden-background-color" : "")
   }, props.item.planPrivileges.map(function (item) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-      className: "plansItem__content_planPrivileges",
+      className: "plansItem__content_planPrivileges ".concat(toggleMenu ? "hide-privilege-text" : ""),
       key: item.id
     }, item.privilegeName);
-  })));
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_device_detect__WEBPACK_IMPORTED_MODULE_3__["MobileView"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "plansItem__content_slider"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    onClick: toggleMenuHandler,
+    className: "plansItem__content_slider-button ".concat(toggleMenu ? "plansItem__content_slider-button-animation" : "")
+  }, "\u02C4")))));
 }
 
 /***/ }),

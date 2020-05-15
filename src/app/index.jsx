@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
-import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import { Header } from "./components/Header/Header.jsx";
 import { TrainerBooking } from "./components/Trainer-booking/TrainerBooking.jsx";
 import { BeginnerOrPro } from "./components/Beginner-Or-Pro/BeginnerOrPro.jsx";
